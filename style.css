@@ -12,7 +12,7 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
-    background-image: url('../Photos/PA00106842-Gare_de_Metz-Ville.jpg');
+    background-image: url('PA00106842-Gare_de_Metz-Ville.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
