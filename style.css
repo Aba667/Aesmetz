@@ -12,7 +12,7 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
-    background-image: url('PA00106842-Gare_de_Metz-Ville.jpg');
+    background-image: url('../Photos/PA00106842-Gare_de_Metz-Ville.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -390,4 +390,98 @@ footer ul li img:hover {
         padding-left: 0;
         text-align: justify;
     }
+}
+/* Grille des activités */
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.activity-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.activity-card:hover {
+    transform: translateY(-5px);
+}
+
+.activity-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    
+    cursor: pointer;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.activity-content {
+    padding: 20px;
+}
+
+.activity-content h4 {
+    color: #2c572e;
+    margin-bottom: 12px;
+    font-size: 1.2em;
+}
+
+.activity-content p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .activities-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .activity-card img {
+        height: 180px;
+    }
+}
+.activity-card img:hover {
+    filter: brightness(0.9);
+}
+/* Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.close:hover {
+    color: #4CAF50;
 }
