@@ -48,13 +48,53 @@
         <p>
             L’AESM met en place divers événements et initiatives pour accompagner ses membres tout au long de leur parcours :
         </p>
-        <ul>
-            <li>📌 Journées d’accueil pour les nouveaux étudiants.</li>
-            <li>📌 Soirées culturelles et culinaires pour partager notre héritage sénégalais.</li>
-            <li>📌 Séances d’orientation et d’accompagnement (logement, démarches administratives, bourses).</li>
-            <li>📌 Sorties et activités sportives pour favoriser la cohésion.</li>
-            <li>📌 Conférences et ateliers sur des thématiques variées (emploi, réussite académique, entrepreneuriat).</li>
-        </ul>
+        
+        <div class="activities-grid">
+            <!-- Carte 1 -->
+            <div class="activity-card">
+                <img src="IMG_1BFABE31A3B1-1.jpeg" alt="Journée d'accueil">
+                <div class="activity-content">
+                    <h4>📌 Journées d'accueil</h4>
+                    <p>Accueil personnalisé des nouveaux étudiants </p>
+                </div>
+            </div>
+
+            <!-- Carte 2 -->
+            <div class="activity-card">
+                <img src="PHOTO-2024-12-29-06-07-31.jpg" alt="Soirée culturelle">
+                <div class="activity-content">
+                    <h4>📌 Soirées culturelles</h4>
+                    <p>Découverte de la culture sénégalaise à travers la cuisine, la musique et les traditions</p>
+                </div>
+            </div>
+
+            <!-- Carte 3 -->
+            <div class="activity-card">
+                <img src="IMG_AEBB4D42B78A-1.jpeg" alt="Orientation étudiants">
+                <div class="activity-content">
+                    <h4>📌 Accompagnement</h4>
+                    <p>Aide aux démarches administratives, recherche de logement et gestion des bourses</p>
+                </div>
+            </div>
+
+            <!-- Carte 4 -->
+            <div class="activity-card">
+                <img src="01da0c99-8529-484d-a7c5-5238e6abad5b.JPG" alt="Activités sportives">
+                <div class="activity-content">
+                    <h4>📌 Activités sportives</h4>
+                    <p>Tournois de football, randonnées et sorties loisirs pour créer des liens</p>
+                </div>
+            </div>
+
+            <!-- Carte 5 -->
+            <div class="activity-card">
+                <img src="IMG_04EDB9EB4CBD-1.jpeg" alt="Conférence">
+                <div class="activity-content">
+                    <h4>📌 Conférences</h4>
+                    <p>Ateliers sur l'insertion professionnelle et rencontres avec des entrepreneurs</p>
+                </div>
+            </div>
+        </div>
 
         <h3>Pourquoi nous rejoindre ?</h3>
         <p>
@@ -89,9 +129,9 @@
 
         <h3>Partenaires et sponsors</h3>
         <p>
-            Nous remercions nos partenaires et sponsors pour leur soutien : ASM (Association des Sénégalais de Moselle), Lemfi (Code promo: Aesmetz57..
+            Nous remercions nos partenaires et sponsors pour leur soutien : ASM (Association des Sénégalais de Moselle), Lemfi (Code promo: Aesmetz57).
         </p>
-     <!-- Section Mot du président -->
+            <!-- Section Mot du président -->
     <div class="president-message">
         <div class="president-photo">
             <img src="d1a48d6d-c006-4075-9beb-6a8810f98c40.jpg" alt="Président">
@@ -105,6 +145,8 @@
             </blockquote>
         </div>
     </div>
+
+    
         <h4>Réalisations</h4>
         <p>
             Ce site a été réalisé par les membres de l'AESM.
@@ -123,9 +165,9 @@
 
         <h3>Galerie photo </h3>
         <div class="gallery">
-            <img src="a96458eb-f003-4914-9fff-7c050bb909ca.JPG" alt="Événement 1">
-            <img src="IMG_0841.jpg" alt="Événement 3">
-            <img src="IMG_0842.jpg" alt="Événement 2">
+            <img src="a96458eb-f003-4914-9fff-7c050bb909ca.JPG" height="200" width="200" alt="Événement 1">
+            <img src="IMG_0841.jpg" height="200" width="200"alt="Événement 3">
+            <img src="IMG_0842.jpg" height="200" width="200"alt="Événement 2">
            
         </div>
     </section>
@@ -177,5 +219,31 @@
             </li>
         </ul>
     </footer>
+    <!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+</div>
+<script>
+    // Lightbox functionality
+    document.querySelectorAll('.activity-card img').forEach(img => {
+        img.onclick = function() {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            lightbox.style.display = "block";
+            lightboxImg.src = this.src;
+        }
+    });
+    
+    document.getElementById('lightbox').onclick = function(e) {
+        if (e.target !== document.getElementById('lightbox-img')) {
+            this.style.display = "none";
+        }
+    }
+    
+    document.querySelector('.close').onclick = function() {
+        document.getElementById('lightbox').style.display = "none";
+    }
+    </script>
 </body>
 </html>
