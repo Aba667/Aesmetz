@@ -102,8 +102,8 @@ section h2 {
 }
 
 .team-member img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 10px;
@@ -323,5 +323,71 @@ footer ul li img:hover {
 
     .team-grid {
         grid-template-columns: 1fr;
+    }
+}
+/* Section Mot du président */
+.president-message {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    margin: 40px 0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.president-photo img {
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.president-photo img:hover {
+    transform: scale(1.03);
+}
+
+.president-text {
+    flex: 1;
+    text-align: left;
+}
+
+.president-text h3 {
+    color: #4CAF50;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.president-text blockquote {
+    font-style: italic;
+    line-height: 1.8;
+    border-left: 4px solid #4CAF50;
+    padding-left: 20px;
+    margin: 15px 0;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .president-message {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .president-photo img {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .president-text {
+        text-align: center;
+    }
+    
+    .president-text blockquote {
+        border-left: none;
+        padding-left: 0;
+        text-align: justify;
     }
 }
