@@ -6,6 +6,34 @@
     <title>AESM - Association</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <head>
+        
+        <script defer>
+        // Lightbox existante...
+
+// Nouveau code pour la galerie
+        document.addEventListener('DOMContentLoaded', function() {
+                const voirPlusBtn = document.querySelector('.voir-plus');
+                    const hiddenGallery = document.querySelector('.hidden-gallery');
+    
+            if (voirPlusBtn && hiddenGallery) {
+            voirPlusBtn.addEventListener('click', function() {
+            if (hiddenGallery.style.display === 'none' || !hiddenGallery.style.display) {
+                hiddenGallery.style.display = 'grid';
+                this.textContent = 'Voir moins de photos';
+                // Défilement animé
+                hiddenGallery.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                hiddenGallery.style.display = 'none';
+                this.textContent = 'Voir plus de photos';
+            }
+                });
+             } else {
+                console.error('Éléments non trouvés - Vérifiez les sélecteurs');
+            }
+            });
+        </script>
+    </head>
 </head>
 <body>
     <!-- En-tête -->
@@ -104,9 +132,9 @@
 
         <h3>Histoire et origine de l’association</h3>
         <p>
-           L’Association des Étudiants Sénégalais de Metz (AESM) a été fondée le 19 juin 1993 avec pour mission de maintenir les liens entre les étudiants du campus Bridoux, de coordonner les activités de ses membres et d’organiser diverses manifestations. (Source : Tribunal judiciaire de Metz)  
+            L’Association des Étudiants Sénégalais de Metz (AESM) a été fondée le 19 juin 1993 avec pour mission de maintenir les liens entre les étudiants du campus Bridoux, de coordonner les activités de ses membres et d’organiser diverses manifestations. (Source : Tribunal judiciaire de Metz)  
 
-À ses débuts, l’association réunissait les étudiants sénégalais et mauritaniens de Metz. Quelques années plus tard, elle prit le nom d’Association des Étudiants Sénégalais de Metz et se fixa pour objectif principal la défense des intérêts matériels et moraux de l’ensemble des étudiants sénégalais, ainsi que la promotion de la culture sénégalaise à travers ses événements.
+               À ses débuts, l’association réunissait les étudiants sénégalais et mauritaniens de Metz. Quelques années plus tard, elle prit le nom d’Association des Étudiants Sénégalais de Metz et se fixa pour objectif principal la défense des intérêts matériels et moraux de l’ensemble des étudiants sénégalais, ainsi que la promotion de la culture sénégalaise à travers ses événements.   
         </p>
 
         <h3>L’équipe</h3>
@@ -129,32 +157,7 @@
             </div>
         </div>
 
-       <div class="partners-section">
-            <h3>Collaborateur et sponsors</h3>
-            <div class="partners-grid">
-                <!-- Partenaire 1 -->
-                <div class="partner-card">
-                    <div class="partner-image">
-                        <img src="IMG_1F279CE6DCDB-1.jpeg" alt="ASM">
-                        <div class="partner-text">
-                            <h4>ASM</h4>
-                            <p>Association des Sénégalais de Moselle</p>
-                        </div>
-                    </div>
-                </div>
         
-                <!-- Partenaire 2 -->
-                <div class="partner-card">
-                    <div class="partner-image">
-                        <img src="PHOTO-2025-03-11-21-10-51.jpg" alt="Événement Lemfi">
-                        <div class="partner-text">
-                            <h4>Lemfi</h4>
-                            <p>Code promo: Aesmetz57</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
             <!-- Section Mot du président -->
     <div class="president-message">
         <div class="president-photo">
@@ -171,28 +174,59 @@
     </div>
 
     
-    
-       
+        
     </section>
 
     <!-- Section Événements -->
-    <section id="events">
-        <h2>Événements</h2>
-        <h3>Événements passés et futurs</h3>
-        <ul>
-            <li><strong>Diner de gala :</strong> Integration nouveaux etudiants - 28/12/2024</li>
-            <li><strong>Ndogou(ftor):</strong> Nogou ASM - 08/03/2025</li>
-            <li><strong>Picnic:</strong> Picnic - 08/08/2024</li>
-        </ul>
-
-        <h3>Galerie photo </h3>
-        <div class="gallery">
-            <img src="a96458eb-f003-4914-9fff-7c050bb909ca.JPG" height="200" width="200" alt="Événement 1">
-            <img src="IMG_0841.jpg" height="200" width="200"alt="Événement 3">
-            <img src="IMG_0842.jpg" height="200" width="200"alt="Événement 2">
-           
+<section id="events">
+    <h2>Événements</h2>
+    
+    <div class="events-container">
+        <!-- Liste des événements -->
+        <div class="events-list">
+            <h3>Événements passés et futurs</h3>
+            <ul>
+                <li><strong>Diner de gala :</strong> Integration nouveaux étudiants - 28/12/2024</li>
+                <li><strong>Ndogou(ftor):</strong> Nogou ASM - 08/03/2025</li>
+                <li><strong>Picnic:</strong> Picnic - 08/08/2024</li>
+            </ul>
         </div>
-    </section>
+
+        <!-- Galerie photo -->
+        <div class="gallery-section">
+            <h3>Galerie photo</h3>
+            <div class="gallery-container">
+                <!-- Premières 3 photos visibles -->
+                <div class="visible-gallery">
+                    <img src="a96458eb-f003-4914-9fff-7c050bb909ca.JPG" alt="Événement 1">
+                    <img src="IMG_0841.jpg" alt="Événement 2">
+                    <img src="IMG_0842.jpg" alt="Événement 3">
+                </div>
+
+                <!-- Photos cachées -->
+                <div class="hidden-gallery">
+                    <img src="1.jpg" alt="Événement ">
+                    <img src="2.jpg" alt="Événement ">
+                    <img src="3.jpg" alt="Événement ">
+                    <img src="4.jpg" alt="Événement ">
+                    <img src="5.jpg" alt="Événement ">
+                    <img src="6.jpg" alt="Événement ">
+                    <img src="7.jpg" alt="Événement ">
+                    <img src="8.jpg" alt="Événement ">
+                    <img src="9.jpg" alt="Événement ">
+                    <img src="10.jpg" alt="Événement ">
+                    <img src="11.jpg" alt="Événement ">
+                    <img src="12.jpg" alt="Événement ">
+                    <img src="13.jpg" alt="Événement ">
+                    <img src="14.jpg" alt="Événement ">
+                </div>
+
+                <!-- Bouton Voir plus -->              
+                <button class="voir-plus" aria-expanded="false">Voir plus de photos</button>
+            </div>
+        </div>
+    </div>
+</section>
 
     <!-- Section Actualités / Blog -->
     <section id="news">
@@ -202,7 +236,90 @@
             <li><strong>Élections du bureau :</strong> 31/10/2024 remplacé par Mr Mamadou Seye.</li>
             <li><strong>Changements :</strong> Ex président : Mr Khadim Diallo.</li>
         </ul>
+        <div class="partners-section">
+            <h3>Collaborateurs et sponsors</h3>
+            <div class="partners-grid">
+                <!-- Partenaire 1 -->
+                <div class="partner-card">
+                    <div class="partner-image">
+                        <img src="IMG_1F279CE6DCDB-1.jpeg" alt="ASM">
+                        <div class="partner-text">
+                            <h4>ASM</h4>
+                            <p>Association des Sénégalais de Moselle</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Partenaire 2 -->
+                <div class="partner-card">
+                    <div class="partner-image">
+                        <img src="LeCap.jpg" alt="Le Cap">
+                        <div class="partner-text">
+                            <h4>Le Cap</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Partenaire 3 -->
+                <div class="partner-card">
+                    <div class="partner-image">
+                        <img src="PHOTO-2025-03-11-21-10-51.jpg" alt="Lemfi">
+                        <div class="partner-text">
+                            <h4>Lemfi</h4>
+                            <p>Code promo: Aesmetz57</p>
+                        </div>
+                    </div>
+                </div>
+        
+                
+        
+                <!-- Partenaire 4 -->
+                <div class="partner-card">
+                    <div class="partner-image">
+                        <img src="afev.png" alt="afev">
+                        <div class="partner-text">
+                            <h4>afev</h4>
+                            <p>Createur de liens solidaires</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Partenaire 5 -->
+                <div class="partner-card">
+                    <div class="partner-image">
+                        <img src="Dahira.jpeg" alt="Dahira Mouride de Metz">
+                        <div class="partner-text">
+                            <h4>Dahira Mouride de Metz</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Partenaire 6 -->
+                <div class="partner-card">
+                    <div class="partner-image">
+                        <img src="UL.jpg" alt="UL">
+                        <div class="partner-text">
+                            <h4>Université de Lorraine</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Partenaire 7 -->
+                <div class="partner-card">
+                    <div class="partner-image">
+                        <img src="LesCouleursD.jpg" alt="Partenaire 7">
+                        <div class="partner-text">
+                            <h4>Les Couleurs D'Afrique</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+    
 
     <!-- Section Faire un don -->
     <section id="don">
@@ -219,10 +336,9 @@
         <p>Pour nous contacter, veuillez cliquer sur le bouton ci-dessous :</p>
         <a href="contact.html" target="_blank" class="don-button">Accéder au formulaire de contact</a>
     </section>
-     <p>
-            Ce site a été réalisé par les membres de l'AESM.
-        </p>
-
+    <p>
+        Ce site a été réalisé par les membres de l'AESM.
+    </p>
     <!-- Pied de page -->
     <footer>
         <h3>Suivez-nous sur nos réseaux sociaux :</h3>
@@ -245,30 +361,37 @@
         </ul>
     </footer>
     <!-- Lightbox -->
-<div id="lightbox" class="lightbox">
-    <span class="close">&times;</span>
-    <img class="lightbox-content" id="lightbox-img">
-</div>
-<script>
-    // Lightbox functionality
-    document.querySelectorAll('.activity-card img').forEach(img => {
-        img.onclick = function() {
-            const lightbox = document.getElementById('lightbox');
-            const lightboxImg = document.getElementById('lightbox-img');
-            lightbox.style.display = "block";
-            lightboxImg.src = this.src;
-        }
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const closeBtn = document.querySelector('.close');
+    
+        // Sélectionner toutes les images de la galerie
+        document.querySelectorAll('.visible-gallery img, .hidden-gallery img, .activity-card img').forEach(img => {
+            img.addEventListener('click', (e) => {
+                lightbox.style.display = "block";
+                lightboxImg.src = e.target.src;
+            });
+        });
+    
+        // Fermer la lightbox
+        closeBtn.addEventListener('click', () => {
+            lightbox.style.display = "none";
+        });
+    
+        // Fermer en cliquant à l'extérieur
+        lightbox.addEventListener('click', (e) => {
+            if (e.target !== lightboxImg) {
+                lightbox.style.display = "none";
+            }
+        });
     });
-    
-    document.getElementById('lightbox').onclick = function(e) {
-        if (e.target !== document.getElementById('lightbox-img')) {
-            this.style.display = "none";
-        }
-    }
-    
-    document.querySelector('.close').onclick = function() {
-        document.getElementById('lightbox').style.display = "none";
-    }
     </script>
-</body>
+</body>    
 </html>
