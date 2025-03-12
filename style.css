@@ -143,40 +143,40 @@ section h2 {
 .gallery-container {
     position: relative;
     margin-top: 20px;
-}
-
-.visible-gallery, .hidden-gallery {
+  }
+  
+  .visible-gallery, .hidden-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 15px;
     margin-bottom: 20px;
-}
-
-.hidden-gallery {
+  }
+  
+  .hidden-gallery {
     display: none;
     animation: fadeIn 0.5s ease;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-.hidden-gallery.visible {
+  }
+  
+  /* Lorsque la galerie cachée devient visible */
+  .hidden-gallery.visible {
     display: grid !important;
     animation: fadeIn 0.5s ease;
-}
-
-.visible-gallery img, .hidden-gallery img {
+  }
+  
+  .visible-gallery img, .hidden-gallery img {
     width: 100%;
     height: 500px;
     object-fit: cover;
     border-radius: 8px;
     cursor: pointer;
     transition: transform 0.3s ease;
-}
-
-.visible-gallery img:hover, .hidden-gallery img:hover {
+  }
+  
+  .visible-gallery img:hover, .hidden-gallery img:hover {
     transform: scale(1.05);
-}
-
-.voir-plus {
+  }
+  
+  .voir-plus {
     display: block;
     margin: 20px auto;
     padding: 10px 30px;
@@ -186,16 +186,17 @@ section h2 {
     border-radius: 25px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-.voir-plus:hover {
+  }
+  
+  .voir-plus:hover {
     background-color: #45a049;
-}
-
-@keyframes fadeIn {
+  }
+  
+  @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
-}
+  }
+  
 
 /* Formulaire moderne */
 .modern-form {
@@ -506,93 +507,51 @@ footer ul li img:hover {
     filter: brightness(0.9);
 }
 
-/* Lightbox  */
+/* Style de la lightbox */
 .lightbox {
-    display: none;
+    display: none; /* Masqué par défaut */
     position: fixed;
-    top: 0;
+    z-index: 1000;
+    padding-top: 60px;
     left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.9);
-    z-index: 1000;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Ajout pour s'assurer que la lightbox est bien active */
-.lightbox.show {
-    display: flex;
-}
-
-/* Image bien centrée */
-.lightbox-img {
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9); /* Fond noir semi-transparent */
+  }
+  
+  .lightbox-content {
+    margin: auto;
+    display: block;
     max-width: 90%;
-    max-height: 90vh;
-    border-radius: 5px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    object-fit: contain;
-}
-
-/* Bouton de fermeture amélioré */
-.close-lightbox {
+    max-height: 80%;
+    animation: zoomIn 0.5s;
+  }
+  
+  @keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+  
+  /* Bouton de fermeture */
+  .lightbox .close {
     position: absolute;
-    top: 25px;
+    top: 20px;
     right: 35px;
-    color: white;
+    color: #f1f1f1;
     font-size: 40px;
+    font-weight: bold;
     cursor: pointer;
     transition: 0.3s;
-    z-index: 1001;
-}
+  }
+  
+  .lightbox .close:hover {
+    color: #bbb;
+  }
+  
 
-.close-lightbox:hover {
-    color: #4CAF50;
-    transform: scale(1.2);
-}
-
-/* Images cliquables */
-.gallery img,
-.activity-card img,
-.partner-image img {
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.gallery img:hover,
-.activity-card img:hover,
-.partner-image img:hover {
-    transform: scale(1.03);
-}
-
-/* Animation améliorée */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-/* Responsive mobile */
-@media (max-width: 768px) {
-    .lightbox-img {
-        max-width: 95%;
-        max-height: 80vh;
-    }
-    
-    .close-lightbox {
-        top: 15px;
-        right: 20px;
-        font-size: 35px;
-    }
-}
-
-@media (max-width: 480px) {
-    .lightbox-img {
-        max-width: 100%;
-        border-radius: 0;
-    }
-}
-
-/* Section Partenaires  */
+/* Section Collaborateurs */
 .partners-section {
     margin: 40px 0;
     padding: 25px;
@@ -619,7 +578,7 @@ footer ul li img:hover {
 
 .partner-image img {
     width: 100%;
-    height: 280px;
+    height: 270px;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
 }
