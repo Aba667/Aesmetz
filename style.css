@@ -349,8 +349,8 @@ footer ul li a {
 }
 
 footer ul li img {
-    width: 32px;
-    height: 32px;
+    width: 70px;
+    height: 70px;
     vertical-align: middle;
     transition: transform 0.3s ease;
 }
