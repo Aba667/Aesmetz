@@ -12,7 +12,6 @@
         <div class="logo">
             <img src="PHOTO-2024-07-18-23-38-45-removebg-preview.png" alt="Logo AESM" width="200">
         </div>
-        </div>
         <h1>Contactez-nous</h1>
         <nav>
             <ul>
@@ -23,107 +22,91 @@
 
     <section id="contact">
         <h2>Formulaire de contact</h2>
-        <form action="https://formspree.io/f/xpwpzajw" method="POST" class="modern-form">
-            <div class="form-row">
+        
+        <div id="form-europe" style="display: none;">
+            <form action="https://formspree.io/f/xpwpzajw" method="POST" class="modern-form">
                 <div class="form-group">
-                    <label for="nom">
-                        <i class="fas fa-user"></i> Nom :
-                    </label>
-                    <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
+                    <label for="nom"><i class="fas fa-user"></i> Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
                 </div>
-
                 <div class="form-group">
-                    <label for="prenom">
-                        <i class="fas fa-user"></i> Prénom :
-                    </label>
-                    <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" required>
+                    <label for="prenom"><i class="fas fa-user"></i> Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" required>
                 </div>
-            </div>
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-envelope"></i> Email :</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="objet"><i class="fas fa-tag"></i> Objet :</label>
+                    <input type="text" id="objet" name="objet" required>
+                </div>
+                <div class="form-group">
+                    <label for="message"><i class="fas fa-comment"></i> Message :</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-button"><i class="fas fa-paper-plane"></i> Envoyer</button>
+            </form>
+        </div>
 
-            <div class="form-group">
-                <label for="objet">
-                    <i class="fas fa-tag"></i> Objet :
-                </label>
-                <input type="text" id="objet" name="objet" placeholder="Objet de votre message" required>
-            </div>
-
-            <div class="form-group">
-                <label for="email">
-                    <i class="fas fa-envelope"></i> Email :
-                </label>
-                <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
-            </div>
-
-            <div class="form-group">
-                <label for="message">
-                    <i class="fas fa-comment"></i> Message :
-                </label>
-                <textarea id="message" name="message" rows="5" placeholder="Écrivez votre message ici" required></textarea>
-            </div>
-
-            <button type="submit" class="submit-button">
-                <i class="fas fa-paper-plane"></i> Envoyer
-            </button>
-            <p id="confirmation-message" style="display: none; color: green; font-weight: bold;">
-                Merci ! Votre message a bien été envoyé.
-            </p>
-        </form>
+        <div id="form-afrique" style="display: none;">
+            <form action="https://formspree.io/f/xpwpzajw" method="POST" class="modern-form">
+                <div class="form-group">
+                    <label for="nom"><i class="fas fa-user"></i> Nom :</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="prenom"><i class="fas fa-user"></i> Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" required>
+                </div>
+                <div class="form-group">
+                    <label for="date_naissance"><i class="fas fa-calendar"></i> Date de naissance :</label>
+                    <input type="date" id="date_naissance" name="date_naissance" required>
+                </div>
+                <div class="form-group">
+                    <label for="lieu_naissance"><i class="fas fa-map-marker-alt"></i> Lieu de naissance :</label>
+                    <input type="text" id="lieu_naissance" name="lieu_naissance" required>
+                </div>
+                <div class="form-group">
+                    <label for="region_naissance"><i class="fas fa-globe"></i> Région de naissance :</label>
+                    <input type="text" id="region_naissance" name="region_naissance" required>
+                </div>
+                <div class="form-group">
+                    <label for="telephone"><i class="fas fa-phone"></i> Numéro de téléphone :</label>
+                    <input type="tel" id="telephone" name="telephone" placeholder="+221 XX XXX XX XX" required>
+                </div>
+                <div class="form-group">
+                    <label for="acceptation"><i class="fas fa-check"></i> Avez-vous une acceptation ?</label>
+                    <select id="acceptation" name="acceptation" required>
+                        <option value="oui">Oui</option>
+                        <option value="non">Non</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="formation"><i class="fas fa-graduation-cap"></i> Formation :</label>
+                    <input type="text" id="formation" name="formation" required>
+                </div>
+                <div class="form-group">
+                    <label for="niveau"><i class="fas fa-layer-group"></i> Niveau d'étude :</label>
+                    <input type="text" id="niveau" name="niveau" required>
+                </div>
+                <div class="form-group">
+                    <label for="frais_inscription"><i class="fas fa-euro-sign"></i> Frais d'inscription :</label>
+                    <input type="number" id="frais_inscription" name="frais_inscription" required>
+                </div>
+                <button type="submit" class="submit-button"><i class="fas fa-paper-plane"></i> Envoyer</button>
+            </form>
+        </div>
     </section>
 
-    <footer>
-        <h3>Suivez-nous sur nos réseaux sociaux :</h3>
-        <ul>
-            <li>
-                <a href="https://www.instagram.com/aesmetz/?igsh=enFueDQzMnk2ZG1j&utm_source=qr" target="_blank">
-                    <img src="logo-instagram-jpg.png" alt="Instagram" width="32" height="32">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.tiktok.com/@aesmetz?_t=ZN-8uXeVrQe4dK&_r=1" target="_blank">
-                    <img src="logo-png-tiktok.jpg" alt="TikTok" width="32" height="32">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/@AESMETZ" target="_blank">
-                    <img src="logo-de-youtube.png" alt="YouTube" width="32" height="32">
-                </a>
-            </li>
-        </ul>
-    </footer>
-     <script>
+    <script>
         document.addEventListener("DOMContentLoaded", function () {
-            const form = document.querySelector("form");
-            const confirmationMessage = document.getElementById("confirmation-message");
-    
-            form.addEventListener("submit", function (event) {
-                event.preventDefault(); // Empêche l'envoi immédiat du formulaire
-                
-                const formData = new FormData(form);
-    
-                fetch(form.action, {
-                    method: form.method,
-                    body: formData,
-                    headers: {
-                        'Accept': 'application/json'
-                    }
-                }).then(response => {
-                    if (response.ok) {
-                        confirmationMessage.style.display = "block"; // Affiche le message de confirmation
-                        form.reset(); // Réinitialise le formulaire
-                    } else {
-                        alert("Une erreur s'est produite, veuillez réessayer.");
-                    }
-                }).catch(error => {
-                    alert("Une erreur s'est produite, veuillez vérifier votre connexion.");
-                });
-            });
-        });
-    </script>
-     <script>
-        document.addEventListener("contextmenu", (event) => event.preventDefault()); // Désactive le clic droit
-        document.addEventListener("keydown", (event) => {
-            if (event.ctrlKey && (event.key === "u" || event.key === "s" || event.key === "i" || event.key === "j")) {
-                event.preventDefault(); // Empêche Ctrl+U, Ctrl+S, Ctrl+Shift+I, Ctrl+Shift+J
+            let userLocation = confirm("Êtes-vous actuellement en Europe ? Appuyez sur OK pour Oui, Annuler pour Non.");
+            document.getElementById("contact").style.display = "block";
+            if (userLocation) {
+                document.getElementById("form-europe").style.display = "block";
+            } else {
+                document.getElementById("form-afrique").style.display = "block";
             }
         });
     </script>
