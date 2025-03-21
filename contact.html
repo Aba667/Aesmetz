@@ -63,24 +63,16 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="PHOTO-2024-07-18-23-38-45-removebg-preview.png" alt="Logo AESM" width="200">
-        </div>
         <h1>Contactez-nous</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Retour à l'accueil</a></li>
-            </ul>
-        </nav>
     </header>
 
     <section id="contact">
         <h2>Formulaire de contact</h2>
         
-        <div id="form-europe" style="display: none;">
+        <div id="form-container">
             <form action="https://formsubmit.co/aesmetz.etu@gmail.com" method="POST" class="modern-form" enctype="multipart/form-data">
                 <input type="hidden" name="_cc" value="aesmetz221@gmail.com">
-                <input type="hidden" name="_subject" value="Nouveau contact (Europe)">
+                <input type="hidden" name="_subject" value="Nouveau contact">
                 <input type="hidden" name="_next" value="https://aesmetz.com/merci.html">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_template" value="table">
@@ -108,86 +100,6 @@
                 <button type="submit" class="submit-button"><i class="fas fa-paper-plane"></i> Envoyer</button>
             </form>
         </div>
-
-        <div id="form-afrique" style="display: none;">
-            <form action="https://formsubmit.co/aesmetz.etu@gmail.com" method="POST" class="modern-form" enctype="multipart/form-data">
-                <input type="hidden" name="_cc" value="aesmetz221@gmail.com">
-                <input type="hidden" name="_subject" value="Nouveau contact (Afrique)">
-                <input type="hidden" name="_next" value="https://aesmetz.com/merci.html">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_template" value="table">
-                
-                <div class="form-group">
-                    <label for="nom_afrique"><i class="fas fa-user"></i> Nom :</label>
-                    <input type="text" id="nom_afrique" name="nom" required>
-                </div>
-                <div class="form-group">
-                    <label for="prenom_afrique"><i class="fas fa-user"></i> Prénom :</label>
-                    <input type="text" id="prenom_afrique" name="prenom" required>
-                </div>
-                <div class="form-group">
-                    <label for="email_afrique"><i class="fas fa-envelope"></i> Email :</label>
-                    <input type="email" id="email_afrique" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="objet_afrique"><i class="fas fa-tag"></i> Objet :</label>
-                    <input type="text" id="objet_afrique" name="objet" required>
-                </div>
-                <div class="form-group">
-                    <label for="date_naissance"><i class="fas fa-calendar"></i> Date de naissance :</label>
-                    <input type="date" id="date_naissance" name="date_naissance" required>
-                </div>
-                <div class="form-group">
-                    <label for="lieu_naissance"><i class="fas fa-map-marker-alt"></i> Lieu de naissance :</label>
-                    <input type="text" id="lieu_naissance" name="lieu_naissance" required>
-                </div>
-                <div class="form-group">
-                    <label for="region_naissance"><i class="fas fa-globe"></i> Région de naissance :</label>
-                    <input type="text" id="region_naissance" name="region_naissance" required>
-                </div>
-                <div class="form-group">
-                    <label for="telephone"><i class="fas fa-phone"></i> Téléphone :</label>
-                    <input type="tel" id="telephone" name="telephone" placeholder="+221 XX XXX XX XX" required>
-                </div>
-                <div class="form-group">
-                    <label for="acceptation"><i class="fas fa-check"></i> Acceptation :</label>
-                    <select id="acceptation" name="acceptation" required>
-                        <option value="oui">Oui</option>
-                        <option value="non">Non</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="agence"><i class="fas fa-building"></i> Agence :</label>
-                    <select id="agence" name="agence" required>
-                        <option value="oui">Oui</option>
-                        <option value="non">Non</option>
-                    </select>
-                </div>
-                <div class="form-group" id="agence_nom_field" style="display: none;">
-                    <label for="agence_nom"><i class="fas fa-building"></i> Nom de l'agence :</label>
-                    <input type="text" id="agence_nom" name="agence_nom">
-                </div>
-                <div class="form-group">
-                    <label for="garant"><i class="fas fa-user-shield"></i> Garant :</label>
-                    <select id="garant" name="garant" required>
-                        <option value="oui">Oui</option>
-                        <option value="non">Non</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="hebergeur"><i class="fas fa-home"></i> Hébergeur :</label>
-                    <select id="hebergeur" name="hebergeur" required>
-                        <option value="oui">Oui</option>
-                        <option value="non">Non</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="message_afrique"><i class="fas fa-comment"></i> Message :</label>
-                    <textarea id="message_afrique" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="submit-button"><i class="fas fa-paper-plane"></i> Envoyer</button>
-            </form>
-        </div>
     </section>
 
     <section id="don">
@@ -200,7 +112,7 @@
 
     <footer>
         <p>© 2025 AESM - Tous droits réservés</p>
-         <h3>Suivez-nous sur nos réseaux sociaux :</h3>
+        <h3>Suivez-nous sur nos réseaux sociaux :</h3>
         <ul>
             <li>
                 <a href="https://www.instagram.com/aesmetz/?igsh=enFueDQzMnk2ZG1j&utm_source=qr" target="_blank">
@@ -222,75 +134,49 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // Gestion de la modal
-            const modal = document.createElement('div');
-            modal.className = 'modal';
-            modal.innerHTML = `
-                <div class="modal-content">
-                    <h3>Veuillez sélectionner votre localisation</h3>
-                    <button class="modal-button" id="ouiBtn" style="background: #4CAF50;">Je suis en Europe</button>
-                    <button class="modal-button" id="nonBtn" style="background: #0f056b;">Je suis en Afrique</button>
-                </div>
-            `;
-            document.body.prepend(modal);
+            document.querySelector('form').addEventListener('submit', async (e) => {
+                e.preventDefault();
 
-            // Gestion des boutons
-            document.getElementById('ouiBtn').addEventListener('click', () => {
-                modal.remove();
-                document.getElementById('form-europe').style.display = 'block';
-            });
+                const form = e.target;
 
-            document.getElementById('nonBtn').addEventListener('click', () => {
-                modal.remove();
-                document.getElementById('form-afrique').style.display = 'block';
-                document.getElementById('agence').addEventListener('change', function() {
-                    document.getElementById('agence_nom_field').style.display = 
-                        this.value === 'oui' ? 'block' : 'none';
-                });
-            });
+                // Génération du PDF
+                const generatePDF = () => {
+                    const { jsPDF } = window.jspdf;
+                    const doc = new jsPDF();
 
-            // Gestion PDF et soumission
-            document.querySelectorAll('form').forEach(form => {
-                form.addEventListener('submit', async (e) => {
-                    e.preventDefault();
-                    
-                    const generatePDF = () => {
-                        const doc = new jspdf.jsPDF();
-                        const formData = new FormData(form);
-                        
-                        doc.setFontSize(16);
-                        doc.text("Résumé du formulaire", 14, 15);
-                        
-                        let yPos = 25;
-                        formData.forEach((value, key) => {
-                            if(key === 'attachment') return;
-                            doc.setFontSize(12);
-                            doc.text(`${key.replace(/_/g, ' ').toUpperCase()}:`, 14, yPos);
-                            doc.text(`${value}`, 60, yPos);
-                            yPos += 10;
-                        });
-                        
-                        return doc.output('blob');
-                    };
+                    doc.setFontSize(16);
+                    doc.text("Résumé du formulaire", 14, 15);
 
-                    try {
-                        const pdfBlob = generatePDF();
-                        const formData = new FormData(form);
-                        formData.append('attachment', pdfBlob, 'formulaire.pdf');
+                    let yPos = 25;
+                    const formData = new FormData(form);
+                    formData.forEach((value, key) => {
+                        doc.setFontSize(12);
+                        doc.text(`${key.replace(/_/g, ' ').toUpperCase()}:`, 14, yPos);
+                        doc.text(`${value}`, 60, yPos);
+                        yPos += 10;
+                    });
 
-                        await fetch(form.action, {
-                            method: 'POST',
-                            body: formData,
-                            redirect: 'manual'
-                        });
+                    return doc.output('blob');
+                };
 
-                        window.location.href = form.querySelector('[name="_next"]').value;
+                try {
+                    const pdfBlob = generatePDF();
+                    const pdfFile = new File([pdfBlob], "formulaire.pdf", { type: "application/pdf" });
 
-                    } catch (error) {
-                        console.error('Erreur:', error);
-                        alert('Une erreur est survenue lors de l\'envoi');
-                    }
-                });
+                    const formData = new FormData(form);
+                    formData.append('attachment', pdfFile);
+
+                    await fetch(form.action, {
+                        method: 'POST',
+                        body: formData,
+                        redirect: 'manual'
+                    });
+
+                    window.location.href = form.querySelector('[name="_next"]').value;
+                } catch (error) {
+                    console.error('Erreur:', error);
+                    alert('Une erreur est survenue lors de l\'envoi');
+                }
             });
         });
     </script>
