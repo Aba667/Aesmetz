@@ -25,8 +25,10 @@
         <h2>Formulaire de contact</h2>
         
         <div id="form-europe" style="display: none;">
-           <form action="https://formsubmit.co/aesmetz.etu@gmail.com" method="POST" class="modern-form" enctype="multipart/form-data">
+            <form action="https://formsubmit.co/aesmetz.etu@gmail.com" method="POST" class="modern-form" enctype="multipart/form-data">
                 <input type="hidden" name="_cc" value="aesmetz221@gmail.com">
+                <input type="hidden" name="_subject" value="Nouveau contact depuis le site">
+                <input type="hidden" name="_next" value="https://aesmetz.com/merci.html">
                 <div class="form-group">
                     <label for="nom"><i class="fas fa-user"></i> Nom :</label>
                     <input type="text" id="nom" name="nom" required>
@@ -52,7 +54,10 @@
         </div>
 
         <div id="form-afrique" style="display: none;">
-            <form action="https://formspree.io/f/xpwpzajw" method="POST" class="modern-form">
+            <form action="https://formsubmit.co/aesmetz.etu@gmail.com" method="POST" class="modern-form" enctype="multipart/form-data">
+                <input type="hidden" name="_cc" value="aesmetz221@gmail.com">
+                <input type="hidden" name="_subject" value="Nouveau contact depuis le site">
+                <input type="hidden" name="_next" value="https://aesmetz.com/merci.html">
                 <div class="form-group">
                     <label for="nom_afrique"><i class="fas fa-user"></i> Nom :</label>
                     <input type="text" id="nom_afrique" name="nom" required>
@@ -159,7 +164,7 @@
             modalContent.innerHTML = `
                 <h3 style="margin-bottom: 1.5rem;">Veuillez sélectionner votre localisation</h3>
                 <button id="ouiBtn" style="margin-right: 1rem; padding: 10px 20px; background: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">
-                   Je suis en Europe
+                    Je suis en Europe
                 </button>
                 <button id="nonBtn" style="padding: 10px 20px; background: #0f056b; color: white; border: none; border-radius: 5px; cursor: pointer;">
                     Je suis en Afrique
@@ -188,65 +193,61 @@
     </script>
     
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    // ... le code existant pour la modal ...
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // ... le code existant pour la modal ...
 
-    // Modifier les écouteurs de soumission de formulaire
-    function setupFormSubmit(formId) {
-        const form = document.querySelector(`#${formId} form`);
-        
-        form.onsubmit = async (e) => {
+            
+        // Remplacer la fonction setupFormSubmit par :
+        async function handleFormSubmit(e, form) {
             e.preventDefault();
             
-            // Générer le PDF
+            // Génération du PDF
             const doc = new jspdf.jsPDF();
             const formData = new FormData(form);
             
-            // Création du tableau PDF
-            const pdfData = [];
-            for (const [key, value] of formData.entries()) {
-                pdfData.push({ 
-                    Champ: key.replace(/_/g, ' ').toUpperCase(), 
-                    Réponse: value 
-                });
-            }
-
-            // Configuration du tableau
-            doc.text("Résumé du formulaire", 10, 10);
-            doc.autoTable({
-                head: [['Champ', 'Réponse']],
-                body: pdfData.map(item => [item.Champ, item.Réponse]),
-                startY: 20
+            // Création du contenu PDF
+            let yPos = 10;
+            formData.forEach((value, key) => {
+                doc.text(`${key}: ${value}`, 10, yPos);
+                yPos += 10;
             });
 
-            // Sauvegarder et envoyer
+            // Création d'un fichier PDF
             const pdfBlob = doc.output('blob');
-            
-            // Ajouter le PDF au formulaire
-            const fileInput = document.createElement('input');
-            fileInput.type = 'hidden';
-            fileInput.name = 'pdf_data';
-            fileInput.value = await blobToBase64(pdfBlob);
-            form.appendChild(fileInput);
+            const pdfFile = new File([pdfBlob], "formulaire.pdf", { type: "application/pdf" });
 
-            // Soumission réelle
-            form.submit();
-        };
-    }
+            // Création d'un nouveau FormData avec le PDF
+            const newFormData = new FormData(form);
+            newFormData.append("attachment", pdfFile);
 
-    function blobToBase64(blob) {
-        return new Promise((resolve) => {
-            const reader = new FileReader();
-            reader.onloadend = () => resolve(reader.result.split(',')[1]);
-            reader.readAsDataURL(blob);
+            // Envoi AJAX
+            try {
+                const response = await fetch(form.action, {
+                    method: "POST",
+                    body: newFormData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+                
+                if (response.ok) {
+                    alert("Formulaire envoyé avec succès !");
+                    form.reset();
+                } else {
+                    alert("Une erreur est survenue lors de l'envoi.");
+                }
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        }
+
+        // Initialisation des formulaires
+        document.querySelectorAll('form').forEach(form => {
+            form.onsubmit = (e) => handleFormSubmit(e, form);
         });
-    }
-
-    // Initialiser pour les deux formulaires
-    setupFormSubmit('form-europe');
-    setupFormSubmit('form-afrique');
-});
-</script>
+    });
+    </script>
 </body>
-</html>
+
+</html> 
