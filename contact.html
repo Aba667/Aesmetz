@@ -6,11 +6,12 @@
     <title>Contact - AESM</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="PHOTO-2024-07-18-23-38-45-removebg-preview.png" alt="Logo AESM" width="200">
+            <img src="../Photos/PHOTO-2024-07-18-23-38-45-removebg-preview.png" alt="Logo AESM" width="200">
         </div>
         <h1>Contactez-nous</h1>
         <nav>
@@ -24,7 +25,7 @@
         <h2>Formulaire de contact</h2>
         
         <div id="form-europe" style="display: none;">
-            <form action="https://formspree.io/f/xpwpzajw" method="POST" class="modern-form">
+            <form action="https://formspree.io/f/xpwpzajw" method="POST" class="modern-form" enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="nom"><i class="fas fa-user"></i> Nom :</label>
                     <input type="text" id="nom" name="nom" required>
@@ -124,6 +125,7 @@
                     <textarea id="message_afrique" name="message" rows="5" required></textarea>
                 </div>
                 <button type="submit" class="submit-button"><i class="fas fa-paper-plane"></i> Envoyer</button>
+                <input type="hidden" name="pdf_attachment" value="true">
             </form>
         </div> 
     </section>
@@ -156,10 +158,10 @@
             modalContent.innerHTML = `
                 <h3 style="margin-bottom: 1.5rem;">Veuillez sélectionner votre localisation</h3>
                 <button id="ouiBtn" style="margin-right: 1rem; padding: 10px 20px; background: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">
-                    Je suis en Europe
+                    Oui, je suis en Europe
                 </button>
                 <button id="nonBtn" style="padding: 10px 20px; background: #0f056b; color: white; border: none; border-radius: 5px; cursor: pointer;">
-                    Je suis en Afrique
+                    Non, je suis en Afrique
                 </button>
             `;
     
@@ -183,5 +185,67 @@
             });
         });
     </script>
+    
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    // ... le code existant pour la modal ...
+
+    // Modifier les écouteurs de soumission de formulaire
+    function setupFormSubmit(formId) {
+        const form = document.querySelector(`#${formId} form`);
+        
+        form.onsubmit = async (e) => {
+            e.preventDefault();
+            
+            // Générer le PDF
+            const doc = new jspdf.jsPDF();
+            const formData = new FormData(form);
+            
+            // Création du tableau PDF
+            const pdfData = [];
+            for (const [key, value] of formData.entries()) {
+                pdfData.push({ 
+                    Champ: key.replace(/_/g, ' ').toUpperCase(), 
+                    Réponse: value 
+                });
+            }
+
+            // Configuration du tableau
+            doc.text("Résumé du formulaire", 10, 10);
+            doc.autoTable({
+                head: [['Champ', 'Réponse']],
+                body: pdfData.map(item => [item.Champ, item.Réponse]),
+                startY: 20
+            });
+
+            // Sauvegarder et envoyer
+            const pdfBlob = doc.output('blob');
+            
+            // Ajouter le PDF au formulaire
+            const fileInput = document.createElement('input');
+            fileInput.type = 'hidden';
+            fileInput.name = 'pdf_data';
+            fileInput.value = await blobToBase64(pdfBlob);
+            form.appendChild(fileInput);
+
+            // Soumission réelle
+            form.submit();
+        };
+    }
+
+    function blobToBase64(blob) {
+        return new Promise((resolve) => {
+            const reader = new FileReader();
+            reader.onloadend = () => resolve(reader.result.split(',')[1]);
+            reader.readAsDataURL(blob);
+        });
+    }
+
+    // Initialiser pour les deux formulaires
+    setupFormSubmit('form-europe');
+    setupFormSubmit('form-afrique');
+});
+</script>
 </body>
 </html>
