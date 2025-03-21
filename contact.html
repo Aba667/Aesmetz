@@ -6,7 +6,6 @@
     <title>Contact - AESM</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <style>
         .modal {
             position: fixed;
@@ -80,8 +79,9 @@
         <div id="form-europe" style="display: none;">
             <form action="https://formsubmit.co/aesmetz.etu@gmail.com" method="POST" class="modern-form" enctype="multipart/form-data">
                 <input type="hidden" name="_cc" value="aesmetz221@gmail.com">
+                <input type="hidden" name="_cc" value="babacarngom81@gmail.com">
                 <input type="hidden" name="_subject" value="Nouveau contact (Europe)">
-               
+                <input type="hidden" name="_next" value="https://aesmetz.com/merci.html">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_template" value="table">
                 
@@ -113,7 +113,7 @@
             <form action="https://formsubmit.co/aesmetz.etu@gmail.com" method="POST" class="modern-form" enctype="multipart/form-data">
                 <input type="hidden" name="_cc" value="aesmetz221@gmail.com">
                 <input type="hidden" name="_subject" value="Nouveau contact (Afrique)">
-               
+                <input type="hidden" name="_next" value="https://aesmetz.com/merci.html">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_template" value="table">
                 
@@ -250,32 +250,13 @@
             document.getElementById('ouiBtn').addEventListener('click', () => showForm('form-europe'));
             document.getElementById('nonBtn').addEventListener('click', () => showForm('form-afrique'));
     
-            // Gestion de la soumission avec Fetch
+            // Gestion de la soumission avec Fetch (sans PDF)
             const handleSubmit = async (e) => {
                 e.preventDefault();
                 const form = e.target;
                 try {
-                    // Génération du PDF
-                    const doc = new jspdf.jsPDF();
-                    const formData = new FormData(form);
-                    
-                    doc.setFontSize(16);
-                    doc.text("Résumé du formulaire", 14, 15);
-                    let yPos = 25;
-                    
-                    formData.forEach((value, key) => {
-                        if(key === 'attachment') return;
-                        doc.setFontSize(12);
-                        doc.text(`${key.replace(/_/g, ' ').toUpperCase()}:`, 14, yPos);
-                        doc.text(`${value}`, 60, yPos);
-                        yPos += 10;
-                    });
-                    
-                    const pdfBlob = doc.output('blob');
-                    
                     // Préparation des données de soumission
                     const submissionData = new FormData(form);
-                    submissionData.append('attachment', pdfBlob, 'formulaire.pdf');
                     
                     // Envoi des données avec fetch
                     const response = await fetch(form.action, {
@@ -305,6 +286,3 @@
 
 </body>
 </html>
-
-
-    
