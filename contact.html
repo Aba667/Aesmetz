@@ -45,6 +45,20 @@
             opacity: 0.9;
             transform: scale(1.05);
         }
+
+        .don-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .don-button:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
@@ -66,8 +80,10 @@
         <div id="form-europe" style="display: none;">
             <form action="https://formsubmit.co/aesmetz.etu@gmail.com" method="POST" class="modern-form" enctype="multipart/form-data">
                 <input type="hidden" name="_cc" value="aesmetz221@gmail.com">
-                <input type="hidden" name="_subject" value="Nouveau contact depuis le site (Europe)">
+                <input type="hidden" name="_subject" value="Nouveau contact (Europe)">
                 <input type="hidden" name="_next" value="https://aesmetz.com/merci.html">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
                 
                 <div class="form-group">
                     <label for="nom"><i class="fas fa-user"></i> Nom :</label>
@@ -96,8 +112,10 @@
         <div id="form-afrique" style="display: none;">
             <form action="https://formsubmit.co/aesmetz.etu@gmail.com" method="POST" class="modern-form" enctype="multipart/form-data">
                 <input type="hidden" name="_cc" value="aesmetz221@gmail.com">
-                <input type="hidden" name="_subject" value="Nouveau contact depuis le site (Afrique)">
+                <input type="hidden" name="_subject" value="Nouveau contact (Afrique)">
                 <input type="hidden" name="_next" value="https://aesmetz.com/merci.html">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
                 
                 <div class="form-group">
                     <label for="nom_afrique"><i class="fas fa-user"></i> Nom :</label>
@@ -172,6 +190,36 @@
         </div>
     </section>
 
+    <section id="don">
+        <h2>Faire un don</h2>
+        <p>Soutenez l'AESM en faisant un don via HelloAsso</p>
+        <a href="https://www.helloasso.com/associations/association-des-etudiants-senegalais-de-metz/formulaires/1" 
+           target="_blank" 
+           class="don-button">Faire un don</a>
+    </section>
+
+    <footer>
+        <p>© 2025 AESM - Tous droits réservés</p>
+         <h3>Suivez-nous sur nos réseaux sociaux :</h3>
+        <ul>
+            <li>
+                <a href="https://www.instagram.com/aesmetz/?igsh=enFueDQzMnk2ZG1j&utm_source=qr" target="_blank">
+                    <img src="logo-instagram-jpg.png" alt="Instagram" width="32" height="32">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.tiktok.com/@aesmetz?_t=ZN-8uXeVrQe4dK&_r=1" target="_blank">
+                    <img src="logo-png-tiktok.jpg" alt="TikTok" width="32" height="32">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/@AESMETZ" target="_blank">
+                    <img src="logo-de-youtube.png" alt="YouTube" width="32" height="32">
+                </a>
+            </li>
+        </ul>
+    </footer>
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             // Gestion de la modal
@@ -201,86 +249,50 @@
                 });
             });
 
-            // Gestion de la soumission des formulaires
-            const generatePDF = (formData) => {
-                const doc = new jspdf.jsPDF();
-                doc.setFontSize(16);
-                doc.text("Résumé du formulaire", 14, 15);
-                
-                let yPos = 25;
-                formData.forEach((value, key) => {
-                    if(key === 'attachment') return;
-                    doc.setFontSize(12);
-                    doc.text(`${key.replace(/_/g, ' ').toUpperCase()}:`, 14, yPos);
-                    doc.text(`${value}`, 60, yPos);
-                    yPos += 10;
-                });
-                
-                return doc.output('blob');
-            };
-
+            // Gestion PDF et soumission
             document.querySelectorAll('form').forEach(form => {
                 form.addEventListener('submit', async (e) => {
                     e.preventDefault();
                     
-                    const formData = new FormData(form);
-                    const pdfBlob = generatePDF(formData);
-                    const pdfFile = new File([pdfBlob], "formulaire.pdf", { type: "application/pdf" });
-                    
-                    formData.append('attachment', pdfFile);
+                    const generatePDF = () => {
+                        const doc = new jspdf.jsPDF();
+                        const formData = new FormData(form);
+                        
+                        doc.setFontSize(16);
+                        doc.text("Résumé du formulaire", 14, 15);
+                        
+                        let yPos = 25;
+                        formData.forEach((value, key) => {
+                            if(key === 'attachment') return;
+                            doc.setFontSize(12);
+                            doc.text(`${key.replace(/_/g, ' ').toUpperCase()}:`, 14, yPos);
+                            doc.text(`${value}`, 60, yPos);
+                            yPos += 10;
+                        });
+                        
+                        return doc.output('blob');
+                    };
 
                     try {
-                        const response = await fetch(form.action, {
+                        const pdfBlob = generatePDF();
+                        const formData = new FormData(form);
+                        formData.append('attachment', pdfBlob, 'formulaire.pdf');
+
+                        await fetch(form.action, {
                             method: 'POST',
                             body: formData,
-                            headers: { 'Accept': 'application/json' }
+                            redirect: 'manual'
                         });
 
-                        if(response.ok) {
-                            window.location.href = form.querySelector('[name="_next"]').value;
-                        } else {
-                            alert('Erreur lors de l\'envoi du formulaire');
-                        }
+                        window.location.href = form.querySelector('[name="_next"]').value;
+
                     } catch (error) {
                         console.error('Erreur:', error);
+                        alert('Une erreur est survenue lors de l\'envoi');
                     }
                 });
             });
         });
     </script>
 </body>
- <!-- Section Faire un don -->
- <section id="don">
-    <h2>Faire un don</h2>
-    <p>
-        Soutenez l'AESM en faisant un don via HelloAsso. Votre contribution nous aide à réaliser nos projets et à soutenir nos activités.
-    </p>
-    <a href="https://www.helloasso.com/associations/association-des-etudiants-senegalais-de-metz/formulaires/1" target="_blank" class="don-button">Faire un don</a>
-</section>
-
-<p>
-    Ce site a été réalisé par les membres de l'AESM.
-</p>
-<!-- Pied de page -->
-<footer>
-    <p>© 2025 AESM - Tous droits réservés</p>
-    <h3>Suivez-nous sur nos réseaux sociaux :</h3>
-    <ul>
-        <li>
-            <a href="https://www.instagram.com/aesmetz/?igsh=enFueDQzMnk2ZG1j&utm_source=qr" target="_blank">
-                <img src="logo-instagram-jpg.png" alt="Instagram" width="32" height="32">
-            </a>
-        </li>
-        <li>
-            <a href="https://www.tiktok.com/@aesmetz?_t=ZN-8uXeVrQe4dK&_r=1" target="_blank">
-                <img src="logo-png-tiktok.jpg" alt="TikTok" width="32" height="32">
-            </a>
-        </li>
-        <li>
-            <a href="https://www.youtube.com/@AESMETZ" target="_blank">
-                <img src="logo-de-youtube.png" alt="YouTube" width="32" height="32">
-            </a>
-        </li>
-    </ul>
-</footer>
 </html>
