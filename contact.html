@@ -233,8 +233,8 @@
                 </div>
             `;
             document.body.prepend(modal);
-
-            // Gestion des boutons
+    
+            // Affichage du formulaire sélectionné
             const showForm = (formId) => {
                 modal.remove();
                 const form = document.getElementById(formId);
@@ -246,17 +246,16 @@
                     });
                 }
             };
-
+    
             document.getElementById('ouiBtn').addEventListener('click', () => showForm('form-europe'));
             document.getElementById('nonBtn').addEventListener('click', () => showForm('form-afrique'));
-
-            // Gestion de la soumission
+    
+            // Gestion de la soumission avec Fetch
             const handleSubmit = async (e) => {
                 e.preventDefault();
                 const form = e.target;
-                
                 try {
-                    // Génération PDF
+                    // Génération du PDF
                     const doc = new jspdf.jsPDF();
                     const formData = new FormData(form);
                     
@@ -271,38 +270,33 @@
                         doc.text(`${value}`, 60, yPos);
                         yPos += 10;
                     });
-
+                    
                     const pdfBlob = doc.output('blob');
                     
-                    // Préparation des données
+                    // Préparation des données de soumission
                     const submissionData = new FormData(form);
                     submissionData.append('attachment', pdfBlob, 'formulaire.pdf');
-
-                    // Envoi avec XMLHttpRequest
-                    const xhr = new XMLHttpRequest();
-                    xhr.open('POST', form.action);
                     
-                    xhr.onload = function() {
-                        if (xhr.status >= 200 && xhr.status < 300) {
-                            window.location.href = form.querySelector('[name="_next"]').value;
-                        } else {
-                            alert('Erreur ' + xhr.status + ' : ' + xhr.statusText);
-                        }
-                    };
+                    // Envoi des données avec fetch
+                    const response = await fetch(form.action, {
+                        method: 'POST',
+                        body: submissionData
+                    });
                     
-                    xhr.onerror = function() {
-                        alert('Erreur réseau');
-                    };
-                    
-                    xhr.send(submissionData);
-
+                    if(response.ok) {
+                        // Redirection vers la page de remerciement
+                        const nextUrl = form.querySelector('[name="_next"]').value;
+                        window.location.href = nextUrl;
+                    } else {
+                        alert('Erreur ' + response.status + ' : ' + response.statusText);
+                    }
                 } catch (error) {
                     console.error('Erreur:', error);
                     alert('Une erreur est survenue');
                 }
             };
-
-            // Application aux formulaires
+    
+            // Application de la gestion sur tous les formulaires
             document.querySelectorAll('form').forEach(form => {
                 form.addEventListener('submit', handleSubmit);
             });
