@@ -390,43 +390,107 @@
   </div>
 </section>
 
-<!-- Lightbox -->
-<div id="lightbox" class="lightbox">
-  <span class="close">&times;</span>
-  <img class="lightbox-content" id="lightbox-img">
-</div>
-
-<!-- DON -->
-<section id="don" class="card text-center">
-  <h2>Faire un don</h2>
-  <p>Votre soutien permet d'organiser nos activités et d'aider les étudiants.</p>
-  <a class="don-button" href="https://www.helloasso.com/associations/association-des-etudiants-senegalais-de-metz/formulaires/1" target="_blank" rel="noopener">
-    Faire un don via HelloAsso
-  </a>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="card text-center">
-  <h2>Contact</h2>
-  <p>Pour toute question ou partenariat, utilisez notre formulaire de contact.</p>
-  <a class="don-button" href="contact.html" target="_blank" rel="noopener">Accéder au formulaire</a>
-</section>
-
-<p class="site-credit">Ce site a été réalisé par des membres de l'AESM.</p>
-
-<footer class="site-footer">
-  <div class="footer-inner">
-    <p>© 2025-2026 AESM — Tous droits réservés</p>
-    <div class="socials">
-      <a href="https://www.instagram.com/aesmetz/" target="_blank" rel="noopener">
-        <img src="logo-instagram-jpg.png" alt="Instagram" width="32" height="32">
-      </a>
-      <a href="https://www.tiktok.com/@aesmetz" target="_blank" rel="noopener">
-        <img src="logo-png-tiktok.jpg" alt="TikTok" width="32" height="32">
-      </a>
-      <a href="https://www.youtube.com/@AESMETZ" target="_blank" rel="noopener">
-        <img src="logo-de-youtube.png" alt="YouTube" width="32" height="32">
-      </a>
+<!-- LIGHTBOX -->
+    <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog">
+        <button class="close" aria-label="Fermer la lightbox">&times;</button>
+        <img id="lightbox-img" class="lightbox-content" src="" alt="">
     </div>
-  </div>
-</footer>
+
+    <!-- SCRIPTS -->
+    <script>
+    // Fonction 'Voir plus / Voir moins' et Lightbox + protections clavier / clic droit
+    document.addEventListener('DOMContentLoaded', function () {
+        // Voir plus / Voir moins
+        document.querySelectorAll('.voir-plus').forEach(button => {
+            button.addEventListener('click', () => {
+                const gallery = button.parentElement.querySelector('.hidden-gallery');
+                if (!gallery) return;
+                gallery.classList.toggle('visible');
+                const opened = gallery.classList.contains('visible');
+                button.textContent = opened ? 'Voir moins de photos' : 'Voir plus de photos';
+                button.setAttribute('aria-expanded', opened ? 'true' : 'false');
+            });
+        });
+
+        // Lightbox
+        const lightbox = document.getElementById('lightbox');
+        const lbImg = document.getElementById('lightbox-img');
+        const closeBtn = document.querySelector('.lightbox .close');
+
+        function openLightbox(e) {
+            if (!e.target || e.target.tagName !== 'IMG') return;
+            lbImg.src = e.target.src;
+            lbImg.alt = e.target.alt || '';
+            lightbox.style.display = 'flex';
+            lightbox.setAttribute('aria-hidden', 'false');
+            // focus sur close pour accessibilité
+            closeBtn.focus();
+        }
+
+        // Attache le comportement à toutes les images de galerie, activités, partenaires, team, président
+        document.querySelectorAll('.visible-gallery img, .hidden-gallery img, .activity-card img, .partner-image img, .president-photo img, .team-member img')
+            .forEach(img => img.addEventListener('click', openLightbox));
+
+        // Fermeture
+        closeBtn.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+            lightbox.setAttribute('aria-hidden', 'true');
+            lbImg.src = '';
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.style.display = 'none';
+                lightbox.setAttribute('aria-hidden', 'true');
+                lbImg.src = '';
+            }
+        });
+
+        // Fermer avec echap
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && lightbox.style.display === 'flex') {
+                lightbox.style.display = 'none';
+                lightbox.setAttribute('aria-hidden', 'true');
+                lbImg.src = '';
+            }
+        });
+    });
+
+    // Désactive clic droit et certains raccourcis (optionnel)
+    document.addEventListener("contextmenu", (event) => event.preventDefault());
+    document.addEventListener("keydown", (event) => {
+        // Empêche Ctrl+U, Ctrl+S, Ctrl+Shift+I, Ctrl+Shift+J
+        if (event.ctrlKey && (event.key === "u" || event.key === "s" || event.key === "U" || event.key === "S")) {
+            event.preventDefault();
+        }
+        if (event.ctrlKey && event.shiftKey && (event.key === "I" || event.key === "J" || event.key === "i" || event.key === "j")) {
+            event.preventDefault();
+        }
+    });
+    // Sélection de tous les logos cliquables
+  const clickableImgs = document.querySelectorAll('.clickable-img');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const closeBtn = document.querySelector('.lightbox .close');
+
+  clickableImgs.forEach(img => {
+    img.addEventListener('click', () => {
+      lightbox.style.display = 'flex';
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt;
+    });
+  });
+
+  closeBtn.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
+
+  // fermer au clic en dehors de l'image
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      lightbox.style.display = 'none';
+    }
+  });
+    </script>
+</body>
+</html>
