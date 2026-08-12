@@ -632,6 +632,18 @@ a:hover { color: var(--rouge); }
 .gallery__hidden.is-open { display: contents; }
 .gallery-actions { margin-top: var(--e-4); }
 
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  gap: var(--e-4);
+  margin-top: var(--e-5);
+}
+.media-grid video {
+  width: 100%;
+  background: var(--ink);
+  border: 1px solid var(--filet);
+}
+
 .event-block { padding-block: var(--e-6); border-top: 2px solid var(--filet-fort); }
 .event-block:first-of-type { border-top: 2px solid var(--filet-fort); }
 .event-block__head {
