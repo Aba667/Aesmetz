@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Pages sans intérêt pour l'indexation
+Disallow: /merci.html
+Disallow: /_archive/
+
+Sitemap: https://aesmetz.com/sitemap.xml

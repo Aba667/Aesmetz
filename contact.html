@@ -1,287 +1,241 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - AESM</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        .modal {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.5);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 1000;
-        }
-
-        .modal-content {
-            background: white;
-            padding: 2rem;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0 0 20px rgba(0,0,0,0.2);
-            max-width: 90%;
-            width: 400px;
-        }
-
-        .modal-button {
-            padding: 10px 20px;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            margin: 0 10px;
-        }
-
-        .modal-button:hover {
-            opacity: 0.9;
-            transform: scale(1.05);
-        }
-
-        .don-button {
-            display: inline-block;
-            padding: 12px 24px;
-            background-color: #4CAF50;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-        .don-button:hover {
-            background-color: #45a049;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - AESM</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* Modal de sélection de localisation */
+    .modal {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+      display: flex; justify-content: center; align-items: center;
+      z-index: 1000;
+    }
+    .modal-content {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
+      max-width: 90%; width: 400px;
+    }
+    .modal-button {
+      padding: 10px 20px;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 0 10px;
+      transition: all 0.3s ease;
+    }
+    .modal-button:hover { opacity: 0.9; transform: scale(1.05); }
+    /* Don button override pour cohérence */
+    .don-button { display: inline-block; padding: 12px 24px; background-color: #0a6232; color: white; border-radius: 25px; transition: background-color 0.3s; text-decoration: none; }
+    .don-button:hover { background-color: #118b49; }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="PHOTO-2024-07-18-23-38-45-removebg-preview.png" alt="Logo AESM" width="200">
-        </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <img src="PHOTO-2024-07-18-23-38-45-removebg-preview.png" alt="Logo AESM" class="logo">
+      <div class="title-area">
         <h1>Contactez-nous</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Retour à l'accueil</a></li>
-            </ul>
-        </nav>
-    </header>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Retour à l'accueil</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section id="contact">
-        <h2>Formulaire de contact</h2>
-        
-        <div id="form-europe" style="display: none;">
-            <form action="https://formsubmit.co/aesmetz221@gmail.com" method="POST" class="modern-form" enctype="multipart/form-data">
-               <input type="hidden" name="_cc" value="aesmetz.etu@gmail.com">
-                <input type="hidden" name="_subject" value="Nouveau contact (Europe)">
-                <input type="hidden" name="_next" value="https://aesmetz.com/merci.html">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_template" value="table">
-                
-                <div class="form-group">
-                    <label for="nom"><i class="fas fa-user"></i> Nom :</label>
-                    <input type="text" id="nom" name="nom" required>
-                </div>
-                <div class="form-group">
-                    <label for="prenom"><i class="fas fa-user"></i> Prénom :</label>
-                    <input type="text" id="prenom" name="prenom" required>
-                </div>
-                <div class="form-group">
-                    <label for="email"><i class="fas fa-envelope"></i> Email :</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="objet"><i class="fas fa-tag"></i> Objet :</label>
-                    <input type="text" id="objet" name="objet" required>
-                </div>
-                <div class="form-group">
-                    <label for="message"><i class="fas fa-comment"></i> Message :</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="submit-button"><i class="fas fa-paper-plane"></i> Envoyer</button>
-            </form>
+  <!-- Section Contact -->
+  <section id="contact" class="card">
+    <h2>Formulaire de contact</h2>
+
+    <!-- Formulaire Europe -->
+    <div id="form-europe" style="display: none;">
+      <form action="https://formsubmit.co/aesmetz221@gmail.com" method="POST" class="modern-form">
+        <input type="hidden" name="_cc" value="aesmetz.etu@gmail.com">
+        <input type="hidden" name="_subject" value="Nouveau contact (Europe)">
+        <input type="hidden" name="_next" value="https://aesmetz.com/merci.html">
+        <input type="hidden" name="_captcha" value="false">
+
+        <div class="form-group">
+          <label for="nom"><i class="fas fa-user"></i> Nom :</label>
+          <input type="text" id="nom" name="nom" required>
         </div>
-
-        <div id="form-afrique" style="display: none;">
-            <form action="https://formsubmit.co/aesmetz221@gmail.com" method="POST" class="modern-form" enctype="multipart/form-data">
-               <input type="hidden" name="_cc" value="aesmetz.etu@gmail.com">
-                <input type="hidden" name="_subject" value="Nouveau contact (Afrique)">
-                <input type="hidden" name="_next" value="https://aesmetz.com/merci.html">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_template" value="table">
-                
-                <div class="form-group">
-                    <label for="nom_afrique"><i class="fas fa-user"></i> Nom :</label>
-                    <input type="text" id="nom_afrique" name="nom" required>
-                </div>
-                <div class="form-group">
-                    <label for="prenom_afrique"><i class="fas fa-user"></i> Prénom :</label>
-                    <input type="text" id="prenom_afrique" name="prenom" required>
-                </div>
-                <div class="form-group">
-                    <label for="email_afrique"><i class="fas fa-envelope"></i> Email :</label>
-                    <input type="email" id="email_afrique" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="objet_afrique"><i class="fas fa-tag"></i> Objet :</label>
-                    <input type="text" id="objet_afrique" name="objet" required>
-                </div>
-                <div class="form-group">
-                    <label for="date_naissance"><i class="fas fa-calendar"></i> Date de naissance :</label>
-                    <input type="date" id="date_naissance" name="date_naissance" required>
-                </div>
-                <div class="form-group">
-                    <label for="lieu_naissance"><i class="fas fa-map-marker-alt"></i> Lieu de naissance :</label>
-                    <input type="text" id="lieu_naissance" name="lieu_naissance" required>
-                </div>
-                <div class="form-group">
-                    <label for="region_naissance"><i class="fas fa-globe"></i> Région de naissance :</label>
-                    <input type="text" id="region_naissance" name="region_naissance" required>
-                </div>
-                <div class="form-group">
-                    <label for="telephone"><i class="fas fa-phone"></i> Téléphone :</label>
-                    <input type="tel" id="telephone" name="telephone" placeholder="+221 XX XXX XX XX" required>
-                </div>
-                <div class="form-group">
-                    <label for="acceptation"><i class="fas fa-check"></i> Avez vous une acceptation ?</label>
-                    <select id="acceptation" name="acceptation" required>
-                        <option value="oui">Oui</option>
-                        <option value="non">Non</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="agence"><i class="fas fa-building"></i> Etes vous passés par une agence ? </label>
-                    <select id="agence" name="agence" required>
-                        <option value="oui">Oui</option>
-                        <option value="non">Non</option>
-                    </select>
-                </div>
-                <div class="form-group" id="agence_nom_field" style="display: none;">
-                    <label for="agence_nom"><i class="fas fa-building"></i> Nom de l'agence :</label>
-                    <input type="text" id="agence_nom" name="agence_nom">
-                </div>
-                <div class="form-group">
-                    <label for="garant"><i class="fas fa-user-shield"></i> Vous avez un garant ?</label>
-                    <select id="garant" name="garant" required>
-                        <option value="oui">Oui</option>
-                        <option value="non">Non</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="hebergeur"><i class="fas fa-home"></i> Vous avez un hébergeur ?</label>
-                    <select id="hebergeur" name="hebergeur" required>
-                        <option value="oui">Oui</option>
-                        <option value="non">Non</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="message_afrique"><i class="fas fa-comment"></i> Message :</label>
-                    <textarea id="message_afrique" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="submit-button"><i class="fas fa-paper-plane"></i> Envoyer</button>
-            </form>
+        <div class="form-group">
+          <label for="prenom"><i class="fas fa-user"></i> Prénom :</label>
+          <input type="text" id="prenom" name="prenom" required>
         </div>
-    </section>
+        <div class="form-group">
+          <label for="email"><i class="fas fa-envelope"></i> Email :</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="objet"><i class="fas fa-tag"></i> Objet :</label>
+          <input type="text" id="objet" name="objet" required>
+        </div>
+        <div class="form-group">
+          <label for="message"><i class="fas fa-comment"></i> Message :</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="submit-button"><i class="fas fa-paper-plane"></i> Envoyer</button>
+      </form>
+    </div>
 
-    <section id="don">
-        <h2>Faire un don</h2>
-        <p>Soutenez l'AESM en faisant un don via HelloAsso</p>
-        <a href="https://www.helloasso.com/associations/association-des-etudiants-senegalais-de-metz/formulaires/1" 
-           target="_blank" 
-           class="don-button">Faire un don</a>
-    </section>
+    <!-- Formulaire Afrique -->
+    <div id="form-afrique" style="display: none;">
+      <form action="https://formsubmit.co/aesmetz221@gmail.com" method="POST" class="modern-form">
+        <input type="hidden" name="_cc" value="aesmetz.etu@gmail.com">
+        <input type="hidden" name="_subject" value="Nouveau contact (Afrique)">
+        <input type="hidden" name="_next" value="https://aesmetz.com/merci.html">
+        <input type="hidden" name="_captcha" value="false">
 
-    <footer>
-        <p>© 2025 AESM - Tous droits réservés</p>
-        <h3>Suivez-nous sur nos réseaux sociaux :</h3>
-        <ul>
-            <li>
-                <a href="https://www.instagram.com/aesmetz/?igsh=enFueDQzMnk2ZG1j&utm_source=qr" target="_blank">
-                    <img src="logo-instagram-jpg.png" alt="Instagram" width="32" height="32">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.tiktok.com/@aesmetz?_t=ZN-8uXeVrQe4dK&_r=1" target="_blank">
-                    <img src="logo-png-tiktok.jpg" alt="TikTok" width="32" height="32">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/@AESMETZ" target="_blank">
-                    <img src="logo-de-youtube.png" alt="YouTube" width="32" height="32">
-                </a>
-            </li>
-        </ul>
-    </footer>
+        <div class="form-group">
+          <label for="nom_afrique"><i class="fas fa-user"></i> Nom :</label>
+          <input type="text" id="nom_afrique" name="nom" required>
+        </div>
+        <div class="form-group">
+          <label for="prenom_afrique"><i class="fas fa-user"></i> Prénom :</label>
+          <input type="text" id="prenom_afrique" name="prenom" required>
+        </div>
+        <div class="form-group">
+          <label for="email_afrique"><i class="fas fa-envelope"></i> Email :</label>
+          <input type="email" id="email_afrique" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="objet_afrique"><i class="fas fa-tag"></i> Objet :</label>
+          <input type="text" id="objet_afrique" name="objet" required>
+        </div>
+        <div class="form-group">
+          <label for="date_naissance"><i class="fas fa-calendar"></i> Date de naissance :</label>
+          <input type="date" id="date_naissance" name="date_naissance" required>
+        </div>
+        <div class="form-group">
+          <label for="lieu_naissance"><i class="fas fa-map-marker-alt"></i> Lieu de naissance :</label>
+          <input type="text" id="lieu_naissance" name="lieu_naissance" required>
+        </div>
+        <div class="form-group">
+          <label for="region_naissance"><i class="fas fa-globe"></i> Région de naissance :</label>
+          <input type="text" id="region_naissance" name="region_naissance" required>
+        </div>
+        <div class="form-group">
+          <label for="telephone"><i class="fas fa-phone"></i> Téléphone :</label>
+          <input type="tel" id="telephone" name="telephone" placeholder="+221 XX XXX XX XX" required>
+        </div>
+        <div class="form-group">
+          <label for="acceptation"><i class="fas fa-check"></i> Avez-vous une acceptation ?</label>
+          <select id="acceptation" name="acceptation" required>
+            <option value="oui">Oui</option>
+            <option value="non">Non</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="agence"><i class="fas fa-building"></i> Passé par une agence ?</label>
+          <select id="agence" name="agence" required>
+            <option value="oui">Oui</option>
+            <option value="non">Non</option>
+          </select>
+        </div>
+        <div class="form-group" id="agence_nom_field" style="display: none;">
+          <label for="agence_nom"><i class="fas fa-building"></i> Nom de l'agence :</label>
+          <input type="text" id="agence_nom" name="agence_nom">
+        </div>
+        <div class="form-group">
+          <label for="garant"><i class="fas fa-user-shield"></i> Vous avez un garant ?</label>
+          <select id="garant" name="garant" required>
+            <option value="oui">Oui</option>
+            <option value="non">Non</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="hebergeur"><i class="fas fa-home"></i> Vous avez un hébergeur ?</label>
+          <select id="hebergeur" name="hebergeur" required>
+            <option value="oui">Oui</option>
+            <option value="non">Non</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message_afrique"><i class="fas fa-comment"></i> Message :</label>
+          <textarea id="message_afrique" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="submit-button"><i class="fas fa-paper-plane"></i> Envoyer</button>
+      </form>
+    </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Gestion de la modal
-            const modal = document.createElement('div');
-            modal.className = 'modal';
-            modal.innerHTML = `
-                <div class="modal-content">
-                    <h3>Veuillez sélectionner votre localisation</h3>
-                    <button class="modal-button" id="ouiBtn" style="background: #4CAF50;">Je suis en Europe</button>
-                    <button class="modal-button" id="nonBtn" style="background: #0f056b;">Je suis en Afrique</button>
-                </div>
-            `;
-            document.body.prepend(modal);
-    
-            // Affichage du formulaire sélectionné
-            const showForm = (formId) => {
-                modal.remove();
-                const form = document.getElementById(formId);
-                form.style.display = 'block';
-                if(formId === 'form-afrique') {
-                    document.getElementById('agence').addEventListener('change', function() {
-                        document.getElementById('agence_nom_field').style.display = 
-                            this.value === 'oui' ? 'block' : 'none';
-                    });
-                }
-            };
-    
-            document.getElementById('ouiBtn').addEventListener('click', () => showForm('form-europe'));
-            document.getElementById('nonBtn').addEventListener('click', () => showForm('form-afrique'));
-    
-            // Gestion de la soumission avec Fetch (sans PDF)
-            const handleSubmit = async (e) => {
-                e.preventDefault();
-                const form = e.target;
-                try {
-                    // Préparation des données de soumission
-                    const submissionData = new FormData(form);
-                    
-                    // Envoi des données avec fetch
-                    const response = await fetch(form.action, {
-                        method: 'POST',
-                        body: submissionData
-                    });
-                    
-                    if(response.ok) {
-                        // Redirection vers la page de remerciement
-                        const nextUrl = form.querySelector('[name="_next"]').value;
-                        window.location.href = nextUrl;
-                    } else {
-                        alert('Erreur ' + response.status + ' : ' + response.statusText);
-                    }
-                } catch (error) {
-                    console.error('Erreur:', error);
-                    alert('Une erreur est survenue');
-                }
-            };
-    
-            // Application de la gestion sur tous les formulaires
-            document.querySelectorAll('form').forEach(form => {
-                form.addEventListener('submit', handleSubmit);
-            });
+  </section>
+
+  <!-- Section Don -->
+  <section id="don" class="card">
+    <h2>Faire un don</h2>
+    <p>Soutenez l'AESM en faisant un don via HelloAsso</p>
+    <a href="https://www.helloasso.com/associations/association-des-etudiants-senegalais-de-metz/formulaires/1" 
+       target="_blank" 
+       class="don-button">Faire un don</a>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© 2025 AESM - Tous droits réservés</p>
+      <div class="socials">
+        <a href="https://www.instagram.com/aesmetz/" target="_blank"><img src="logo-instagram-jpg.png" alt="Instagram"></a>
+        <a href="https://www.tiktok.com/@aesmetz" target="_blank"><img src="logo-png-tiktok.jpg" alt="TikTok"></a>
+        <a href="https://www.youtube.com/@AESMETZ" target="_blank"><img src="logo-de-youtube.png" alt="YouTube"></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal et scripts -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Création modal
+      const modal = document.createElement('div');
+      modal.className = 'modal';
+      modal.innerHTML = `
+        <div class="modal-content">
+          <h3>Veuillez sélectionner votre localisation</h3>
+          <button class="modal-button" id="ouiBtn" style="background: #0a6232;">Je suis en Europe</button>
+          <button class="modal-button" id="nonBtn" style="background: #118b49;">Je suis en Afrique</button>
+        </div>
+      `;
+      document.body.prepend(modal);
+
+      // Affichage du formulaire correspondant
+      const showForm = (formId) => {
+        modal.remove();
+        document.getElementById(formId).style.display = 'block';
+        if(formId === 'form-afrique') {
+          document.getElementById('agence').addEventListener('change', function() {
+            document.getElementById('agence_nom_field').style.display = this.value === 'oui' ? 'block' : 'none';
+          });
+        }
+      };
+
+      document.getElementById('ouiBtn').addEventListener('click', () => showForm('form-europe'));
+      document.getElementById('nonBtn').addEventListener('click', () => showForm('form-afrique'));
+
+      // Soumission fetch
+      document.querySelectorAll('form').forEach(form => {
+        form.addEventListener('submit', async e => {
+          e.preventDefault();
+          try {
+            const formData = new FormData(form);
+            const res = await fetch(form.action, { method: 'POST', body: formData });
+            if(res.ok) window.location.href = form.querySelector('[name="_next"]').value;
+            else alert('Erreur : ' + res.status);
+          } catch(err) { alert('Une erreur est survenue'); console.error(err); }
         });
-    </script>
+      });
+    });
+  </script>
 
 </body>
 </html>
