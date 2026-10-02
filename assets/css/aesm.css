@@ -298,6 +298,48 @@ a:hover { color: var(--rouge); }
    puis la photo en pleine largeur avec sa légende datée. */
 .hero { padding-top: clamp(2.5rem, 6vw, 4.5rem); }
 
+.hero__welcome {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--e-4) var(--e-6);
+  padding: var(--e-4) var(--e-5);
+  margin-bottom: clamp(1.5rem, 3vw, 2.25rem);
+  background: var(--vert-clair);
+  border-inline-start: 4px solid var(--ocre);
+}
+.hero__welcome-label {
+  color: var(--vert);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.hero__welcome-title {
+  margin-top: var(--e-1);
+  font-family: var(--romain);
+  font-weight: 600;
+  line-height: 1.14;
+  letter-spacing: -0.012em;
+  color: var(--vert-fonce);
+  font-size: var(--t-2);
+}
+.hero__welcome-title strong { font-weight: inherit; }
+.hero__welcome-text {
+  margin-top: var(--e-1);
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+.hero__welcome-link {
+  color: var(--vert-fonce);
+  font-weight: 700;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+@media (max-width: 700px) {
+  .hero__welcome { grid-template-columns: 1fr; padding-inline: var(--e-4); }
+}
+
 .hero__inner {
   display: grid;
   grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
