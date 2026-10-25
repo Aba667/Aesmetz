@@ -1,0 +1,9 @@
+{
+ "name":"aesm-sondage-2026",
+ "main":"index.js",
+ "compatibility_date":"2026-10-01",
+ "account_id":"cb1010f3afb4bed80ef3c6031b8ccd78",
+ "workers_dev":true,
+ "durable_objects":{"bindings":[{"name":"POLL","class_name":"ElectionPoll"}]},
+ "migrations":[{"tag":"v1","new_sqlite_classes":["ElectionPoll"]}]
+}

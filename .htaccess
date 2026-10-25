@@ -28,7 +28,7 @@ AddDefaultCharset UTF-8
     # Politique de sécurité du contenu : tout est servi depuis le domaine.
     # Les seules destinations externes sont l'envoi du formulaire (formsubmit.co)
     # et les liens sortants (HelloAsso, réseaux sociaux), qui ne chargent rien ici.
-    Header always set Content-Security-Policy "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; form-action 'self' https://formsubmit.co; frame-ancestors 'self'; base-uri 'self'; object-src 'none'"
+    Header always set Content-Security-Policy "default-src 'self'; connect-src 'self' https://aesm-sondage-2026.footmaster-web.workers.dev; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; form-action 'self' https://formsubmit.co; frame-ancestors 'self'; base-uri 'self'; object-src 'none'"
 
     # HSTS — à n'activer qu'une fois le HTTPS confirmé sur tout le site
     # Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
