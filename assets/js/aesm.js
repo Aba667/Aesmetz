@@ -186,3 +186,18 @@
     initYear();
   });
 })();
+
+// Mesure d’audience : uniquement après consentement, sans identifiant visiteur.
+(() => {
+  let sent = false;
+  function measure() {
+    if (sent || !['aesmetz.com','www.aesmetz.com'].includes(location.hostname) || !window.AESMConsent?.has('mesure_audience')) return;
+    sent = true;
+    fetch('https://aesm-audience.footmaster-web.workers.dev/collect', {
+      method:'POST', credentials:'omit', referrerPolicy:'no-referrer', keepalive:true,
+      headers:{'Content-Type':'text/plain'}, body:JSON.stringify({path:location.pathname})
+    }).catch(() => {});
+  }
+  document.addEventListener('aesm:consent', measure);
+  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', measure); else measure();
+})();

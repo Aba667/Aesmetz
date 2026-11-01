@@ -55,10 +55,9 @@
       obligatoire: false,
       defaut: false,
       titre: 'Mesure d’audience',
-      texte: 'Ils serviraient à compter les visites et à repérer les pages ' +
-             'réellement utiles, sans publicité ni revente de données. ' +
-             'Aucun outil de ce type n’est installé aujourd’hui : votre choix ' +
-             'est enregistré par avance et sera respecté si nous en ajoutons un.'
+      texte: 'Ils permettent de compter les pages consultées après votre accord. ' +
+             'Le compteur conserve uniquement la date et le chemin de la page, ' +
+             'sans identifiant visiteur ni publicité. Vous pouvez refuser ou retirer votre accord.'
     },
     {
       id: 'reseaux_sociaux',
