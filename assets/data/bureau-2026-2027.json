@@ -1,0 +1,339 @@
+{
+  "status": "ready",
+  "season": "2026-2027",
+  "groups": [
+    {
+      "id": "presidence",
+      "name": "Présidence",
+      "members": [
+        {
+          "id": "ahmet-tambedou",
+          "name": "Ahmet TAMBEDOU",
+          "role": "Président",
+          "description": "Ahmet donne le cap à l’AESM et représente l’association.Avec le bureau, Ahmet choisit les projets à lancer et fixe les priorités.En réunion, Ahmet s’assure que chaque pôle peut faire entendre ses idées.Quand plusieurs projets arrivent en même temps, Ahmet aide à trancher.Ahmet relève le défi de faire tenir toutes les bonnes idées dans un même calendrier !",
+          "photo": "assets/img/bureau-2026-2027/ahmet-tambedou.jpg",
+          "email": "mouhamet.tambedou@gmail.com",
+          "photo_fit": "contain"
+        }
+      ]
+    },
+    {
+      "id": "secretariat-general",
+      "name": "Secrétariat général",
+      "members": [
+        {
+          "id": "rama-diouf",
+          "name": "Rama DIOUF",
+          "role": "Adjointe au secrétaire général",
+          "description": "Rama aide le secrétariat général à suivre les décisions du bureau.Avant une réunion, Rama rassemble les sujets à mettre à l’ordre du jour.Après les échanges, Rama vérifie que les prochaines étapes sont claires.Rama aide aussi à transmettre les infos aux personnes concernées.Avec Rama, le fameux « on en reparle » trouve une place dans le planning.",
+          "photo": "assets/img/bureau-2026-2027/rama-diouf.jpg",
+          "email": "ramadiouf868@gmail.com",
+          "photo_fit": "contain"
+        },
+        {
+          "id": "babacar-drame",
+          "name": "Babacar DRAME",
+          "role": "Secrétaire général",
+          "description": "Babacar prépare les réunions et garde une trace des décisions du bureau.Babacar veille à ce que l’ordre du jour laisse de la place aux sujets importants.Après la réunion, Babacar résume les décisions et les tâches à suivre.Babacar aide aussi à retrouver les documents quand une question revient.Grâce à Babacar, le compte rendu évite bien des « on avait décidé quoi, déjà ? »",
+          "photo": "assets/img/bureau-2026-2027/babacar-drame.jpg",
+          "email": null,
+          "photo_fit": "contain"
+        },
+        {
+          "id": "dame-diakhate",
+          "name": "Dame DIAKHATE",
+          "role": "Adjoint au secrétaire général",
+          "description": "Dame prête main-forte au secrétariat général dans le suivi des dossiers.Dame aide à rassembler les documents utiles avant les réunions.Dame garde un œil sur les échéances et rappelle les dates à l’équipe.Quand une décision concerne plusieurs pôles, Dame aide à faire passer l’info.Dame sait remettre la main sur le bon document au bon moment.",
+          "photo": "assets/img/bureau-2026-2027/dame-diakhate.jpg",
+          "email": "damediakhate007@gmail.com",
+          "photo_fit": "contain"
+        }
+      ]
+    },
+    {
+      "id": "tresorerie",
+      "name": "Trésorerie",
+      "members": [
+        {
+          "id": "isseu-sow-kane",
+          "name": "Isseu SOW KANE",
+          "role": "Trésorière",
+          "description": "Isseu suit les comptes de l’AESM et prépare le budget avec le bureau.Avant une activité, Isseu aide à estimer ce qu’il faudra dépenser.Isseu compare ensuite les dépenses prévues avec les montants payés.Si un projet coûte plus cher que prévu, Isseu aide à revoir le budget.Avec Isseu, même les petits achats ont leur place dans le tableau.",
+          "photo": "assets/img/bureau-2026-2027/isseu-sow-kane.jpg",
+          "email": "SOWISSEU101@GMAIL.COM",
+          "photo_fit": "contain"
+        },
+        {
+          "id": "cheikh-boye",
+          "name": "Cheikh BOYE",
+          "role": "Adjoint au trésorier",
+          "description": "Cheikh aide la trésorerie à suivre les dépenses au fil des activités.Cheikh rassemble les factures et les reçus transmis par les équipes.Cheikh aide à vérifier que chaque montant correspond au bon achat.Avant un événement, Cheikh prête aussi main-forte pour estimer les coûts.Le ticket froissé au fond d’une poche ? Cheikh sait à quoi il peut servir.",
+          "photo": "assets/img/bureau-2026-2027/cheikh-boye.jpg",
+          "email": "cboye4517@gmail.com",
+          "photo_fit": "contain"
+        }
+      ]
+    },
+    {
+      "id": "controle-des-comptes",
+      "name": "Contrôle des comptes",
+      "members": [
+        {
+          "id": "aminata-boye",
+          "name": "Aminata BOYE",
+          "role": "Commissaire aux comptes",
+          "description": "Aminata vérifie que les comptes de l’AESM sont bien documentés.Aminata rapproche les dépenses des justificatifs correspondants.Quand une information manque, Aminata demande les précisions utiles.Aminata partage ses observations pour aider le bureau à y voir clair.Même les petites dépenses ont droit à un passage par sa calculette !",
+          "photo": "assets/img/bureau-2026-2027/aminata-boye.jpg",
+          "email": null,
+          "photo_fit": "contain"
+        }
+      ]
+    },
+    {
+      "id": "pedagogie",
+      "name": "Pédagogie",
+      "members": [
+        {
+          "id": "ibrahim-ndiaye",
+          "name": "Ibrahim NDIAYE",
+          "role": "Adjoint au pôle pédagogique",
+          "description": "Ibrahim aide les étudiants à s’échanger des notes et des conseils de cours.Ibrahim facilite les échanges entre nouveaux et anciens d’une même filière.Avant les révisions, Ibrahim aide à repérer les ressources qui peuvent servir.Quand une question revient, Ibrahim aide à trouver quelqu’un qui connaît le sujet.Avec Ibrahim, le bon conseil a plus de chances de circuler dans la promo.",
+          "photo": "assets/img/bureau-2026-2027/ibrahim-ndiaye.jpg",
+          "email": "ibrahimakhalil0753@gmail.com",
+          "photo_fit": "contain"
+        }
+      ]
+    },
+    {
+      "id": "social",
+      "name": "Social",
+      "members": [
+        {
+          "id": "malang-cisse",
+          "name": "Malang CISSE",
+          "role": "Responsable du pôle social",
+          "description": "Malang coordonne les actions d’entraide du pôle social.Malang écoute les besoins qui remontent et aide à trouver les bons relais.Pour une action solidaire, Malang organise les contributions de l’équipe.Malang veille aussi à faire circuler les informations pratiques.Avec Malang, demander un coup de main fait partie de la vie de l’asso.",
+          "photo": "assets/img/bureau-2026-2027/malang-cisse.jpg",
+          "email": null,
+          "photo_fit": "contain"
+        },
+        {
+          "id": "ndeye-ndiaye",
+          "name": "Ndeye NDIAYE",
+          "role": "Adjointe au pôle social",
+          "description": "Ndeye est à l’écoute des étudiants qui ont une question ou une difficulté.Ndeye aide à préciser le besoin pour trouver une piste concrète.Quand une démarche paraît compliquée, Ndeye cherche le bon contact.Ndeye partage aussi les ressources utiles avec le reste du pôle social.Avec Ndeye, on peut commencer par un simple « Je ne sais pas par où partir ».",
+          "photo": "assets/img/bureau-2026-2027/ndeye-ndiaye.jpg",
+          "email": "ndeyeramandiaye37@gmail.com",
+          "photo_fit": "contain"
+        },
+        {
+          "id": "adja-sarr",
+          "name": "Adja SARR",
+          "role": "Adjointe au pôle social",
+          "description": "Adja aide les nouveaux étudiants à trouver leurs repères à Metz.Adja répond aux premières questions et partage les infos utiles.Quand le sujet demande un appui particulier, Adja indique à qui s’adresser.Adja aide aussi à créer des occasions de rencontre entre étudiants.Avec Adja, le premier « Salut, je viens d’arriver » lance la conversation.",
+          "photo": "assets/img/bureau-2026-2027/adja-sarr.jpg",
+          "email": "adjatabarasarr2021@gmail.com",
+          "photo_fit": "contain"
+        },
+        {
+          "id": "mbaye-fall",
+          "name": "Mbaye FALL",
+          "role": "Adjoint au pôle social",
+          "description": "Mbaye donne un coup de main aux actions solidaires de l’AESM.Mbaye aide à faire circuler les infos et à mobiliser les volontaires.Sur le terrain, Mbaye s’occupe des petites tâches qui facilitent l’entraide.Mbaye relaye les besoins rencontrés vers le reste du pôle social.Avec Mbaye, même un petit geste trouve sa place dans une action collective.",
+          "photo": "assets/img/bureau-2026-2027/mbaye-fall.jpg",
+          "email": "mbaye.fall0104@outlook.com",
+          "photo_fit": "contain"
+        },
+        {
+          "id": "khoudia-dioum",
+          "name": "Khoudia DIOUM",
+          "role": "Adjointe au pôle social",
+          "description": "Khoudia aide à organiser l’entraide entre les étudiants.Khoudia relaie les infos utiles et les bons plans du quotidien.Quand un besoin remonte, Khoudia en parle avec le pôle social.Khoudia aide à trouver la bonne ressource ou le bon interlocuteur.Avec Khoudia, une info qui peut dépanner est faite pour circuler.",
+          "photo": "assets/img/bureau-2026-2027/khoudia-dioum.jpg",
+          "email": "khoudiadioum2.0@gmail.com",
+          "photo_fit": "contain"
+        },
+        {
+          "id": "astou-mbow",
+          "name": "Astou MBOW",
+          "role": "Adjointe au pôle social",
+          "description": "Astou participe à l’accueil des étudiants qui rejoignent l’AESM.Astou présente les activités et aide chacun à repérer les bons contacts.Astou prend le temps d’écouter les questions des nouveaux membres.Quand une démarche semble floue, Astou aide à trouver par où commencer.Avec Astou, on peut poser la petite question qu’on gardait pour plus tard.",
+          "photo": "assets/img/bureau-2026-2027/astou-mbow.jpg",
+          "email": "astoumbow784@gmail.com",
+          "photo_fit": "contain"
+        }
+      ]
+    },
+    {
+      "id": "relations-exterieures",
+      "name": "Relations extérieures",
+      "members": [
+        {
+          "id": "moustapha-mbow",
+          "name": "Moustapha MBOW",
+          "role": "Adjoint au pôle relations extérieures",
+          "description": "Moustapha aide l’AESM à nouer des liens avec d’autres associations.Pour un premier échange, Moustapha présente l’équipe et ses projets.Moustapha écoute les idées des autres et repère les intérêts communs.Si une idée prend forme, Moustapha aide à préparer la suite avec le pôle.Avec Moustapha, un simple bonjour peut devenir une activité à deux équipes.",
+          "photo": "assets/img/bureau-2026-2027/moustapha-mbow.jpg",
+          "email": "mbowmouhamedoumoustapha@gmail.com",
+          "photo_fit": "contain"
+        },
+        {
+          "id": "alioune-sow",
+          "name": "Alioune SOW",
+          "role": "Responsable des relations extérieures",
+          "description": "Alioune présente l’AESM aux associations et aux interlocuteurs extérieurs.Alioune cherche des occasions de monter des activités en commun.Avant un rendez-vous, Alioune prépare les idées à discuter avec l’équipe.Après la rencontre, Alioune partage les pistes à creuser avec le bureau.Alioune aime donner une suite concrète au fameux « On devrait faire un truc ensemble ».",
+          "photo": "assets/img/bureau-2026-2027/alioune-sow.jpg",
+          "email": "sowalione173@gmail.com",
+          "photo_fit": "contain"
+        },
+        {
+          "id": "cheikh-sow",
+          "name": "Cheikh SOW",
+          "role": "Responsable des relations extérieures",
+          "description": "Cheikh entretient les liens de l’AESM avec les contacts extérieurs.Cheikh échange avec les associations et repère les intérêts communs.Quand une collaboration se dessine, Cheikh en discute avec le bureau.Cheikh garde le lien après les rencontres pour préparer la suite.Cheikh apprécie de voir deux équipes se retrouver autour d’un projet.",
+          "photo": "assets/img/bureau-2026-2027/cheikh-sow.jpg",
+          "email": "C.SOWTRANSIT@GMAIL.COM",
+          "photo_fit": "contain"
+        },
+        {
+          "id": "aminata-ndiaye",
+          "name": "Aminata NDIAYE",
+          "role": "Adjointe aux relations extérieures",
+          "description": "Aminata aide l’équipe à suivre les échanges avec les contacts extérieurs.Aminata prépare les informations utiles pour présenter un projet.Après un rendez-vous, Aminata aide à noter les pistes à approfondir.Aminata relance les échanges quand une prochaine étape se précise.Avec Aminata, la bonne idée lancée en fin de réunion a droit à un suivi.",
+          "photo": "assets/img/bureau-2026-2027/aminata-ndiaye.jpg",
+          "email": "amisira2005@gmail.com",
+          "photo_fit": "contain"
+        },
+        {
+          "id": "malick-boye",
+          "name": "Malick BOYE",
+          "role": "Adjoint aux relations extérieures",
+          "description": "Malick aide à préparer les rencontres avec d’autres associations.Malick présente les activités de l’AESM et écoute les idées des équipes.Après la rencontre, Malick aide à partager les pistes avec le bureau.Malick garde aussi le contact pour faire avancer les échanges.Avec Malick, le premier rendez-vous peut déboucher sur un vrai projet.",
+          "photo": "assets/img/bureau-2026-2027/malick-boye.jpg",
+          "email": "boyem082002@gmail.com",
+          "photo_fit": "contain"
+        }
+      ]
+    },
+    {
+      "id": "organisation",
+      "name": "Organisation",
+      "members": [
+        {
+          "id": "aissatou-sarr",
+          "name": "Aissatou SARR",
+          "role": "Responsable du pôle organisation",
+          "description": "Aissatou coordonne la préparation des événements de l’AESM.Aissatou fixe les étapes, répartit les tâches et suit les préparatifs.Avant le jour J, Aissatou vérifie les horaires, le matériel et l’accueil.En cas d’imprévu, Aissatou aide l’équipe à revoir le programme.Aissatou pense à ce qu’il faut avant même le premier « Qui a les clés ? »",
+          "photo": "assets/img/bureau-2026-2027/aissatou-sarr.jpg",
+          "email": "sarraissatougueye@gmail.com",
+          "photo_fit": "contain"
+        },
+        {
+          "id": "saliou-mbengue",
+          "name": "Saliou MBENGUE",
+          "role": "Adjoint au pôle organisation",
+          "description": "Saliou aide l’équipe à passer du programme à l’installation sur place.Saliou vérifie le matériel et aide à répartir les tâches entre bénévoles.Avant l’ouverture, Saliou aide à repérer les derniers détails à régler.Pendant l’événement, Saliou donne un coup de main là où ça coince.Un carton à déplacer ou une table à monter ? Saliou aide à s’organiser.",
+          "photo": "assets/img/bureau-2026-2027/saliou-mbengue.jpg",
+          "email": "mbengue.ssmpro@gmail.com",
+          "photo_fit": "contain"
+        },
+        {
+          "id": "satan-ndiaye",
+          "name": "Satan NDIAYE",
+          "role": "Adjointe au pôle organisation",
+          "description": "Satan aide à préparer les événements avec le pôle organisation.Satan vérifie les petites choses faciles à oublier dans le planning.Avant l’arrivée du public, Satan donne un coup de main à l’installation.Quand une tâche change de main, Satan aide à faire passer l’info.Le jour J, Satan contribue à régler les petits imprévus en coulisses.",
+          "photo": "assets/img/bureau-2026-2027/satan-ndiaye.jpg",
+          "email": "ndiayesatuu1@gmail.com",
+          "photo_fit": "contain"
+        },
+        {
+          "id": "mariame-siby",
+          "name": "Mariame SIBY",
+          "role": "Adjointe au pôle organisation",
+          "description": "Mariame aide le pôle organisation à préparer les événements de l’AESM.Mariame vérifie que les bénévoles savent où et quand donner un coup de main.Avant l’ouverture, Mariame aide à faire le tour des derniers préparatifs.Si le programme bouge, Mariame aide à transmettre l’info à l’équipe.Avec Mariame, chacun peut se concentrer sur ce qu’il a à faire le jour J.",
+          "photo": "assets/img/bureau-2026-2027/mariame-siby.jpg",
+          "email": null,
+          "photo_fit": "contain"
+        }
+      ]
+    },
+    {
+      "id": "communication-et-contenu",
+      "name": "Communication et contenu",
+      "members": [
+        {
+          "id": "djibi-mamadou-thiam",
+          "name": "Djibi Mamadou THIAM",
+          "role": "Créateur de contenu",
+          "description": "Djibi Mamadou raconte la vie de l’AESM en photos et en vidéos.Pendant les événements, Djibi Mamadou capte l’ambiance et les coulisses.Après, Djibi Mamadou choisit les images qui racontent le mieux la journée.Djibi Mamadou prépare des formats à partager avec les membres.Avec Djibi Mamadou, même ceux qui ont raté l’événement en voient un bout.",
+          "photo": "assets/img/bureau-2026-2027/djibi-mamadou-thiam.jpg",
+          "email": "djibi.mamadou.thima@gmail.com",
+          "photo_fit": "contain"
+        },
+        {
+          "id": "modou-diagne",
+          "name": "Modou DIAGNE",
+          "role": "Adjoint à la communication",
+          "description": "Modou aide à préparer les annonces et les messages de l’AESM.Modou vérifie que la date, le lieu et les modalités d’inscription se repèrent vite.Modou adapte les messages au support, du groupe aux réseaux sociaux.Avant publication, Modou relit les infos avec l’équipe concernée.Avec Modou, le « c’est où déjà ? » trouve sa réponse dans l’annonce.",
+          "photo": "assets/img/bureau-2026-2027/modou-diagne.jpg",
+          "email": "modou1999diagne@gmail.com",
+          "photo_fit": "contain"
+        },
+        {
+          "id": "doudou-ndiaye",
+          "name": "Doudou NDIAYE",
+          "role": "Créateur de contenu",
+          "description": "Doudou raconte les activités de l’AESM à travers ses publications.Doudou aide à choisir les images et à trouver le ton des légendes.Après une activité, Doudou prépare de quoi partager les temps forts.Doudou travaille avec l’équipe pour donner envie de découvrir la suite.Avec Doudou, une photo de groupe peut raconter toute une journée.",
+          "photo": "assets/img/bureau-2026-2027/doudou-ndiaye.jpg",
+          "email": null,
+          "photo_fit": "contain"
+        }
+      ]
+    },
+    {
+      "id": "partenariat",
+      "name": "Partenariat",
+      "members": [
+        {
+          "id": "helene-ndiolene",
+          "name": "Helene NDIOLENE",
+          "role": "Adjointe au pôle partenariat",
+          "description": "Helene aide l’AESM à trouver des partenaires pour ses projets.Helene repère les structures à contacter selon les besoins de l’équipe.Pour un premier échange, Helene aide à présenter l’idée et les attentes.Helene suit les réponses et prépare les relances quand c’est nécessaire.Avec Helene, un contact de plus peut ouvrir la porte à un projet commun.",
+          "photo": "assets/img/bureau-2026-2027/helene-ndiolene.jpg",
+          "email": null,
+          "photo_fit": "contain"
+        }
+      ]
+    },
+    {
+      "id": "culture",
+      "name": "Culture",
+      "members": [
+        {
+          "id": "mohamed-sylla",
+          "name": "Mohamed SYLLA",
+          "role": "Responsable du pôle culturel",
+          "description": "Mohamed prépare les activités culturelles de l’AESM.Mohamed cherche des idées qui donnent envie de partager ses traditions.Mohamed construit les programmes avec les personnes qui veulent participer.Le jour venu, Mohamed aide à faire une place à chaque contribution.Avec Mohamed, on peut venir par curiosité et repartir avec une découverte.",
+          "photo": "assets/img/bureau-2026-2027/mohamed-sylla.jpg",
+          "email": "mohamedsylla2101@gmail.com",
+          "photo_fit": "contain"
+        }
+      ]
+    },
+    {
+      "id": "sport",
+      "name": "Sport",
+      "members": [
+        {
+          "id": "papy-hamoud",
+          "name": "Papy HAMOUD",
+          "role": "Responsable du pôle sport",
+          "description": "Papy propose des activités sportives pour les membres de l’AESM.Papy aide à prévoir les créneaux, les inscriptions et le matériel.Papy veille à ce que chacun puisse participer à son rythme.Papy laisse aussi une place à celles et ceux qui viennent encourager.Avec Papy, les tribunes ont leur rôle autant que le terrain !",
+          "photo": "assets/img/bureau-2026-2027/papy-hamoud.jpg",
+          "email": "messaoudhamoud11@gmail.com",
+          "photo_fit": "contain"
+        }
+      ]
+    }
+  ]
+}
