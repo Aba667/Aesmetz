@@ -2,3 +2,6 @@ body{background:#f7f5ee}.draft-banner{background:#f4d264;color:#253d2e;padding:1
 .member-email{display:block;overflow-wrap:anywhere;line-height:1.6;min-height:44px;padding:10px 0}.member-role{font-size:14px;color:#315a41;font-weight:600;line-height:1.5}.member details{font-size:14px;line-height:1.8;border-top:1px solid #dde3d7;padding-top:12px}.member summary{cursor:pointer;min-height:44px}.member details p{margin-top:12px}
 
 .member-photo--poster{aspect-ratio:4/5;background:#fff;display:block;overflow:hidden}.member-photo--poster a{display:block;width:100%;height:100%}.member-photo--poster img{display:block;width:100%;height:100%;object-fit:contain}.bureau-article-visual{max-width:440px;margin:32px auto}.bureau-article-visual img{width:100%;height:auto;display:block}.bureau-article-visual figcaption{font-size:13px;color:#61715f;margin-top:10px}
+
+/* Ne pas afficher les anciens intitulés intégrés aux affiches corrigées. */
+.member-photo--corrected{aspect-ratio:4/3}.member-photo--corrected img{height:auto;max-height:none;object-fit:initial}

@@ -83,24 +83,25 @@
           "name": "Aminata BOYE",
           "role": "Commissaire aux comptes",
           "description": "Aminata vérifie que les comptes de l’AESM sont bien documentés.Aminata rapproche les dépenses des justificatifs correspondants.Quand une information manque, Aminata demande les précisions utiles.Aminata partage ses observations pour aider le bureau à y voir clair.Même les petites dépenses ont droit à un passage par sa calculette !",
-          "photo": "assets/img/bureau-2026-2027/aminata-boye.jpg",
+          "photo": null,
           "email": null,
           "photo_fit": "contain"
         }
       ]
     },
     {
-      "id": "pedagogie",
-      "name": "Pédagogie",
+      "id": "insertion",
+      "name": "Insertion",
       "members": [
         {
           "id": "ibrahim-ndiaye",
-          "name": "Ibrahim NDIAYE",
-          "role": "Adjoint au pôle pédagogique",
-          "description": "Ibrahim aide les étudiants à s’échanger des notes et des conseils de cours.Ibrahim facilite les échanges entre nouveaux et anciens d’une même filière.Avant les révisions, Ibrahim aide à repérer les ressources qui peuvent servir.Quand une question revient, Ibrahim aide à trouver quelqu’un qui connaît le sujet.Avec Ibrahim, le bon conseil a plus de chances de circuler dans la promo.",
+          "name": "Ibrahima NDIAYE",
+          "role": "Adjoint au pôle insertion",
+          "description": "Ibrahima apporte son appui au pôle insertion et aux actions qui accompagnent les parcours professionnels des étudiants.",
           "photo": "assets/img/bureau-2026-2027/ibrahim-ndiaye.jpg",
           "email": "ibrahimakhalil0753@gmail.com",
-          "photo_fit": "contain"
+          "photo_fit": "contain",
+          "photo_crop": "portrait"
         }
       ]
     },
@@ -113,26 +114,8 @@
           "name": "Malang CISSE",
           "role": "Responsable du pôle social",
           "description": "Malang coordonne les actions d’entraide du pôle social.Malang écoute les besoins qui remontent et aide à trouver les bons relais.Pour une action solidaire, Malang organise les contributions de l’équipe.Malang veille aussi à faire circuler les informations pratiques.Avec Malang, demander un coup de main fait partie de la vie de l’asso.",
-          "photo": "assets/img/bureau-2026-2027/malang-cisse.jpg",
-          "email": null,
-          "photo_fit": "contain"
-        },
-        {
-          "id": "ndeye-ndiaye",
-          "name": "Ndeye NDIAYE",
-          "role": "Adjointe au pôle social",
-          "description": "Ndeye est à l’écoute des étudiants qui ont une question ou une difficulté.Ndeye aide à préciser le besoin pour trouver une piste concrète.Quand une démarche paraît compliquée, Ndeye cherche le bon contact.Ndeye partage aussi les ressources utiles avec le reste du pôle social.Avec Ndeye, on peut commencer par un simple « Je ne sais pas par où partir ».",
-          "photo": "assets/img/bureau-2026-2027/ndeye-ndiaye.jpg",
-          "email": "ndeyeramandiaye37@gmail.com",
-          "photo_fit": "contain"
-        },
-        {
-          "id": "adja-sarr",
-          "name": "Adja SARR",
-          "role": "Adjointe au pôle social",
-          "description": "Adja aide les nouveaux étudiants à trouver leurs repères à Metz.Adja répond aux premières questions et partage les infos utiles.Quand le sujet demande un appui particulier, Adja indique à qui s’adresser.Adja aide aussi à créer des occasions de rencontre entre étudiants.Avec Adja, le premier « Salut, je viens d’arriver » lance la conversation.",
-          "photo": "assets/img/bureau-2026-2027/adja-sarr.jpg",
-          "email": "adjatabarasarr2021@gmail.com",
+          "photo": null,
+          "email": "cissemalang11@gmail.com",
           "photo_fit": "contain"
         },
         {
@@ -198,20 +181,12 @@
         {
           "id": "aminata-ndiaye",
           "name": "Aminata NDIAYE",
-          "role": "Adjointe aux relations extérieures",
-          "description": "Aminata aide l’équipe à suivre les échanges avec les contacts extérieurs.Aminata prépare les informations utiles pour présenter un projet.Après un rendez-vous, Aminata aide à noter les pistes à approfondir.Aminata relance les échanges quand une prochaine étape se précise.Avec Aminata, la bonne idée lancée en fin de réunion a droit à un suivi.",
+          "role": "Responsable des relations extérieures",
+          "description": "Aminata coordonne le pôle relations extérieures et contribue aux échanges avec les interlocuteurs de l’association.",
           "photo": "assets/img/bureau-2026-2027/aminata-ndiaye.jpg",
           "email": "amisira2005@gmail.com",
-          "photo_fit": "contain"
-        },
-        {
-          "id": "malick-boye",
-          "name": "Malick BOYE",
-          "role": "Adjoint aux relations extérieures",
-          "description": "Malick aide à préparer les rencontres avec d’autres associations.Malick présente les activités de l’AESM et écoute les idées des équipes.Après la rencontre, Malick aide à partager les pistes avec le bureau.Malick garde aussi le contact pour faire avancer les échanges.Avec Malick, le premier rendez-vous peut déboucher sur un vrai projet.",
-          "photo": "assets/img/bureau-2026-2027/malick-boye.jpg",
-          "email": "boyem082002@gmail.com",
-          "photo_fit": "contain"
+          "photo_fit": "contain",
+          "photo_crop": "portrait"
         }
       ]
     },
@@ -254,6 +229,26 @@
           "photo": "assets/img/bureau-2026-2027/mariame-siby.jpg",
           "email": null,
           "photo_fit": "contain"
+        },
+        {
+          "id": "ndeye-ndiaye",
+          "name": "Ndeye NDIAYE",
+          "role": "Adjointe au pôle organisation",
+          "description": "Ndeye contribue à la préparation des événements et à leur organisation avec les membres du pôle.",
+          "photo": "assets/img/bureau-2026-2027/ndeye-ndiaye.jpg",
+          "email": "ndeyeramandiaye37@gmail.com",
+          "photo_fit": "contain",
+          "photo_crop": "portrait"
+        },
+        {
+          "id": "adja-sarr",
+          "name": "Adja SARR",
+          "role": "Adjointe au pôle organisation",
+          "description": "Adja accompagne le pôle organisation dans les préparatifs et la mise en place des activités de l’association.",
+          "photo": "assets/img/bureau-2026-2027/adja-sarr.jpg",
+          "email": "adjatabarasarr2021@gmail.com",
+          "photo_fit": "contain",
+          "photo_crop": "portrait"
         }
       ]
     },
@@ -278,15 +273,6 @@
           "photo": "assets/img/bureau-2026-2027/modou-diagne.jpg",
           "email": "modou1999diagne@gmail.com",
           "photo_fit": "contain"
-        },
-        {
-          "id": "doudou-ndiaye",
-          "name": "Doudou NDIAYE",
-          "role": "Créateur de contenu",
-          "description": "Doudou raconte les activités de l’AESM à travers ses publications.Doudou aide à choisir les images et à trouver le ton des légendes.Après une activité, Doudou prépare de quoi partager les temps forts.Doudou travaille avec l’équipe pour donner envie de découvrir la suite.Avec Doudou, une photo de groupe peut raconter toute une journée.",
-          "photo": "assets/img/bureau-2026-2027/doudou-ndiaye.jpg",
-          "email": null,
-          "photo_fit": "contain"
         }
       ]
     },
@@ -302,6 +288,16 @@
           "photo": "assets/img/bureau-2026-2027/helene-ndiolene.jpg",
           "email": null,
           "photo_fit": "contain"
+        },
+        {
+          "id": "malick-boye",
+          "name": "Malick BOYE",
+          "role": "Responsable du pôle partenariat",
+          "description": "Malick coordonne le pôle partenariat et accompagne les échanges avec les partenaires de l’AESM.",
+          "photo": "assets/img/bureau-2026-2027/malick-boye.jpg",
+          "email": "boyem082002@gmail.com",
+          "photo_fit": "contain",
+          "photo_crop": "portrait"
         }
       ]
     },
@@ -310,13 +306,24 @@
       "name": "Culture",
       "members": [
         {
+          "id": "doudou-ndiaye",
+          "name": "Doudou NDIAYE",
+          "role": "Responsable du pôle culturel · Créateur de contenus",
+          "description": "Doudou coordonne le pôle culturel et participe également à la création de contenus pour raconter les activités de l’AESM.",
+          "photo": "assets/img/bureau-2026-2027/doudou-ndiaye.jpg",
+          "email": null,
+          "photo_fit": "contain",
+          "photo_crop": "portrait"
+        },
+        {
           "id": "mohamed-sylla",
           "name": "Mohamed SYLLA",
-          "role": "Responsable du pôle culturel",
-          "description": "Mohamed prépare les activités culturelles de l’AESM.Mohamed cherche des idées qui donnent envie de partager ses traditions.Mohamed construit les programmes avec les personnes qui veulent participer.Le jour venu, Mohamed aide à faire une place à chaque contribution.Avec Mohamed, on peut venir par curiosité et repartir avec une découverte.",
+          "role": "Adjoint au pôle culturel",
+          "description": "Mohamed accompagne le pôle culturel dans la préparation et le déroulement des activités culturelles de l’AESM.",
           "photo": "assets/img/bureau-2026-2027/mohamed-sylla.jpg",
           "email": "mohamedsylla2101@gmail.com",
-          "photo_fit": "contain"
+          "photo_fit": "contain",
+          "photo_crop": "portrait"
         }
       ]
     },
