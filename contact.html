@@ -21,8 +21,8 @@
 <script src="assets/js/aesm.js" defer></script>
 <script src="assets/js/consent.js?v=20261115" defer></script>
 
-<link rel="stylesheet" href="assets/css/contact.css?v=20261115">
-<script src="assets/js/contact.js?v=20261115" defer></script>
+<link rel="stylesheet" href="assets/css/contact.css?v=20261115-europe-afrique">
+<script src="assets/js/contact.js?v=20261115-europe-afrique" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#contenu">Aller au contenu principal</a>
@@ -63,32 +63,65 @@
 </div></section>
 <section class="section"><div class="container contact-layout">
 <div class="contact-form-panel">
-<h2 id="formulaire">Votre message</h2><p class="contact-intro">Choisissez le sujet de votre demande et dites-nous comment nous pouvons vous aider.</p>
-<p class="form-note">Tous les champs sont obligatoires, sauf le téléphone.</p>
-<form class="form" id="contact-form" action="https://formsubmit.co/aesmetz221@gmail.com" method="post" aria-labelledby="formulaire" aria-describedby="contact-privacy">
+<h2 id="formulaire">Où vous trouvez-vous actuellement ?</h2>
+<p class="contact-intro">Choisissez votre situation pour accéder au formulaire qui vous correspond.</p>
+<nav class="contact-choices" aria-label="Votre localisation">
+<a class="contact-choice" href="#form-europe" data-contact-location="europe" aria-controls="form-europe"><strong>Je suis en Europe</strong><span>Contacter le bureau</span><span aria-hidden="true">→</span></a>
+<a class="contact-choice" href="#form-afrique" data-contact-location="afrique" aria-controls="form-afrique"><strong>Je suis en Afrique</strong><span>Préparer mon arrivée</span><span aria-hidden="true">→</span></a>
+</nav>
+<p class="form-note contact-location-status" data-location-status role="status" aria-live="polite">Les questions sont adaptées à votre situation.</p>
+<section class="contact-route" id="form-europe" data-contact-panel aria-labelledby="heading-europe">
+<h3 id="heading-europe">Formulaire Europe</h3>
+<p class="contact-intro">Vous êtes en Europe : adressez votre demande au bureau de l’AESM.</p>
+<p class="form-note">Tous les champs sont obligatoires.</p>
+<form class="form" id="contact-form-europe" data-contact-form action="https://formsubmit.co/aesmetz221@gmail.com" method="post" aria-labelledby="heading-europe" aria-describedby="contact-privacy-europe">
 <input type="hidden" name="_cc" value="aesmetz.etu@gmail.com">
-<input type="hidden" name="_subject" value="Nouveau message — Contact AESM">
+<input type="hidden" name="_subject" value="Nouveau contact (Europe) — AESM">
 <input type="hidden" name="_next" value="https://aesmetz.com/merci.html">
 <input type="hidden" name="_url" value="https://aesmetz.com/contact.html">
 <input type="hidden" name="_captcha" value="false">
 <input type="hidden" name="_template" value="table">
-<div class="hp-field" aria-hidden="true"><label for="website">Laissez ce champ vide</label><input id="website" name="_honey" type="text" tabindex="-1" autocomplete="off"></div>
-<div class="form-grid">
-<div class="field"><label for="prenom">Prénom</label><input class="input" id="prenom" name="prenom" autocomplete="given-name" maxlength="100" required></div>
-<div class="field"><label for="nom">Nom</label><input class="input" id="nom" name="nom" autocomplete="family-name" maxlength="100" required></div>
-</div>
-<div class="form-grid">
-<div class="field"><label for="email">Adresse e-mail</label><input class="input" type="email" id="email" name="email" autocomplete="email" maxlength="254" required aria-describedby="email-hint"><span class="hint" id="email-hint">C’est à cette adresse que nous vous répondrons.</span></div>
-<div class="field"><label for="telephone">Téléphone <span class="contact-optional">(facultatif)</span></label><input class="input" type="tel" id="telephone" name="telephone" autocomplete="tel" maxlength="40"></div>
-</div>
-<div class="field"><label for="objet">Sujet de votre demande</label><select class="select" id="objet" name="objet" required>
-<option value="">Choisir un sujet</option><option>Préparer mon arrivée à Metz</option><option>Adhérer à l’association</option><option>Entraide et vie étudiante</option><option>Activités et événements</option><option>Partenariat</option><option>Photo ou données personnelles</option><option>Autre demande</option>
-</select></div>
-<div class="field"><label for="message">Message</label><textarea class="textarea" id="message" name="message" rows="7" maxlength="5000" required aria-describedby="message-hint"></textarea><span class="hint" id="message-hint">Pour une arrivée à Metz, précisez votre formation et votre date d’arrivée si vous les connaissez. N’envoyez pas de pièce d’identité ni de document bancaire.</span></div>
-<p class="form-note" id="contact-privacy">Vos coordonnées servent à traiter votre demande et à vous répondre. Le message est transmis au bureau via FormSubmit. Vous pouvez exercer vos droits à <a href="mailto:aesmetz221@gmail.com">aesmetz221@gmail.com</a>. <a href="politique-confidentialite.html#traitements">En savoir plus sur vos données</a>.</p>
-<div><button class="btn btn--primary" type="submit" id="contact-submit">Envoyer mon message <span aria-hidden="true">→</span></button></div>
-<p id="contact-status" class="contact-status" role="status" aria-live="polite" tabindex="-1" hidden></p>
-</form>
+<input type="hidden" name="localisation" value="Europe">
+<div class="hp-field" aria-hidden="true"><label for="website-europe">Laissez ce champ vide</label><input id="website-europe" name="_honey" type="text" tabindex="-1" autocomplete="off"></div>
+<div class="form-grid"><div class="field"><label for="nom">Nom</label><input class="input" id="nom" name="nom" type="text" autocomplete="family-name" maxlength="150" required></div><div class="field"><label for="prenom">Prénom</label><input class="input" id="prenom" name="prenom" type="text" autocomplete="given-name" maxlength="150" required></div></div>
+<div class="field"><label for="email">Adresse e-mail</label><input class="input" id="email" name="email" type="email" autocomplete="email" aria-describedby="email-hint" maxlength="254" required><span class="hint" id="email-hint">C’est à cette adresse que nous vous répondrons.</span></div>
+<div class="field"><label for="objet">Objet de votre message</label><input class="input" id="objet" name="objet" type="text" maxlength="150" required></div>
+<div class="field"><label for="message">Message</label><textarea class="textarea" id="message" name="message" rows="7" maxlength="5000" required aria-describedby="message-hint"></textarea><span class="hint" id="message-hint">Précisez votre demande. N’envoyez pas de pièce d’identité ni de document bancaire.</span></div>
+<p class="form-note" id="contact-privacy-europe">Vos informations servent à traiter votre demande et à vous répondre. Le message est transmis au bureau via FormSubmit. Vous pouvez exercer vos droits à <a href="mailto:aesmetz221@gmail.com">aesmetz221@gmail.com</a>. <a href="politique-confidentialite.html#traitements">En savoir plus sur vos données</a>.</p>
+<div><button class="btn btn--primary contact-submit" type="submit">Envoyer mon message <span aria-hidden="true">→</span></button></div>
+<p class="contact-status" data-contact-status role="status" aria-live="polite" tabindex="-1" hidden></p>
+</form></section>
+<section class="contact-route" id="form-afrique" data-contact-panel aria-labelledby="heading-afrique">
+<h3 id="heading-afrique">Formulaire Afrique</h3>
+<p class="contact-intro">Vous êtes en Afrique : ces précisions nous aident à préparer votre accompagnement.</p>
+<p class="form-note">Tous les champs sont obligatoires, sauf le nom de l’agence.</p>
+<form class="form" id="contact-form-afrique" data-contact-form action="https://formsubmit.co/aesmetz221@gmail.com" method="post" aria-labelledby="heading-afrique" aria-describedby="contact-privacy-afrique">
+<input type="hidden" name="_cc" value="aesmetz.etu@gmail.com">
+<input type="hidden" name="_subject" value="Nouveau contact (Afrique) — AESM">
+<input type="hidden" name="_next" value="https://aesmetz.com/merci.html">
+<input type="hidden" name="_url" value="https://aesmetz.com/contact.html">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="localisation" value="Afrique">
+<div class="hp-field" aria-hidden="true"><label for="website-afrique">Laissez ce champ vide</label><input id="website-afrique" name="_honey" type="text" tabindex="-1" autocomplete="off"></div>
+<div class="form-grid"><div class="field"><label for="nom_afrique">Nom</label><input class="input" id="nom_afrique" name="nom" type="text" autocomplete="family-name" maxlength="150" required></div><div class="field"><label for="prenom_afrique">Prénom</label><input class="input" id="prenom_afrique" name="prenom" type="text" autocomplete="given-name" maxlength="150" required></div></div>
+<div class="field"><label for="email_afrique">Adresse e-mail</label><input class="input" id="email_afrique" name="email" type="email" autocomplete="email" aria-describedby="email_afrique-hint" maxlength="254" required><span class="hint" id="email_afrique-hint">C’est à cette adresse que nous vous répondrons.</span></div>
+<div class="field"><label for="objet_afrique">Objet de votre message</label><input class="input" id="objet_afrique" name="objet" type="text" maxlength="150" required></div>
+<fieldset class="fieldset"><legend>Votre situation</legend><div class="form">
+<div class="field"><label for="date_naissance">Date de naissance</label><input class="input" id="date_naissance" name="date_naissance" type="date" autocomplete="bday" required></div>
+<div class="form-grid"><div class="field"><label for="lieu_naissance">Lieu de naissance</label><input class="input" id="lieu_naissance" name="lieu_naissance" type="text" maxlength="150" required></div><div class="field"><label for="region_naissance">Région de naissance</label><input class="input" id="region_naissance" name="region_naissance" type="text" maxlength="150" required></div></div>
+<div class="field"><label for="telephone">Téléphone</label><input class="input" id="telephone" name="telephone" type="tel" autocomplete="tel" aria-describedby="telephone-hint" maxlength="150" required><span class="hint" id="telephone-hint">Pensez à préciser l’indicatif du pays, par exemple +221.</span></div>
+<div class="field"><label for="acceptation">Avez-vous une acceptation ?</label><select class="select" id="acceptation" name="acceptation" required><option value="">Choisir une réponse</option><option value="oui">Oui</option><option value="non">Non</option></select></div>
+<div class="field"><label for="agence">Êtes-vous passé par une agence ?</label><select class="select" id="agence" name="agence" required><option value="">Choisir une réponse</option><option value="oui">Oui</option><option value="non">Non</option></select></div>
+<div id="agence_nom_field"><div class="field"><label for="agence_nom">Nom de l’agence (facultatif)</label><input class="input" id="agence_nom" name="agence_nom" type="text" aria-describedby="agence_nom-hint" maxlength="150"><span class="hint" id="agence_nom-hint">À renseigner uniquement si vous êtes passé par une agence.</span></div></div>
+<div class="field"><label for="garant">Avez-vous un garant ?</label><select class="select" id="garant" name="garant" required><option value="">Choisir une réponse</option><option value="oui">Oui</option><option value="non">Non</option></select></div>
+<div class="field"><label for="hebergeur">Avez-vous un hébergeur ?</label><select class="select" id="hebergeur" name="hebergeur" required><option value="">Choisir une réponse</option><option value="oui">Oui</option><option value="non">Non</option></select></div>
+</div></fieldset>
+<div class="field"><label for="message_afrique">Message</label><textarea class="textarea" id="message_afrique" name="message" rows="7" maxlength="5000" required aria-describedby="message_afrique-hint"></textarea><span class="hint" id="message_afrique-hint">Précisez votre demande. N’envoyez pas de pièce d’identité ni de document bancaire.</span></div>
+<p class="form-note" id="contact-privacy-afrique">Vos informations servent à traiter votre demande et à vous répondre. Le message est transmis au bureau via FormSubmit. Vous pouvez exercer vos droits à <a href="mailto:aesmetz221@gmail.com">aesmetz221@gmail.com</a>. <a href="politique-confidentialite.html#formulaire-afrique">En savoir plus sur vos données</a>.</p>
+<div><button class="btn btn--primary contact-submit" type="submit">Envoyer mon message <span aria-hidden="true">→</span></button></div>
+<p class="contact-status" data-contact-status role="status" aria-live="polite" tabindex="-1" hidden></p>
+</form></section>
 </div>
 <aside class="contact-aside" aria-label="Autres moyens de nous contacter">
 <p class="eyebrow">Le bureau 2026-2027</p><h2>À votre écoute</h2>
