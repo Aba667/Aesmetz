@@ -11,11 +11,8 @@
      - le choix est conservé six mois, puis la question est reposée ;
      - le choix peut être modifié à tout moment (élément [data-cookie-settings]).
 
-   État actuel du site : aucun traceur de mesure d'audience, aucun cookie
-   publicitaire, aucun contenu tiers embarqué. Le seul stockage est la clé
-   « aesm_consent_v1 » ci-dessous, qui relève de l'exemption « strictement
-   nécessaire ». Les deux autres catégories sont présentées par avance :
-   le choix est enregistré et sera respecté si de tels outils sont ajoutés.
+   État actuel : compteur de pages vues après accord uniquement ; aucun
+   traceur publicitaire ni contenu de réseau social embarqué.
    ============================================================================= */
 
 (function () {
@@ -29,7 +26,7 @@
   var CLE_STOCKAGE = 'aesm_consent_v1';
 
   /** Version du format enregistré. Incrémenter invalide les choix antérieurs. */
-  var VERSION = 1;
+  var VERSION = 2;
 
   /** Durée de validité du choix, en mois (recommandation CNIL : 6 mois). */
   var DUREE_VALIDITE_MOIS = 6;
@@ -67,7 +64,7 @@
       texte: 'Ils autoriseraient l’affichage direct de publications Instagram, ' +
              'TikTok ou YouTube à l’intérieur de nos pages. Aujourd’hui nous ne ' +
              'mettons que de simples liens, qui ne déposent rien tant que vous ' +
-             'ne cliquez pas : votre choix est enregistré par avance.'
+             'ne cliquez pas. Cette catégorie n’active aucun contenu aujourd’hui.'
     }
   ];
 
@@ -232,10 +229,10 @@
 
     el.innerHTML =
       '<h2>Vos préférences de confidentialité</h2>' +
-      '<p>Ce site n’utilise aucun traceur publicitaire et aucune mesure ' +
-      'd’audience. Seul un fichier technique conserve, pendant six mois, la ' +
-      'réponse que vous donnez ici. Vous pouvez accepter, refuser ou choisir ' +
-      'en détail, et changer d’avis à tout moment depuis le pied de page. ' +
+      '<p>Avec votre accord, un compteur nous aide à connaître les pages les plus ' +
+      'consultées, sans identifiant visiteur ni publicité. Votre choix est conservé ' +
+      'six mois dans ce navigateur. Vous pouvez refuser ou changer d’avis à tout ' +
+      'moment depuis le pied de page. ' +
       '<a href="' + lienPolitiqueCookies() + '">En savoir plus sur les traceurs</a>.</p>' +
       '<div class="cookie-banner__actions">' +
       '<button type="button" class="btn btn--primary" data-consent-action="accepter">Tout accepter</button>' +

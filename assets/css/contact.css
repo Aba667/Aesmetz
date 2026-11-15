@@ -1,0 +1,19 @@
+/* Contact : même grille et mêmes couleurs que les autres pages du site. */
+.contact-layout { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: clamp(2rem, 6vw, 5rem); align-items: start; }
+.contact-form-panel, .contact-aside { min-width: 0; }
+.contact-form-panel h2, .contact-aside h2 { font-size: var(--t-3); margin-bottom: var(--e-3); }
+.contact-intro { color: var(--ink-soft); max-width: 38rem; margin-bottom: var(--e-3); }
+.contact-form-panel > .form-note { margin-bottom: var(--e-5); }
+.contact-optional { font-weight: 400; color: var(--ink-soft); }
+.contact-aside { border-top: 3px solid var(--ocre); background: var(--papier-clair); padding: clamp(1.25rem, 3vw, 2rem); }
+.contact-aside > p { margin-bottom: var(--e-5); color: var(--ink-soft); }
+.contact-detail { border-top: 1px solid var(--filet); padding-top: var(--e-5); margin-top: var(--e-5); }
+.contact-detail h3 { font-size: var(--t-1); margin-bottom: var(--e-2); }
+.contact-detail p { margin-top: var(--e-2); color: var(--ink-soft); }
+.contact-detail a, .form-note a { overflow-wrap: anywhere; text-decoration: underline; text-underline-offset: 3px; }
+.contact-status { padding: var(--e-4); border-left: 3px solid var(--vert); background: var(--papier-clair); }
+.contact-status[data-state="error"] { border-color: var(--rouge); }
+.contact-status[hidden] { display: none; }
+#contact-submit { min-height: 48px; }
+#contact-submit:disabled { opacity: .7; cursor: wait; }
+@media (max-width: 760px) { .contact-layout { grid-template-columns: minmax(0, 1fr); } .contact-form-panel .form-grid { grid-template-columns: minmax(0, 1fr); } #contact-submit { width: 100%; } }
