@@ -1,0 +1,359 @@
+[
+  {
+    "id": "aix-en-provence-association-des-geographes-senegalais-de-france",
+    "name": "Association des géographes sénégalais de France",
+    "city": "Aix-en-Provence",
+    "region": "Provence-Alpes-Côte d’Azur",
+    "email": "ndembadiallo0@gmail.com"
+  },
+  {
+    "id": "albi-asesa-albi",
+    "name": "ASESA (Albi)",
+    "city": "Albi",
+    "region": "Occitanie",
+    "email": "contactasesa@gmail.com"
+  },
+  {
+    "id": "amiens-association-des-senegalais-damiens",
+    "name": "Association des Sénégalais d’Amiens",
+    "city": "Amiens",
+    "region": "Hauts-de-France",
+    "email": "associationsenegalaisdamiens@gmail.com"
+  },
+  {
+    "id": "angers-association-des-etudiants-senegalais-dangers-aesa",
+    "name": "Association des étudiants sénégalais d’Angers (AESA)",
+    "city": "Angers",
+    "region": "Pays de la Loire",
+    "email": "dioufmamadoukhaoul@gmail.com"
+  },
+  {
+    "id": "belfort-association-des-etudiants-senegalais-de-belfort-montbeliard",
+    "name": "Association des étudiants sénégalais de Belfort-Montbéliard",
+    "city": "Belfort",
+    "region": "Bourgogne-Franche-Comté",
+    "email": "aesbcommittee@gmail.com"
+  },
+  {
+    "id": "besancon-association-des-senegalais-de-besancon",
+    "name": "Association des sénégalais de Besançon",
+    "city": "Besançon",
+    "region": "Bourgogne-Franche-Comté",
+    "email": "asso.sene.besac@gmail.com"
+  },
+  {
+    "id": "bourges-association-des-senegalais-etudiants-de-bourges",
+    "name": "Association des sénégalais étudiants de Bourges",
+    "city": "Bourges",
+    "region": "Centre-Val de Loire",
+    "email": "aseb.bourges@gmail.com"
+  },
+  {
+    "id": "caen-association-des-etudiants-senegalais-de-caen",
+    "name": "Association des étudiants sénégalais de Caen",
+    "city": "Caen",
+    "region": "Normandie",
+    "email": "infoaesc.caen@gmail.com"
+  },
+  {
+    "id": "cergy-union-des-senegalais-de-cergy-pontoise",
+    "name": "Union des Sénégalais de Cergy-Pontoise",
+    "city": "Cergy",
+    "region": "Île-de-France",
+    "email": "adjaratousoda42@gmail.com"
+  },
+  {
+    "id": "champs-sur-marne-association-des-etudiants-senegalais-de-luniversite-gustave-eiffel",
+    "name": "Association des Étudiants Sénégalais de l’Université Gustave Eiffel",
+    "city": "Champs-sur-Marne",
+    "region": "Île-de-France",
+    "email": "contact.asuge@gmail.com"
+  },
+  {
+    "id": "clermont-ferrand-association-senegalaise-de-clermont-ferrand",
+    "name": "Association sénégalaise de Clermont-Ferrand",
+    "city": "Clermont-Ferrand",
+    "region": "Auvergne-Rhône-Alpes",
+    "email": "aerssc@yahoo.fr"
+  },
+  {
+    "id": "colmar-association-des-etudiants-senegalais-de-colmar-et-agglomeration-aesca",
+    "name": "Association des Étudiants Sénégalais de Colmar et Agglomération (AESCA)",
+    "city": "Colmar",
+    "region": "Grand Est",
+    "email": "aesca.association@gmail.com"
+  },
+  {
+    "id": "creteil-respec-upec",
+    "name": "RESPEC/UPEC",
+    "city": "Créteil",
+    "region": "Île-de-France",
+    "email": "assorespec@outlook.fr"
+  },
+  {
+    "id": "dijon-association-des-etudiants-et-stagiaires-senegalais-de-dijon",
+    "name": "Association des étudiants et stagiaires sénégalais de Dijon",
+    "city": "Dijon",
+    "region": "Bourgogne-Franche-Comté",
+    "email": "mamadouseck217@gmail.com"
+  },
+  {
+    "id": "dunkerque-liens-solidaires",
+    "name": "Liens Solidaires",
+    "city": "Dunkerque",
+    "region": "Hauts-de-France",
+    "email": "liens.solidaires@gmail.com"
+  },
+  {
+    "id": "foix-association-des-stagiaires-et-etudiants-senegalais-de-foix-asesf",
+    "name": "Association des stagiaires et étudiants sénégalais de Foix (ASESF)",
+    "city": "Foix",
+    "region": "Occitanie",
+    "email": "contact.asesf.foix@gmail.com"
+  },
+  {
+    "id": "grenoble-aessg",
+    "name": "AESSG",
+    "city": "Grenoble",
+    "region": "Auvergne-Rhône-Alpes",
+    "email": "aessg.grenoble@gmail.com"
+  },
+  {
+    "id": "la-rochelle-association-des-etudiants-senegalais-de-la-rochelle",
+    "name": "Association des étudiants Sénégalais de La Rochelle",
+    "city": "La Rochelle",
+    "region": "Nouvelle-Aquitaine",
+    "email": "aesrochelle@gmail.com"
+  },
+  {
+    "id": "le-mans-senmans",
+    "name": "SEN’MANS",
+    "city": "Le Mans",
+    "region": "Pays de la Loire",
+    "email": "senmans_asso@yahoo.fr"
+  },
+  {
+    "id": "lens-association-des-etudiants-senegalais-de-lens-et-alentours",
+    "name": "Association des étudiants sénégalais de Lens et alentours",
+    "city": "Lens",
+    "region": "Hauts-de-France",
+    "email": "asla2024.lens@gmail.com"
+  },
+  {
+    "id": "lille-aesn",
+    "name": "AESN",
+    "city": "Lille",
+    "region": "Hauts-de-France",
+    "email": "aesnlille@gmail.com"
+  },
+  {
+    "id": "limoges-association-etudiants-senegalais-de-limoges",
+    "name": "Association étudiants sénégalais de Limoges",
+    "city": "Limoges",
+    "region": "Nouvelle-Aquitaine",
+    "email": "aesel.190@gmail.com"
+  },
+  {
+    "id": "longwy-association-des-etudiants-senegalais-de-longwy",
+    "name": "Association des étudiants Sénégalais de Longwy",
+    "city": "Longwy",
+    "region": "Grand Est",
+    "email": "etudiantsenegalaislongwy@gmail.com"
+  },
+  {
+    "id": "lyon-cessel",
+    "name": "CESSEL",
+    "city": "Lyon",
+    "region": "Auvergne-Rhône-Alpes",
+    "email": "ceselsng@gmail.com"
+  },
+  {
+    "id": "marseille-association-des-etudiants-senegalais-de-provence-assesp",
+    "name": "Association des Étudiants Sénégalais de Provence (ASSESP)",
+    "city": "Marseille",
+    "region": "Provence-Alpes-Côte d’Azur",
+    "email": "assesp13@yahoo.com"
+  },
+  {
+    "id": "metz-association-des-etudiants-senegalais-de-metz",
+    "name": "Association des Étudiants Sénégalais de Metz",
+    "city": "Metz",
+    "region": "Grand Est",
+    "email": "aesmetz221@gmail.com"
+  },
+  {
+    "id": "montpellier-association-des-etudiants-senegalais-de-montpellier-aesm",
+    "name": "Association des étudiants sénégalais de Montpellier (AESM)",
+    "city": "Montpellier",
+    "region": "Occitanie",
+    "email": "assos.aesm@gmail.com"
+  },
+  {
+    "id": "montpellier-les-elites-senegalaises",
+    "name": "Les élites sénégalaises",
+    "city": "Montpellier",
+    "region": "Occitanie",
+    "email": "l.e.senegalaises@gmail.com"
+  },
+  {
+    "id": "mulhouse-association-des-etudiants-senegalais-de-mulhouse",
+    "name": "Association des étudiants sénégalais de Mulhouse",
+    "city": "Mulhouse",
+    "region": "Grand Est",
+    "email": "associationaesm68100@gmail.com"
+  },
+  {
+    "id": "nancy-association-des-etudiants-senegalais-de-nancy",
+    "name": "Association des Étudiants Sénégalais de Nancy",
+    "city": "Nancy",
+    "region": "Grand Est",
+    "email": "associationsenegaisedenancy@gmail.com"
+  },
+  {
+    "id": "nanterre-amesen",
+    "name": "AMESEN",
+    "city": "Nanterre",
+    "region": "Île-de-France",
+    "email": "etudiantsenegalais.nanterre1@gmail.com"
+  },
+  {
+    "id": "nantes-association-nantaise-des-etudiants-et-stagiaires-senegalais-aness",
+    "name": "Association nantaise des étudiants et stagiaires sénégalais (ANESS)",
+    "city": "Nantes",
+    "region": "Pays de la Loire",
+    "email": "associationaness44@gmail.com"
+  },
+  {
+    "id": "nice-adesen",
+    "name": "ADESEN",
+    "city": "Nice",
+    "region": "Provence-Alpes-Côte d’Azur",
+    "email": "adsen2024@gmail.com"
+  },
+  {
+    "id": "orleans-association-des-etudiants-et-stagiaires-senegalais-dorleans-aesso",
+    "name": "Association des étudiants et stagiaires sénégalais d’Orléans (AESSO)",
+    "city": "Orléans",
+    "region": "Centre-Val de Loire",
+    "email": "aessoorleans@gmail.com"
+  },
+  {
+    "id": "orsay-reseau-des-etudiants-senegalais-de-l-universite-paris-saclay-resups",
+    "name": "Réseau des Étudiants Sénégalais de l'Université Paris-Saclay (RESUPS)",
+    "city": "Orsay",
+    "region": "Île-de-France",
+    "email": "contactresups@gmail.com"
+  },
+  {
+    "id": "paris-association-des-etudiants-senegalais-de-la-sorbonne-aess",
+    "name": "Association des étudiants sénégalais de la Sorbonne (AESS)",
+    "city": "Paris",
+    "region": "Île-de-France",
+    "email": ""
+  },
+  {
+    "id": "paris-association-des-etudiants-senegalais-de-paris-cite-aespc",
+    "name": "Association des étudiants sénégalais de Paris Cité (AESPC)",
+    "city": "Paris",
+    "region": "Île-de-France",
+    "email": "aespc75@gmail.com"
+  },
+  {
+    "id": "paris-letudiant221",
+    "name": "L’Étudiant221",
+    "city": "Paris",
+    "region": "Île-de-France",
+    "email": "collectifetudiant221@gmail.col"
+  },
+  {
+    "id": "paris-union-des-etudiants-solidaires-senegalais-de-france-uessf",
+    "name": "Union des étudiants solidaires sénégalais de France (UESSF)",
+    "city": "Paris",
+    "region": "Île-de-France",
+    "email": "uniondesetudiantssolidaires@gmail.com"
+  },
+  {
+    "id": "pau-solidarite-etudiante-senegalaise-soles",
+    "name": "Solidarité étudiante sénégalaise (SOLES)",
+    "city": "Pau",
+    "region": "Nouvelle-Aquitaine",
+    "email": "solespau221@gmail.com"
+  },
+  {
+    "id": "poitiers-association-des-senegalais-de-poitiers-asep",
+    "name": "Association des Sénégalais de Poitiers (ASEP)",
+    "city": "Poitiers",
+    "region": "Nouvelle-Aquitaine",
+    "email": "asepoitiers@gmail.com"
+  },
+  {
+    "id": "provence-alpes-cote-dazur-association-mouvement-sunu-yeene",
+    "name": "Association Mouvement Sunu Yeene",
+    "city": "",
+    "region": "Provence-Alpes-Côte d’Azur",
+    "email": "secretariatdiaspora@gmail.com"
+  },
+  {
+    "id": "reims-chalons-et-charleville-association-remoise-des-etudiants-senegalais",
+    "name": "Association Rémoise des Étudiants Sénégalais",
+    "city": "Reims, Châlons et Charleville",
+    "region": "Grand Est",
+    "email": "assdiop1207@gmail.com"
+  },
+  {
+    "id": "roanne-association-senegalaise-de-roanne",
+    "name": "Association sénégalaise de Roanne",
+    "city": "Roanne",
+    "region": "Auvergne-Rhône-Alpes",
+    "email": "arsr@live.fr"
+  },
+  {
+    "id": "rouen-association-des-etudiants-senegalais-de-rouen",
+    "name": "Association des étudiants Sénégalais de Rouen",
+    "city": "Rouen",
+    "region": "Normandie",
+    "email": "aser.rouen@gmail.com"
+  },
+  {
+    "id": "saint-denis-paris-8-amicale-des-etudiants-senegalais-de-paris-8-bokk-xaalat",
+    "name": "Amicale des étudiants sénégalais de Paris 8 Bokk Xaalat",
+    "city": "Saint-Denis · Paris 8",
+    "region": "Île-de-France",
+    "email": "bokkxaalat221@outlook.com"
+  },
+  {
+    "id": "saint-etienne-association-des-etudiants-senegalais-de-saint-etienne",
+    "name": "Association des étudiants sénégalais de Saint-Étienne",
+    "city": "Saint-Étienne",
+    "region": "Auvergne-Rhône-Alpes",
+    "email": "presidence.aess@gmail.com"
+  },
+  {
+    "id": "strasbourg-association-des-etudiants-et-stagiaires-senegalais-de-strasbourg",
+    "name": "Association des Étudiants et Stagiaires Sénégalais de Strasbourg",
+    "city": "Strasbourg",
+    "region": "Grand Est",
+    "email": "aessstrasbourg67@gmail.com"
+  },
+  {
+    "id": "toulouse-association-des-stagiaires-et-etudiants-senegalais-de-toulouse",
+    "name": "Association des Stagiaires et Étudiants Sénégalais de Toulouse",
+    "city": "Toulouse",
+    "region": "Occitanie",
+    "email": "asest31@gmail.com"
+  },
+  {
+    "id": "tours-association-des-etudiants-senegalais-de-tours-aest37",
+    "name": "Association des étudiants sénégalais de Tours (AEST37)",
+    "city": "Tours",
+    "region": "Centre-Val de Loire",
+    "email": "presidence.ast37@gmail.com"
+  },
+  {
+    "id": "valenciennes-cercle-des-etudiants-senegalais-de-valenciennes-cesval",
+    "name": "Cercle des étudiants sénégalais de Valenciennes (CESVAL)",
+    "city": "Valenciennes",
+    "region": "Hauts-de-France",
+    "email": "cesval2019@gmail.com"
+  }
+]

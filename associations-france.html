@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Associations sénégalaises en France — Annuaire AESM</title>
+<meta name="description" content="Trouvez une association sénégalaise près de votre lieu d’études. Un annuaire par ville et par région pour prendre contact facilement.">
+<link rel="canonical" href="https://aesmetz.com/associations-france.html">
+<meta name="theme-color" content="#0f4d2e">
+<meta property="og:type" content="website"><meta property="og:locale" content="fr_FR"><meta property="og:site_name" content="AESM"><meta property="og:title" content="Les associations sénégalaises en France"><meta property="og:description" content="Un point de contact près de votre lieu d’études : recherchez une association par ville ou par région."><meta property="og:url" content="https://aesmetz.com/associations-france.html"><meta property="og:image" content="https://aesmetz.com/assets/img/logo/aesm.png">
+<link rel="icon" href="assets/img/logo/favicon.png"><link rel="stylesheet" href="assets/css/aesm.css"><link rel="stylesheet" href="assets/css/annuaire.css">
+<script src="assets/js/aesm.js" defer></script><script src="assets/js/consent.js?v=20261115" defer></script><script src="assets/js/annuaire.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#contenu">Aller au contenu principal</a>
+<header class="site-header">
+  <div class="container header-bar">
+    <a class="brand" href="index.html">
+      <img src="assets/img/logo/aesm.webp" alt="" width="48" height="48">
+      <span>
+        <span class="brand__name">AESM</span>
+        <span class="brand__tag">Étudiants Sénégalais de Metz</span>
+      </span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false"
+            aria-controls="nav-principal" aria-label="Ouvrir le menu de navigation">
+      <span></span>
+    </button>
+
+    <nav class="nav" id="nav-principal" aria-label="Navigation principale">
+      <ul class="nav-list">
+        <li><a class="nav-link" href="association.html">L’association</a></li>
+        <li><a class="nav-link" href="nos-actions.html">Nos actions</a></li>
+        <li><a class="nav-link" href="bureau.html">Le bureau</a></li>
+        <li><a class="nav-link" href="evenements.html">Événements</a></li>
+        <li><a class="nav-link" href="actualites.html">Actualités</a></li>
+        <li><a class="nav-link" href="adherer.html">Adhérer</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <a class="btn btn--gold btn--sm" href="soutenir.html">Nous soutenir</a>
+    </nav>
+  </div>
+</header>
+<main id="contenu">
+  <section class="directory-hero" aria-labelledby="directory-title">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Fil d’Ariane"><ol><li><a href="index.html">Accueil</a></li><li><a href="association.html">L’association</a></li><li>Annuaire</li></ol></nav>
+      <div class="directory-hero__layout">
+        <div>
+          <p class="eyebrow">D’une ville à l’autre</p>
+          <h1 id="directory-title">Les associations sénégalaises <em>en France.</em></h1>
+          <p class="directory-hero__intro">Vous arrivez dans une nouvelle ville, poursuivez vos études ailleurs ou préparez un projet entre associations ? Retrouvez ici un premier contact.</p>
+        </div>
+        <aside class="directory-hero__aside" aria-label="L’annuaire en chiffres">
+          <dl class="directory-stats"><div><dt>51</dt><dd>associations</dd></div><div><dt>11</dt><dd>régions</dd></div></dl>
+          <a href="#proposer">Proposer une association <span aria-hidden="true">&nbsp;↗</span></a>
+        </aside>
+      </div>
+    </div>
+  </section>
+  <section class="directory-body" aria-labelledby="directory-list-title">
+    <div class="container">
+      <h2 class="visually-hidden" id="directory-list-title">Trouver une association</h2>
+      <form class="directory-filters" id="directory-filters" role="search" aria-label="Rechercher une association" hidden>
+        <div class="directory-field">
+          <label for="directory-search">Une ville ou une association</label>
+          <div class="directory-input"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input type="search" id="directory-search" name="q" placeholder="Metz, Lyon, nom d’association…" enterkeyhint="search" autocomplete="off" aria-controls="directory-grid"></div>
+        </div>
+        <div class="directory-field">
+          <label for="directory-region">Région</label>
+          <select id="directory-region" name="region" aria-controls="directory-grid"><option value="">Toutes les régions</option>
+              <option value="auvergne-rhone-alpes">Auvergne-Rhône-Alpes</option>
+              <option value="bourgogne-franche-comte">Bourgogne-Franche-Comté</option>
+              <option value="centre-val-de-loire">Centre-Val de Loire</option>
+              <option value="grand-est">Grand Est</option>
+              <option value="hauts-de-france">Hauts-de-France</option>
+              <option value="ile-de-france">Île-de-France</option>
+              <option value="normandie">Normandie</option>
+              <option value="nouvelle-aquitaine">Nouvelle-Aquitaine</option>
+              <option value="occitanie">Occitanie</option>
+              <option value="pays-de-la-loire">Pays de la Loire</option>
+              <option value="provence-alpes-cote-dazur">Provence-Alpes-Côte d’Azur</option>
+          </select>
+        </div>
+      </form>
+      <div class="directory-results-bar"><p class="directory-count" id="directory-count" role="status" aria-live="polite" aria-atomic="true">51 associations</p><button class="directory-reset" id="directory-reset" type="button" hidden>Effacer les filtres</button><p class="directory-order">Classées par ville, de A à Z</p></div>
+      <div class="directory-grid" id="directory-grid">
+      <article class="directory-card" data-region="provence-alpes-cote-dazur" data-search="Aix-en-Provence Provence-Alpes-Côte d’Azur Association des géographes sénégalais de France" id="aix-en-provence-association-des-geographes-senegalais-de-france">
+        <p class="directory-card__region">Provence-Alpes-Côte d’Azur</p>
+        <h3 class="directory-card__city" tabindex="-1">Aix-en-Provence</h3>
+        <p class="directory-card__name">Association des géographes sénégalais de France</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:ndembadiallo0@gmail.com" aria-label="Écrire à Association des géographes sénégalais de France : ndembadiallo0@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>ndembadiallo0@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Association%20des%20g%C3%A9ographes%20s%C3%A9n%C3%A9galais%20de%20France&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AAssociation%20des%20g%C3%A9ographes%20s%C3%A9n%C3%A9galais%20de%20France%0AAix-en-Provence%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Association des géographes sénégalais de France"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="occitanie" data-search="Albi Occitanie ASESA (Albi)" id="albi-asesa-albi">
+        <p class="directory-card__region">Occitanie</p>
+        <h3 class="directory-card__city" tabindex="-1">Albi</h3>
+        <p class="directory-card__name">ASESA (Albi)</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:contactasesa@gmail.com" aria-label="Écrire à ASESA (Albi) : contactasesa@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>contactasesa@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20ASESA%20%28Albi%29&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AASESA%20%28Albi%29%0AAlbi%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : ASESA (Albi)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="hauts-de-france" data-search="Amiens Hauts-de-France Association des Sénégalais d’Amiens" id="amiens-association-des-senegalais-damiens">
+        <p class="directory-card__region">Hauts-de-France</p>
+        <h3 class="directory-card__city" tabindex="-1">Amiens</h3>
+        <p class="directory-card__name">Association des Sénégalais d’Amiens</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:associationsenegalaisdamiens@gmail.com" aria-label="Écrire à Association des Sénégalais d’Amiens : associationsenegalaisdamiens@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>associationsenegalaisdamiens@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Association%20des%20S%C3%A9n%C3%A9galais%20d%E2%80%99Amiens&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AAssociation%20des%20S%C3%A9n%C3%A9galais%20d%E2%80%99Amiens%0AAmiens%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Association des Sénégalais d’Amiens"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="pays-de-la-loire" data-search="Angers Pays de la Loire Association des étudiants sénégalais d’Angers (AESA)" id="angers-association-des-etudiants-senegalais-dangers-aesa">
+        <p class="directory-card__region">Pays de la Loire</p>
+        <h3 class="directory-card__city" tabindex="-1">Angers</h3>
+        <p class="directory-card__name">Association des étudiants sénégalais d’Angers (AESA)</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:dioufmamadoukhaoul@gmail.com" aria-label="Écrire à Association des étudiants sénégalais d’Angers (AESA) : dioufmamadoukhaoul@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>dioufmamadoukhaoul@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Association%20des%20%C3%A9tudiants%20s%C3%A9n%C3%A9galais%20d%E2%80%99Angers%20%28AESA%29&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AAssociation%20des%20%C3%A9tudiants%20s%C3%A9n%C3%A9galais%20d%E2%80%99Angers%20%28AESA%29%0AAngers%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Association des étudiants sénégalais d’Angers (AESA)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="bourgogne-franche-comte" data-search="Belfort Bourgogne-Franche-Comté Association des étudiants sénégalais de Belfort-Montbéliard" id="belfort-association-des-etudiants-senegalais-de-belfort-montbeliard">
+        <p class="directory-card__region">Bourgogne-Franche-Comté</p>
+        <h3 class="directory-card__city" tabindex="-1">Belfort</h3>
+        <p class="directory-card__name">Association des étudiants sénégalais de Belfort-Montbéliard</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:aesbcommittee@gmail.com" aria-label="Écrire à Association des étudiants sénégalais de Belfort-Montbéliard : aesbcommittee@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>aesbcommittee@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Association%20des%20%C3%A9tudiants%20s%C3%A9n%C3%A9galais%20de%20Belfort-Montb%C3%A9liard&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AAssociation%20des%20%C3%A9tudiants%20s%C3%A9n%C3%A9galais%20de%20Belfort-Montb%C3%A9liard%0ABelfort%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Association des étudiants sénégalais de Belfort-Montbéliard"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="bourgogne-franche-comte" data-search="Besançon Bourgogne-Franche-Comté Association des sénégalais de Besançon" id="besancon-association-des-senegalais-de-besancon">
+        <p class="directory-card__region">Bourgogne-Franche-Comté</p>
+        <h3 class="directory-card__city" tabindex="-1">Besançon</h3>
+        <p class="directory-card__name">Association des sénégalais de Besançon</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:asso.sene.besac@gmail.com" aria-label="Écrire à Association des sénégalais de Besançon : asso.sene.besac@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>asso.sene.besac@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Association%20des%20s%C3%A9n%C3%A9galais%20de%20Besan%C3%A7on&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AAssociation%20des%20s%C3%A9n%C3%A9galais%20de%20Besan%C3%A7on%0ABesan%C3%A7on%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Association des sénégalais de Besançon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="centre-val-de-loire" data-search="Bourges Centre-Val de Loire Association des sénégalais étudiants de Bourges" id="bourges-association-des-senegalais-etudiants-de-bourges">
+        <p class="directory-card__region">Centre-Val de Loire</p>
+        <h3 class="directory-card__city" tabindex="-1">Bourges</h3>
+        <p class="directory-card__name">Association des sénégalais étudiants de Bourges</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:aseb.bourges@gmail.com" aria-label="Écrire à Association des sénégalais étudiants de Bourges : aseb.bourges@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>aseb.bourges@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Association%20des%20s%C3%A9n%C3%A9galais%20%C3%A9tudiants%20de%20Bourges&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AAssociation%20des%20s%C3%A9n%C3%A9galais%20%C3%A9tudiants%20de%20Bourges%0ABourges%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Association des sénégalais étudiants de Bourges"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="normandie" data-search="Caen Normandie Association des étudiants sénégalais de Caen" id="caen-association-des-etudiants-senegalais-de-caen">
+        <p class="directory-card__region">Normandie</p>
+        <h3 class="directory-card__city" tabindex="-1">Caen</h3>
+        <p class="directory-card__name">Association des étudiants sénégalais de Caen</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:infoaesc.caen@gmail.com" aria-label="Écrire à Association des étudiants sénégalais de Caen : infoaesc.caen@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>infoaesc.caen@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Association%20des%20%C3%A9tudiants%20s%C3%A9n%C3%A9galais%20de%20Caen&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AAssociation%20des%20%C3%A9tudiants%20s%C3%A9n%C3%A9galais%20de%20Caen%0ACaen%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Association des étudiants sénégalais de Caen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="ile-de-france" data-search="Cergy Île-de-France Union des Sénégalais de Cergy-Pontoise" id="cergy-union-des-senegalais-de-cergy-pontoise">
+        <p class="directory-card__region">Île-de-France</p>
+        <h3 class="directory-card__city" tabindex="-1">Cergy</h3>
+        <p class="directory-card__name">Union des Sénégalais de Cergy-Pontoise</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:adjaratousoda42@gmail.com" aria-label="Écrire à Union des Sénégalais de Cergy-Pontoise : adjaratousoda42@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>adjaratousoda42@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Union%20des%20S%C3%A9n%C3%A9galais%20de%20Cergy-Pontoise&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AUnion%20des%20S%C3%A9n%C3%A9galais%20de%20Cergy-Pontoise%0ACergy%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Union des Sénégalais de Cergy-Pontoise"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="ile-de-france" data-search="Champs-sur-Marne Île-de-France Association des Étudiants Sénégalais de l’Université Gustave Eiffel" id="champs-sur-marne-association-des-etudiants-senegalais-de-luniversite-gustave-eiffel">
+        <p class="directory-card__region">Île-de-France</p>
+        <h3 class="directory-card__city" tabindex="-1">Champs-sur-Marne</h3>
+        <p class="directory-card__name">Association des Étudiants Sénégalais de l’Université Gustave Eiffel</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:contact.asuge@gmail.com" aria-label="Écrire à Association des Étudiants Sénégalais de l’Université Gustave Eiffel : contact.asuge@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>contact.asuge@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Association%20des%20%C3%89tudiants%20S%C3%A9n%C3%A9galais%20de%20l%E2%80%99Universit%C3%A9%20Gustave%20Eiffel&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AAssociation%20des%20%C3%89tudiants%20S%C3%A9n%C3%A9galais%20de%20l%E2%80%99Universit%C3%A9%20Gustave%20Eiffel%0AChamps-sur-Marne%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Association des Étudiants Sénégalais de l’Université Gustave Eiffel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="auvergne-rhone-alpes" data-search="Clermont-Ferrand Auvergne-Rhône-Alpes Association sénégalaise de Clermont-Ferrand" id="clermont-ferrand-association-senegalaise-de-clermont-ferrand">
+        <p class="directory-card__region">Auvergne-Rhône-Alpes</p>
+        <h3 class="directory-card__city" tabindex="-1">Clermont-Ferrand</h3>
+        <p class="directory-card__name">Association sénégalaise de Clermont-Ferrand</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:aerssc@yahoo.fr" aria-label="Écrire à Association sénégalaise de Clermont-Ferrand : aerssc@yahoo.fr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>aerssc@yahoo.fr</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Association%20s%C3%A9n%C3%A9galaise%20de%20Clermont-Ferrand&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AAssociation%20s%C3%A9n%C3%A9galaise%20de%20Clermont-Ferrand%0AClermont-Ferrand%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Association sénégalaise de Clermont-Ferrand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="grand-est" data-search="Colmar Grand Est Association des Étudiants Sénégalais de Colmar et Agglomération (AESCA)" id="colmar-association-des-etudiants-senegalais-de-colmar-et-agglomeration-aesca">
+        <p class="directory-card__region">Grand Est</p>
+        <h3 class="directory-card__city" tabindex="-1">Colmar</h3>
+        <p class="directory-card__name">Association des Étudiants Sénégalais de Colmar et Agglomération (AESCA)</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:aesca.association@gmail.com" aria-label="Écrire à Association des Étudiants Sénégalais de Colmar et Agglomération (AESCA) : aesca.association@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>aesca.association@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Association%20des%20%C3%89tudiants%20S%C3%A9n%C3%A9galais%20de%20Colmar%20et%20Agglom%C3%A9ration%20%28AESCA%29&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AAssociation%20des%20%C3%89tudiants%20S%C3%A9n%C3%A9galais%20de%20Colmar%20et%20Agglom%C3%A9ration%20%28AESCA%29%0AColmar%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Association des Étudiants Sénégalais de Colmar et Agglomération (AESCA)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="ile-de-france" data-search="Créteil Île-de-France RESPEC/UPEC" id="creteil-respec-upec">
+        <p class="directory-card__region">Île-de-France</p>
+        <h3 class="directory-card__city" tabindex="-1">Créteil</h3>
+        <p class="directory-card__name">RESPEC/UPEC</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:assorespec@outlook.fr" aria-label="Écrire à RESPEC/UPEC : assorespec@outlook.fr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>assorespec@outlook.fr</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20RESPEC%2FUPEC&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0ARESPEC%2FUPEC%0ACr%C3%A9teil%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : RESPEC/UPEC"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="bourgogne-franche-comte" data-search="Dijon Bourgogne-Franche-Comté Association des étudiants et stagiaires sénégalais de Dijon" id="dijon-association-des-etudiants-et-stagiaires-senegalais-de-dijon">
+        <p class="directory-card__region">Bourgogne-Franche-Comté</p>
+        <h3 class="directory-card__city" tabindex="-1">Dijon</h3>
+        <p class="directory-card__name">Association des étudiants et stagiaires sénégalais de Dijon</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:mamadouseck217@gmail.com" aria-label="Écrire à Association des étudiants et stagiaires sénégalais de Dijon : mamadouseck217@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>mamadouseck217@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Association%20des%20%C3%A9tudiants%20et%20stagiaires%20s%C3%A9n%C3%A9galais%20de%20Dijon&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AAssociation%20des%20%C3%A9tudiants%20et%20stagiaires%20s%C3%A9n%C3%A9galais%20de%20Dijon%0ADijon%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Association des étudiants et stagiaires sénégalais de Dijon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="hauts-de-france" data-search="Dunkerque Hauts-de-France Liens Solidaires" id="dunkerque-liens-solidaires">
+        <p class="directory-card__region">Hauts-de-France</p>
+        <h3 class="directory-card__city" tabindex="-1">Dunkerque</h3>
+        <p class="directory-card__name">Liens Solidaires</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:liens.solidaires@gmail.com" aria-label="Écrire à Liens Solidaires : liens.solidaires@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>liens.solidaires@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Liens%20Solidaires&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0ALiens%20Solidaires%0ADunkerque%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Liens Solidaires"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="occitanie" data-search="Foix Occitanie Association des stagiaires et étudiants sénégalais de Foix (ASESF)" id="foix-association-des-stagiaires-et-etudiants-senegalais-de-foix-asesf">
+        <p class="directory-card__region">Occitanie</p>
+        <h3 class="directory-card__city" tabindex="-1">Foix</h3>
+        <p class="directory-card__name">Association des stagiaires et étudiants sénégalais de Foix (ASESF)</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:contact.asesf.foix@gmail.com" aria-label="Écrire à Association des stagiaires et étudiants sénégalais de Foix (ASESF) : contact.asesf.foix@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>contact.asesf.foix@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Association%20des%20stagiaires%20et%20%C3%A9tudiants%20s%C3%A9n%C3%A9galais%20de%20Foix%20%28ASESF%29&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AAssociation%20des%20stagiaires%20et%20%C3%A9tudiants%20s%C3%A9n%C3%A9galais%20de%20Foix%20%28ASESF%29%0AFoix%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Association des stagiaires et étudiants sénégalais de Foix (ASESF)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="auvergne-rhone-alpes" data-search="Grenoble Auvergne-Rhône-Alpes AESSG" id="grenoble-aessg">
+        <p class="directory-card__region">Auvergne-Rhône-Alpes</p>
+        <h3 class="directory-card__city" tabindex="-1">Grenoble</h3>
+        <p class="directory-card__name">AESSG</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:aessg.grenoble@gmail.com" aria-label="Écrire à AESSG : aessg.grenoble@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>aessg.grenoble@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20AESSG&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AAESSG%0AGrenoble%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : AESSG"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="nouvelle-aquitaine" data-search="La Rochelle Nouvelle-Aquitaine Association des étudiants Sénégalais de La Rochelle" id="la-rochelle-association-des-etudiants-senegalais-de-la-rochelle">
+        <p class="directory-card__region">Nouvelle-Aquitaine</p>
+        <h3 class="directory-card__city" tabindex="-1">La Rochelle</h3>
+        <p class="directory-card__name">Association des étudiants Sénégalais de La Rochelle</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:aesrochelle@gmail.com" aria-label="Écrire à Association des étudiants Sénégalais de La Rochelle : aesrochelle@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>aesrochelle@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Association%20des%20%C3%A9tudiants%20S%C3%A9n%C3%A9galais%20de%20La%20Rochelle&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AAssociation%20des%20%C3%A9tudiants%20S%C3%A9n%C3%A9galais%20de%20La%20Rochelle%0ALa%20Rochelle%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Association des étudiants Sénégalais de La Rochelle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="pays-de-la-loire" data-search="Le Mans Pays de la Loire SEN’MANS" id="le-mans-senmans">
+        <p class="directory-card__region">Pays de la Loire</p>
+        <h3 class="directory-card__city" tabindex="-1">Le Mans</h3>
+        <p class="directory-card__name">SEN’MANS</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:senmans_asso@yahoo.fr" aria-label="Écrire à SEN’MANS : senmans_asso@yahoo.fr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>senmans_asso@yahoo.fr</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20SEN%E2%80%99MANS&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0ASEN%E2%80%99MANS%0ALe%20Mans%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : SEN’MANS"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="hauts-de-france" data-search="Lens Hauts-de-France Association des étudiants sénégalais de Lens et alentours" id="lens-association-des-etudiants-senegalais-de-lens-et-alentours">
+        <p class="directory-card__region">Hauts-de-France</p>
+        <h3 class="directory-card__city" tabindex="-1">Lens</h3>
+        <p class="directory-card__name">Association des étudiants sénégalais de Lens et alentours</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:asla2024.lens@gmail.com" aria-label="Écrire à Association des étudiants sénégalais de Lens et alentours : asla2024.lens@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>asla2024.lens@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Association%20des%20%C3%A9tudiants%20s%C3%A9n%C3%A9galais%20de%20Lens%20et%20alentours&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AAssociation%20des%20%C3%A9tudiants%20s%C3%A9n%C3%A9galais%20de%20Lens%20et%20alentours%0ALens%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Association des étudiants sénégalais de Lens et alentours"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="hauts-de-france" data-search="Lille Hauts-de-France AESN" id="lille-aesn">
+        <p class="directory-card__region">Hauts-de-France</p>
+        <h3 class="directory-card__city" tabindex="-1">Lille</h3>
+        <p class="directory-card__name">AESN</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:aesnlille@gmail.com" aria-label="Écrire à AESN : aesnlille@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>aesnlille@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20AESN&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AAESN%0ALille%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : AESN"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="nouvelle-aquitaine" data-search="Limoges Nouvelle-Aquitaine Association étudiants sénégalais de Limoges" id="limoges-association-etudiants-senegalais-de-limoges">
+        <p class="directory-card__region">Nouvelle-Aquitaine</p>
+        <h3 class="directory-card__city" tabindex="-1">Limoges</h3>
+        <p class="directory-card__name">Association étudiants sénégalais de Limoges</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:aesel.190@gmail.com" aria-label="Écrire à Association étudiants sénégalais de Limoges : aesel.190@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>aesel.190@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Association%20%C3%A9tudiants%20s%C3%A9n%C3%A9galais%20de%20Limoges&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AAssociation%20%C3%A9tudiants%20s%C3%A9n%C3%A9galais%20de%20Limoges%0ALimoges%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Association étudiants sénégalais de Limoges"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="grand-est" data-search="Longwy Grand Est Association des étudiants Sénégalais de Longwy" id="longwy-association-des-etudiants-senegalais-de-longwy">
+        <p class="directory-card__region">Grand Est</p>
+        <h3 class="directory-card__city" tabindex="-1">Longwy</h3>
+        <p class="directory-card__name">Association des étudiants Sénégalais de Longwy</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:etudiantsenegalaislongwy@gmail.com" aria-label="Écrire à Association des étudiants Sénégalais de Longwy : etudiantsenegalaislongwy@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>etudiantsenegalaislongwy@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Association%20des%20%C3%A9tudiants%20S%C3%A9n%C3%A9galais%20de%20Longwy&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AAssociation%20des%20%C3%A9tudiants%20S%C3%A9n%C3%A9galais%20de%20Longwy%0ALongwy%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Association des étudiants Sénégalais de Longwy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="auvergne-rhone-alpes" data-search="Lyon Auvergne-Rhône-Alpes CESSEL" id="lyon-cessel">
+        <p class="directory-card__region">Auvergne-Rhône-Alpes</p>
+        <h3 class="directory-card__city" tabindex="-1">Lyon</h3>
+        <p class="directory-card__name">CESSEL</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:ceselsng@gmail.com" aria-label="Écrire à CESSEL : ceselsng@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>ceselsng@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20CESSEL&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0ACESSEL%0ALyon%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : CESSEL"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="provence-alpes-cote-dazur" data-search="Marseille Provence-Alpes-Côte d’Azur Association des Étudiants Sénégalais de Provence (ASSESP)" id="marseille-association-des-etudiants-senegalais-de-provence-assesp">
+        <p class="directory-card__region">Provence-Alpes-Côte d’Azur</p>
+        <h3 class="directory-card__city" tabindex="-1">Marseille</h3>
+        <p class="directory-card__name">Association des Étudiants Sénégalais de Provence (ASSESP)</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:assesp13@yahoo.com" aria-label="Écrire à Association des Étudiants Sénégalais de Provence (ASSESP) : assesp13@yahoo.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>assesp13@yahoo.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Association%20des%20%C3%89tudiants%20S%C3%A9n%C3%A9galais%20de%20Provence%20%28ASSESP%29&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AAssociation%20des%20%C3%89tudiants%20S%C3%A9n%C3%A9galais%20de%20Provence%20%28ASSESP%29%0AMarseille%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Association des Étudiants Sénégalais de Provence (ASSESP)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="grand-est" data-search="Metz Grand Est Association des Étudiants Sénégalais de Metz" id="metz-association-des-etudiants-senegalais-de-metz">
+        <p class="directory-card__region">Grand Est</p>
+        <h3 class="directory-card__city" tabindex="-1">Metz</h3>
+        <p class="directory-card__name">Association des Étudiants Sénégalais de Metz</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:aesmetz221@gmail.com" aria-label="Écrire à Association des Étudiants Sénégalais de Metz : aesmetz221@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>aesmetz221@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Association%20des%20%C3%89tudiants%20S%C3%A9n%C3%A9galais%20de%20Metz&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AAssociation%20des%20%C3%89tudiants%20S%C3%A9n%C3%A9galais%20de%20Metz%0AMetz%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Association des Étudiants Sénégalais de Metz"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="occitanie" data-search="Montpellier Occitanie Association des étudiants sénégalais de Montpellier (AESM)" id="montpellier-association-des-etudiants-senegalais-de-montpellier-aesm">
+        <p class="directory-card__region">Occitanie</p>
+        <h3 class="directory-card__city" tabindex="-1">Montpellier</h3>
+        <p class="directory-card__name">Association des étudiants sénégalais de Montpellier (AESM)</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:assos.aesm@gmail.com" aria-label="Écrire à Association des étudiants sénégalais de Montpellier (AESM) : assos.aesm@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>assos.aesm@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Association%20des%20%C3%A9tudiants%20s%C3%A9n%C3%A9galais%20de%20Montpellier%20%28AESM%29&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AAssociation%20des%20%C3%A9tudiants%20s%C3%A9n%C3%A9galais%20de%20Montpellier%20%28AESM%29%0AMontpellier%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Association des étudiants sénégalais de Montpellier (AESM)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="occitanie" data-search="Montpellier Occitanie Les élites sénégalaises" id="montpellier-les-elites-senegalaises">
+        <p class="directory-card__region">Occitanie</p>
+        <h3 class="directory-card__city" tabindex="-1">Montpellier</h3>
+        <p class="directory-card__name">Les élites sénégalaises</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:l.e.senegalaises@gmail.com" aria-label="Écrire à Les élites sénégalaises : l.e.senegalaises@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>l.e.senegalaises@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Les%20%C3%A9lites%20s%C3%A9n%C3%A9galaises&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0ALes%20%C3%A9lites%20s%C3%A9n%C3%A9galaises%0AMontpellier%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Les élites sénégalaises"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="grand-est" data-search="Mulhouse Grand Est Association des étudiants sénégalais de Mulhouse" id="mulhouse-association-des-etudiants-senegalais-de-mulhouse">
+        <p class="directory-card__region">Grand Est</p>
+        <h3 class="directory-card__city" tabindex="-1">Mulhouse</h3>
+        <p class="directory-card__name">Association des étudiants sénégalais de Mulhouse</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:associationaesm68100@gmail.com" aria-label="Écrire à Association des étudiants sénégalais de Mulhouse : associationaesm68100@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>associationaesm68100@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Association%20des%20%C3%A9tudiants%20s%C3%A9n%C3%A9galais%20de%20Mulhouse&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AAssociation%20des%20%C3%A9tudiants%20s%C3%A9n%C3%A9galais%20de%20Mulhouse%0AMulhouse%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Association des étudiants sénégalais de Mulhouse"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="grand-est" data-search="Nancy Grand Est Association des Étudiants Sénégalais de Nancy" id="nancy-association-des-etudiants-senegalais-de-nancy">
+        <p class="directory-card__region">Grand Est</p>
+        <h3 class="directory-card__city" tabindex="-1">Nancy</h3>
+        <p class="directory-card__name">Association des Étudiants Sénégalais de Nancy</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:associationsenegaisedenancy@gmail.com" aria-label="Écrire à Association des Étudiants Sénégalais de Nancy : associationsenegaisedenancy@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>associationsenegaisedenancy@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Association%20des%20%C3%89tudiants%20S%C3%A9n%C3%A9galais%20de%20Nancy&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AAssociation%20des%20%C3%89tudiants%20S%C3%A9n%C3%A9galais%20de%20Nancy%0ANancy%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Association des Étudiants Sénégalais de Nancy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="ile-de-france" data-search="Nanterre Île-de-France AMESEN" id="nanterre-amesen">
+        <p class="directory-card__region">Île-de-France</p>
+        <h3 class="directory-card__city" tabindex="-1">Nanterre</h3>
+        <p class="directory-card__name">AMESEN</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:etudiantsenegalais.nanterre1@gmail.com" aria-label="Écrire à AMESEN : etudiantsenegalais.nanterre1@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>etudiantsenegalais.nanterre1@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20AMESEN&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AAMESEN%0ANanterre%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : AMESEN"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="pays-de-la-loire" data-search="Nantes Pays de la Loire Association nantaise des étudiants et stagiaires sénégalais (ANESS)" id="nantes-association-nantaise-des-etudiants-et-stagiaires-senegalais-aness">
+        <p class="directory-card__region">Pays de la Loire</p>
+        <h3 class="directory-card__city" tabindex="-1">Nantes</h3>
+        <p class="directory-card__name">Association nantaise des étudiants et stagiaires sénégalais (ANESS)</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:associationaness44@gmail.com" aria-label="Écrire à Association nantaise des étudiants et stagiaires sénégalais (ANESS) : associationaness44@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>associationaness44@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Association%20nantaise%20des%20%C3%A9tudiants%20et%20stagiaires%20s%C3%A9n%C3%A9galais%20%28ANESS%29&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AAssociation%20nantaise%20des%20%C3%A9tudiants%20et%20stagiaires%20s%C3%A9n%C3%A9galais%20%28ANESS%29%0ANantes%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Association nantaise des étudiants et stagiaires sénégalais (ANESS)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="provence-alpes-cote-dazur" data-search="Nice Provence-Alpes-Côte d’Azur ADESEN" id="nice-adesen">
+        <p class="directory-card__region">Provence-Alpes-Côte d’Azur</p>
+        <h3 class="directory-card__city" tabindex="-1">Nice</h3>
+        <p class="directory-card__name">ADESEN</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:adsen2024@gmail.com" aria-label="Écrire à ADESEN : adsen2024@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>adsen2024@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20ADESEN&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AADESEN%0ANice%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : ADESEN"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="centre-val-de-loire" data-search="Orléans Centre-Val de Loire Association des étudiants et stagiaires sénégalais d’Orléans (AESSO)" id="orleans-association-des-etudiants-et-stagiaires-senegalais-dorleans-aesso">
+        <p class="directory-card__region">Centre-Val de Loire</p>
+        <h3 class="directory-card__city" tabindex="-1">Orléans</h3>
+        <p class="directory-card__name">Association des étudiants et stagiaires sénégalais d’Orléans (AESSO)</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:aessoorleans@gmail.com" aria-label="Écrire à Association des étudiants et stagiaires sénégalais d’Orléans (AESSO) : aessoorleans@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>aessoorleans@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Association%20des%20%C3%A9tudiants%20et%20stagiaires%20s%C3%A9n%C3%A9galais%20d%E2%80%99Orl%C3%A9ans%20%28AESSO%29&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AAssociation%20des%20%C3%A9tudiants%20et%20stagiaires%20s%C3%A9n%C3%A9galais%20d%E2%80%99Orl%C3%A9ans%20%28AESSO%29%0AOrl%C3%A9ans%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Association des étudiants et stagiaires sénégalais d’Orléans (AESSO)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="ile-de-france" data-search="Orsay Île-de-France Réseau des Étudiants Sénégalais de l&#x27;Université Paris-Saclay (RESUPS)" id="orsay-reseau-des-etudiants-senegalais-de-l-universite-paris-saclay-resups">
+        <p class="directory-card__region">Île-de-France</p>
+        <h3 class="directory-card__city" tabindex="-1">Orsay</h3>
+        <p class="directory-card__name">Réseau des Étudiants Sénégalais de l&#x27;Université Paris-Saclay (RESUPS)</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:contactresups@gmail.com" aria-label="Écrire à Réseau des Étudiants Sénégalais de l&#x27;Université Paris-Saclay (RESUPS) : contactresups@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>contactresups@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20R%C3%A9seau%20des%20%C3%89tudiants%20S%C3%A9n%C3%A9galais%20de%20l%27Universit%C3%A9%20Paris-Saclay%20%28RESUPS%29&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AR%C3%A9seau%20des%20%C3%89tudiants%20S%C3%A9n%C3%A9galais%20de%20l%27Universit%C3%A9%20Paris-Saclay%20%28RESUPS%29%0AOrsay%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Réseau des Étudiants Sénégalais de l&#x27;Université Paris-Saclay (RESUPS)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="ile-de-france" data-search="Paris Île-de-France Association des étudiants sénégalais de la Sorbonne (AESS)" id="paris-association-des-etudiants-senegalais-de-la-sorbonne-aess">
+        <p class="directory-card__region">Île-de-France</p>
+        <h3 class="directory-card__city" tabindex="-1">Paris</h3>
+        <p class="directory-card__name">Association des étudiants sénégalais de la Sorbonne (AESS)</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:aesmetz221@gmail.com?subject=Contact%20d%E2%80%99une%20association%20%3A%20Association%20des%20%C3%A9tudiants%20s%C3%A9n%C3%A9galais%20de%20la%20Sorbonne%20%28AESS%29&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20contacter%20Association%20des%20%C3%A9tudiants%20s%C3%A9n%C3%A9galais%20de%20la%20Sorbonne%20%28AESS%29.%20Pouvez-vous%20m%E2%80%99orienter%20%3F%0A%0AMerci."><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>Demander le contact à l’AESM</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Association%20des%20%C3%A9tudiants%20s%C3%A9n%C3%A9galais%20de%20la%20Sorbonne%20%28AESS%29&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AAssociation%20des%20%C3%A9tudiants%20s%C3%A9n%C3%A9galais%20de%20la%20Sorbonne%20%28AESS%29%0AParis%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Association des étudiants sénégalais de la Sorbonne (AESS)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="ile-de-france" data-search="Paris Île-de-France Association des étudiants sénégalais de Paris Cité (AESPC)" id="paris-association-des-etudiants-senegalais-de-paris-cite-aespc">
+        <p class="directory-card__region">Île-de-France</p>
+        <h3 class="directory-card__city" tabindex="-1">Paris</h3>
+        <p class="directory-card__name">Association des étudiants sénégalais de Paris Cité (AESPC)</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:aespc75@gmail.com" aria-label="Écrire à Association des étudiants sénégalais de Paris Cité (AESPC) : aespc75@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>aespc75@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Association%20des%20%C3%A9tudiants%20s%C3%A9n%C3%A9galais%20de%20Paris%20Cit%C3%A9%20%28AESPC%29&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AAssociation%20des%20%C3%A9tudiants%20s%C3%A9n%C3%A9galais%20de%20Paris%20Cit%C3%A9%20%28AESPC%29%0AParis%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Association des étudiants sénégalais de Paris Cité (AESPC)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="ile-de-france" data-search="Paris Île-de-France L’Étudiant221" id="paris-letudiant221">
+        <p class="directory-card__region">Île-de-France</p>
+        <h3 class="directory-card__city" tabindex="-1">Paris</h3>
+        <p class="directory-card__name">L’Étudiant221</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:collectifetudiant221@gmail.col" aria-label="Écrire à L’Étudiant221 : collectifetudiant221@gmail.col"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>collectifetudiant221@gmail.col</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20L%E2%80%99%C3%89tudiant221&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AL%E2%80%99%C3%89tudiant221%0AParis%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : L’Étudiant221"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="ile-de-france" data-search="Paris Île-de-France Union des étudiants solidaires sénégalais de France (UESSF)" id="paris-union-des-etudiants-solidaires-senegalais-de-france-uessf">
+        <p class="directory-card__region">Île-de-France</p>
+        <h3 class="directory-card__city" tabindex="-1">Paris</h3>
+        <p class="directory-card__name">Union des étudiants solidaires sénégalais de France (UESSF)</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:uniondesetudiantssolidaires@gmail.com" aria-label="Écrire à Union des étudiants solidaires sénégalais de France (UESSF) : uniondesetudiantssolidaires@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>uniondesetudiantssolidaires@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Union%20des%20%C3%A9tudiants%20solidaires%20s%C3%A9n%C3%A9galais%20de%20France%20%28UESSF%29&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AUnion%20des%20%C3%A9tudiants%20solidaires%20s%C3%A9n%C3%A9galais%20de%20France%20%28UESSF%29%0AParis%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Union des étudiants solidaires sénégalais de France (UESSF)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="nouvelle-aquitaine" data-search="Pau Nouvelle-Aquitaine Solidarité étudiante sénégalaise (SOLES)" id="pau-solidarite-etudiante-senegalaise-soles">
+        <p class="directory-card__region">Nouvelle-Aquitaine</p>
+        <h3 class="directory-card__city" tabindex="-1">Pau</h3>
+        <p class="directory-card__name">Solidarité étudiante sénégalaise (SOLES)</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:solespau221@gmail.com" aria-label="Écrire à Solidarité étudiante sénégalaise (SOLES) : solespau221@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>solespau221@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Solidarit%C3%A9%20%C3%A9tudiante%20s%C3%A9n%C3%A9galaise%20%28SOLES%29&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0ASolidarit%C3%A9%20%C3%A9tudiante%20s%C3%A9n%C3%A9galaise%20%28SOLES%29%0APau%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Solidarité étudiante sénégalaise (SOLES)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="nouvelle-aquitaine" data-search="Poitiers Nouvelle-Aquitaine Association des Sénégalais de Poitiers (ASEP)" id="poitiers-association-des-senegalais-de-poitiers-asep">
+        <p class="directory-card__region">Nouvelle-Aquitaine</p>
+        <h3 class="directory-card__city" tabindex="-1">Poitiers</h3>
+        <p class="directory-card__name">Association des Sénégalais de Poitiers (ASEP)</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:asepoitiers@gmail.com" aria-label="Écrire à Association des Sénégalais de Poitiers (ASEP) : asepoitiers@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>asepoitiers@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Association%20des%20S%C3%A9n%C3%A9galais%20de%20Poitiers%20%28ASEP%29&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AAssociation%20des%20S%C3%A9n%C3%A9galais%20de%20Poitiers%20%28ASEP%29%0APoitiers%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Association des Sénégalais de Poitiers (ASEP)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="provence-alpes-cote-dazur" data-search=" Provence-Alpes-Côte d’Azur Association Mouvement Sunu Yeene" id="provence-alpes-cote-dazur-association-mouvement-sunu-yeene">
+        <p class="directory-card__region">Provence-Alpes-Côte d’Azur</p>
+        <h3 class="directory-card__city" tabindex="-1">Association Mouvement Sunu Yeene</h3>
+        <div class="directory-card__name"></div>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:secretariatdiaspora@gmail.com" aria-label="Écrire à Association Mouvement Sunu Yeene : secretariatdiaspora@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>secretariatdiaspora@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Association%20Mouvement%20Sunu%20Yeene&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AAssociation%20Mouvement%20Sunu%20Yeene%0AProvence-Alpes-C%C3%B4te%20d%E2%80%99Azur%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Association Mouvement Sunu Yeene"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="grand-est" data-search="Reims, Châlons et Charleville Grand Est Association Rémoise des Étudiants Sénégalais" id="reims-chalons-et-charleville-association-remoise-des-etudiants-senegalais">
+        <p class="directory-card__region">Grand Est</p>
+        <h3 class="directory-card__city" tabindex="-1">Reims, Châlons et Charleville</h3>
+        <p class="directory-card__name">Association Rémoise des Étudiants Sénégalais</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:assdiop1207@gmail.com" aria-label="Écrire à Association Rémoise des Étudiants Sénégalais : assdiop1207@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>assdiop1207@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Association%20R%C3%A9moise%20des%20%C3%89tudiants%20S%C3%A9n%C3%A9galais&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AAssociation%20R%C3%A9moise%20des%20%C3%89tudiants%20S%C3%A9n%C3%A9galais%0AReims%2C%20Ch%C3%A2lons%20et%20Charleville%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Association Rémoise des Étudiants Sénégalais"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="auvergne-rhone-alpes" data-search="Roanne Auvergne-Rhône-Alpes Association sénégalaise de Roanne" id="roanne-association-senegalaise-de-roanne">
+        <p class="directory-card__region">Auvergne-Rhône-Alpes</p>
+        <h3 class="directory-card__city" tabindex="-1">Roanne</h3>
+        <p class="directory-card__name">Association sénégalaise de Roanne</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:arsr@live.fr" aria-label="Écrire à Association sénégalaise de Roanne : arsr@live.fr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>arsr@live.fr</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Association%20s%C3%A9n%C3%A9galaise%20de%20Roanne&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AAssociation%20s%C3%A9n%C3%A9galaise%20de%20Roanne%0ARoanne%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Association sénégalaise de Roanne"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="normandie" data-search="Rouen Normandie Association des étudiants Sénégalais de Rouen" id="rouen-association-des-etudiants-senegalais-de-rouen">
+        <p class="directory-card__region">Normandie</p>
+        <h3 class="directory-card__city" tabindex="-1">Rouen</h3>
+        <p class="directory-card__name">Association des étudiants Sénégalais de Rouen</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:aser.rouen@gmail.com" aria-label="Écrire à Association des étudiants Sénégalais de Rouen : aser.rouen@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>aser.rouen@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Association%20des%20%C3%A9tudiants%20S%C3%A9n%C3%A9galais%20de%20Rouen&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AAssociation%20des%20%C3%A9tudiants%20S%C3%A9n%C3%A9galais%20de%20Rouen%0ARouen%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Association des étudiants Sénégalais de Rouen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="ile-de-france" data-search="Saint-Denis · Paris 8 Île-de-France Amicale des étudiants sénégalais de Paris 8 Bokk Xaalat" id="saint-denis-paris-8-amicale-des-etudiants-senegalais-de-paris-8-bokk-xaalat">
+        <p class="directory-card__region">Île-de-France</p>
+        <h3 class="directory-card__city" tabindex="-1">Saint-Denis · Paris 8</h3>
+        <p class="directory-card__name">Amicale des étudiants sénégalais de Paris 8 Bokk Xaalat</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:bokkxaalat221@outlook.com" aria-label="Écrire à Amicale des étudiants sénégalais de Paris 8 Bokk Xaalat : bokkxaalat221@outlook.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>bokkxaalat221@outlook.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Amicale%20des%20%C3%A9tudiants%20s%C3%A9n%C3%A9galais%20de%20Paris%208%20Bokk%20Xaalat&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AAmicale%20des%20%C3%A9tudiants%20s%C3%A9n%C3%A9galais%20de%20Paris%208%20Bokk%20Xaalat%0ASaint-Denis%20%C2%B7%20Paris%208%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Amicale des étudiants sénégalais de Paris 8 Bokk Xaalat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="auvergne-rhone-alpes" data-search="Saint-Étienne Auvergne-Rhône-Alpes Association des étudiants sénégalais de Saint-Étienne" id="saint-etienne-association-des-etudiants-senegalais-de-saint-etienne">
+        <p class="directory-card__region">Auvergne-Rhône-Alpes</p>
+        <h3 class="directory-card__city" tabindex="-1">Saint-Étienne</h3>
+        <p class="directory-card__name">Association des étudiants sénégalais de Saint-Étienne</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:presidence.aess@gmail.com" aria-label="Écrire à Association des étudiants sénégalais de Saint-Étienne : presidence.aess@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>presidence.aess@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Association%20des%20%C3%A9tudiants%20s%C3%A9n%C3%A9galais%20de%20Saint-%C3%89tienne&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AAssociation%20des%20%C3%A9tudiants%20s%C3%A9n%C3%A9galais%20de%20Saint-%C3%89tienne%0ASaint-%C3%89tienne%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Association des étudiants sénégalais de Saint-Étienne"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="grand-est" data-search="Strasbourg Grand Est Association des Étudiants et Stagiaires Sénégalais de Strasbourg" id="strasbourg-association-des-etudiants-et-stagiaires-senegalais-de-strasbourg">
+        <p class="directory-card__region">Grand Est</p>
+        <h3 class="directory-card__city" tabindex="-1">Strasbourg</h3>
+        <p class="directory-card__name">Association des Étudiants et Stagiaires Sénégalais de Strasbourg</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:aessstrasbourg67@gmail.com" aria-label="Écrire à Association des Étudiants et Stagiaires Sénégalais de Strasbourg : aessstrasbourg67@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>aessstrasbourg67@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Association%20des%20%C3%89tudiants%20et%20Stagiaires%20S%C3%A9n%C3%A9galais%20de%20Strasbourg&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AAssociation%20des%20%C3%89tudiants%20et%20Stagiaires%20S%C3%A9n%C3%A9galais%20de%20Strasbourg%0AStrasbourg%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Association des Étudiants et Stagiaires Sénégalais de Strasbourg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="occitanie" data-search="Toulouse Occitanie Association des Stagiaires et Étudiants Sénégalais de Toulouse" id="toulouse-association-des-stagiaires-et-etudiants-senegalais-de-toulouse">
+        <p class="directory-card__region">Occitanie</p>
+        <h3 class="directory-card__city" tabindex="-1">Toulouse</h3>
+        <p class="directory-card__name">Association des Stagiaires et Étudiants Sénégalais de Toulouse</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:asest31@gmail.com" aria-label="Écrire à Association des Stagiaires et Étudiants Sénégalais de Toulouse : asest31@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>asest31@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Association%20des%20Stagiaires%20et%20%C3%89tudiants%20S%C3%A9n%C3%A9galais%20de%20Toulouse&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AAssociation%20des%20Stagiaires%20et%20%C3%89tudiants%20S%C3%A9n%C3%A9galais%20de%20Toulouse%0AToulouse%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Association des Stagiaires et Étudiants Sénégalais de Toulouse"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="centre-val-de-loire" data-search="Tours Centre-Val de Loire Association des étudiants sénégalais de Tours (AEST37)" id="tours-association-des-etudiants-senegalais-de-tours-aest37">
+        <p class="directory-card__region">Centre-Val de Loire</p>
+        <h3 class="directory-card__city" tabindex="-1">Tours</h3>
+        <p class="directory-card__name">Association des étudiants sénégalais de Tours (AEST37)</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:presidence.ast37@gmail.com" aria-label="Écrire à Association des étudiants sénégalais de Tours (AEST37) : presidence.ast37@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>presidence.ast37@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Association%20des%20%C3%A9tudiants%20s%C3%A9n%C3%A9galais%20de%20Tours%20%28AEST37%29&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0AAssociation%20des%20%C3%A9tudiants%20s%C3%A9n%C3%A9galais%20de%20Tours%20%28AEST37%29%0ATours%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Association des étudiants sénégalais de Tours (AEST37)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      <article class="directory-card" data-region="hauts-de-france" data-search="Valenciennes Hauts-de-France Cercle des étudiants sénégalais de Valenciennes (CESVAL)" id="valenciennes-cercle-des-etudiants-senegalais-de-valenciennes-cesval">
+        <p class="directory-card__region">Hauts-de-France</p>
+        <h3 class="directory-card__city" tabindex="-1">Valenciennes</h3>
+        <p class="directory-card__name">Cercle des étudiants sénégalais de Valenciennes (CESVAL)</p>
+        <div class="directory-card__contact"><a class="directory-card__email" href="mailto:cesval2019@gmail.com" aria-label="Écrire à Cercle des étudiants sénégalais de Valenciennes (CESVAL) : cesval2019@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="5" width="18" height="14"/><path d="m3 6 9 7 9-7"/></svg><span>cesval2019@gmail.com</span></a></div>
+        <a class="directory-card__edit" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20correction%20pour%20Cercle%20des%20%C3%A9tudiants%20s%C3%A9n%C3%A9galais%20de%20Valenciennes%20%28CESVAL%29&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20corriger%20la%20fiche%20suivante%20%3A%0ACercle%20des%20%C3%A9tudiants%20s%C3%A9n%C3%A9galais%20de%20Valenciennes%20%28CESVAL%29%0AValenciennes%0A%0AInformations%20%C3%A0%20mettre%20%C3%A0%20jour%20%3A%0A%0AMerci." aria-label="Corriger la fiche : Cercle des étudiants sénégalais de Valenciennes (CESVAL)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m16 3 5 5-12 12H4v-5L16 3Z"/><path d="m13 6 5 5"/></svg>Corriger cette fiche</a>
+      </article>
+      </div>
+      <div class="directory-empty" id="directory-empty" hidden><h3>Aucune association trouvée</h3><p>Essayez une autre ville, un nom plus court ou une autre région.</p><button type="button" class="btn btn--ghost" id="directory-empty-reset">Voir toutes les associations</button></div>
+      <div class="directory-more" id="directory-more" hidden><p id="directory-shown"></p><button class="btn btn--ghost" id="directory-more-button" type="button" aria-controls="directory-grid">Afficher plus d’associations</button></div>
+      <section class="directory-help" id="proposer" aria-labelledby="directory-help-title"><div><h2 id="directory-help-title">Une association manque à l’appel ?</h2><p>Vous pouvez proposer son ajout au bureau de l’AESM. Pour mettre à jour une adresse, utilisez le lien « Corriger cette fiche » sous l’association concernée.</p></div><a class="btn btn--gold" href="mailto:aesmetz221@gmail.com?subject=Annuaire%20%3A%20proposer%20une%20association&amp;body=Bonjour%2C%0A%0AJe%20souhaite%20proposer%20une%20association%20pour%20l%E2%80%99annuaire.%0A%0ANom%20de%20l%E2%80%99association%20%3A%0AVille%20%3A%0AR%C3%A9gion%20%3A%0AAdresse%20e-mail%20de%20l%E2%80%99association%20%3A%0ASite%20ou%20r%C3%A9seau%20social%20%3A%0A%0AMerci.">Proposer une association</a></section>
+      <p class="directory-source">Annuaire constitué à partir des coordonnées communiquées par les associations entre octobre 2025 et juin 2026. Les bureaux peuvent changer ; une adresse ne fonctionne plus ? Signalez-le-nous pour garder ces contacts utiles.</p>
+      <noscript><p class="directory-source">Toutes les associations sont affichées ci-dessus. Activez JavaScript pour utiliser la recherche et les filtres.</p></noscript>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-col">
+        <div class="footer-brand">
+          <img src="assets/img/logo/aesm.webp" alt="" width="52" height="52">
+          <strong>AESM<br>Étudiants Sénégalais de Metz</strong>
+        </div>
+        <p>Association étudiante à but non lucratif, inscrite au registre des associations
+           du tribunal judiciaire de Metz. L’association est fondée en 1991.</p>
+        <p class="footer-legal-id">
+          SIRET 931 126 692 00017<br>
+          Registre des associations : volume 121, folio n° 175<br>
+          RNA / AMALIA : A1993MET000032
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h3>L’association</h3>
+        <ul>
+          <li><a href="association.html">Qui sommes-nous</a></li>
+          <li><a href="associations-france.html">Associations en France</a></li>
+          <li><a href="nos-actions.html">Nos actions</a></li>
+          <li><a href="bureau.html">Le bureau</a></li>
+          <li><a href="evenements.html">Événements</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Participer</h3>
+        <ul>
+          <li><a href="adherer.html">Adhérer / nouvel arrivant</a></li>
+          <li><a href="soutenir.html">Faire un don</a></li>
+          <li><a href="soutenir.html#partenaires">Devenir partenaire</a></li>
+          <li><a href="contact.html">Nous écrire</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <ul>
+          <li>Île du Saulcy — BP 80794<br>57000 Metz, France</li>
+          <li><a href="mailto:aesmetz221@gmail.com">aesmetz221@gmail.com</a></li>
+        </ul>
+        <div class="social">
+          <a href="https://www.instagram.com/aesmetz/" target="_blank" rel="noopener noreferrer" aria-label="L’AESM sur Instagram (nouvelle fenêtre)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@aesmetz" target="_blank" rel="noopener noreferrer" aria-label="L’AESM sur TikTok (nouvelle fenêtre)">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.5 3c.3 2.2 1.6 3.6 3.8 3.8v2.6c-1.4.1-2.7-.3-3.9-1v5.6c0 4.6-4.4 6.9-8 4.7-2.3-1.4-3-4.5-1.7-6.9 1.1-2 3.3-3 5.6-2.6v2.8c-.4-.1-.8-.2-1.2-.2-1.4 0-2.5 1.2-2.4 2.6.1 1.3 1.2 2.3 2.5 2.2 1.4 0 2.4-1.1 2.4-2.6V3h2.9z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/aesm-association-des-etudiants-s%C3%A9n%C3%A9galais-de-metz-4a9489358/" target="_blank" rel="noopener noreferrer" aria-label="L’AESM sur LinkedIn (nouvelle fenêtre)">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.5 8.5A1.5 1.5 0 1 0 6.5 5.5a1.5 1.5 0 0 0 0 3zM5 9.75h3V19H5V9.75zM10 9.75h2.88v1.26h.04c.4-.76 1.38-1.56 2.84-1.56 3.04 0 3.6 2 3.6 4.6V19h-3v-4.38c0-1.05-.02-2.4-1.46-2.4-1.46 0-1.68 1.14-1.68 2.33V19h-3V9.75z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@AESMETZ" target="_blank" rel="noopener noreferrer" aria-label="L’AESM sur YouTube (nouvelle fenêtre)">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10.5 9.5v5l4.2-2.5-4.2-2.5z" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 1991–<span data-current-year>2026</span> AESM — Association des Étudiants Sénégalais de Metz</p>
+      <nav aria-label="Liens légaux">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="politique-confidentialite.html">Politique de confidentialité</a>
+        <a href="politique-cookies.html">Cookies</a>
+        <button type="button" class="linklike" data-cookie-settings>Gérer mes préférences</button>
+      </nav>
+    </div>
+  </div>
+</footer>
+</body></html>
