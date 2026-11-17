@@ -13,6 +13,8 @@ AddDefaultCharset UTF-8
 
 # ---------- En-têtes de sécurité ----------
 <IfModule mod_headers.c>
+  # Études définit ses propres en-têtes, notamment pour le traitement des PDF.
+  <If "%{HTTP_HOST} != 'etudes.aesmetz.com'">
     # Empêche l'interprétation d'un fichier avec un type MIME différent de celui annoncé
     Header always set X-Content-Type-Options "nosniff"
 
@@ -32,6 +34,7 @@ AddDefaultCharset UTF-8
 
     # HSTS — à n'activer qu'une fois le HTTPS confirmé sur tout le site
     # Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+  </If>
 </IfModule>
 
 # ---------- Compression ----------
