@@ -11,6 +11,20 @@ ErrorDocument 404 /404.html
 # ---------- Encodage par défaut ----------
 AddDefaultCharset UTF-8
 
+# ---------- Adresse HTTPS canonique ----------
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # Laisser la validation automatique des certificats accessible en HTTP.
+    RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/
+    RewriteCond %{HTTP_HOST} ^(www\.|etudes\.)?aesmetz\.com$ [NC]
+    RewriteCond %{HTTPS} !=on
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+    RewriteCond %{HTTP_HOST} ^www\.aesmetz\.com$ [NC]
+    RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/
+    RewriteRule ^ https://aesmetz.com%{REQUEST_URI} [R=301,L]
+</IfModule>
+
 # ---------- En-têtes de sécurité ----------
 <IfModule mod_headers.c>
   # Études définit ses propres en-têtes, notamment pour le traitement des PDF.
