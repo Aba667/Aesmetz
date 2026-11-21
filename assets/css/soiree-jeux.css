@@ -1,0 +1,41 @@
+/* Soirée du 28 novembre : conserver l’affiche entière, à toute largeur. */
+.hero__welcome--event { grid-template-columns: 94px minmax(0, 1fr) auto; }
+.hero__welcome--event img { width: 94px; height: auto; }
+.hero__welcome--event .hero__welcome-label { font-size: 0.875rem; letter-spacing: 0.05em; }
+.hero__welcome--event .hero__welcome-link { display: inline-flex; align-items: center; min-height: 44px; }
+.game-night { scroll-margin-top: calc(var(--entete-h) + 1.5rem); }
+.game-night__layout { display: grid; gap: var(--e-6); align-items: start; }
+.game-night__copy { min-width: 0; }
+.game-night__kicker {
+  color: var(--vert); font-size: 0.875rem; font-weight: 700;
+  letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: var(--e-3);
+}
+.game-night__title { font-size: var(--t-4); }
+.game-night__intro { font-size: var(--t-1); margin-top: var(--e-4); color: var(--ink-soft); }
+.game-night__facts { margin-block: var(--e-5); border-block: 1px solid var(--filet); }
+.game-night__facts > div { padding-block: var(--e-3); }
+.game-night__facts > div + div { border-top: 1px solid var(--filet); }
+.game-night__facts dt { font-size: 0.875rem; color: var(--ink-soft); }
+.game-night__facts dd { font-weight: 600; }
+.game-night__facts dd span { display: block; font-weight: 400; }
+.game-night__copy h2:not(.game-night__title) { font-size: var(--t-2); margin-bottom: var(--e-3); }
+.game-night__copy p + p { margin-top: var(--e-4); }
+.game-night__actions { display: flex; flex-wrap: wrap; gap: var(--e-3); margin-block: var(--e-5); }
+.game-night__poster { margin: 0; }
+.game-night__poster a { display: block; }
+.game-night__poster img { width: 100%; height: auto; }
+.game-night__poster figcaption { padding-top: var(--e-2); font-size: 0.875rem; color: var(--ink-soft); }
+.article-card__media--poster { object-fit: contain; object-position: center; background: #104b38; }
+.game-night__back { display: inline-flex; align-items: center; min-height: 44px; }
+@media (min-width: 800px) {
+  .game-night__layout { grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: var(--e-7); }
+  .game-night__facts > div { display: grid; grid-template-columns: 5rem minmax(0, 1fr); gap: var(--e-4); }
+}
+@media (max-width: 700px) {
+  .hero__welcome--event { grid-template-columns: 72px minmax(0, 1fr); gap: var(--e-4); }
+  .hero__welcome--event img { width: 72px; }
+  .hero__welcome--event .hero__welcome-link { grid-column: 1 / -1; }
+}
+@media (max-width: 400px) {
+  .game-night__actions { flex-direction: column; align-items: stretch; }
+}

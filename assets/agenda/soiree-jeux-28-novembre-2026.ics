@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//AESM//Evenements//FR
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:soiree-jeux-28-novembre-2026@aesmetz.com
+DTSTAMP:20261121T172805Z
+DTSTART:20261128T170000Z
+DTEND:20261128T220000Z
+SUMMARY:Soirée jeux de société de l’AESM
+LOCATION:Le Cap\, 1 avenue Robert Schuman\, 57000 Metz
+DESCRIPTION:Entrée libre et ouverte à tous. UNO\, Loup-Garou\, cartes\, G
+ énie en herbe\, baby-foot et crêpes.
+URL:https://aesmetz.com/articles/soiree-jeux-28-novembre-2026.html
+END:VEVENT
+END:VCALENDAR
