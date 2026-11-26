@@ -42,9 +42,9 @@ const GOALS = [
     'autre' => 'Autre objectif',
 ];
 const SLOTS = [
-    'lun-soir' => 'Lundi soir', 'mar-soir' => 'Mardi soir', 'mer-am' => 'Mercredi après-midi',
-    'mer-soir' => 'Mercredi soir', 'jeu-soir' => 'Jeudi soir', 'ven-soir' => 'Vendredi soir',
-    'sam-matin' => 'Samedi matin', 'sam-am' => 'Samedi après-midi',
+    'lun-soir' => 'Lundi soir',
+    'mer-soir' => 'Mercredi soir',
+    'dim-soir' => 'Dimanche soir',
 ];
 function posted(string $key): string {
     return is_string($_POST[$key] ?? null) ? trim($_POST[$key]) : '';
