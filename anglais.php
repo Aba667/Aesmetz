@@ -1,8 +1,27 @@
 <?php
 declare(strict_types=1);
 
-$appPath = getenv('AESM_ETUDES_APP_PATH') ?: dirname(__DIR__) . '/etudes-app';
-require $appPath . '/app/bootstrap.php';
+header('Cache-Control: private, no-store');
+header('Content-Type: text/html; charset=UTF-8');
+header('X-Content-Type-Options: nosniff');
+header('Referrer-Policy: same-origin');
+
+try {
+    $appPath = getenv('AESM_ETUDES_APP_PATH');
+    if (!$appPath) {
+        $pathFile = __DIR__ . '/etudes.aesmetz.com/app-path.php';
+        $appPath = is_file($pathFile) ? require $pathFile : dirname(__DIR__) . '/etudes-app';
+    }
+    if (!is_string($appPath) || !is_readable($appPath . '/app/bootstrap.php')) {
+        throw new RuntimeException('Configuration Études AESM inaccessible.');
+    }
+    require $appPath . '/app/bootstrap.php';
+} catch (Throwable $exception) {
+    http_response_code(503);
+    error_log('AESM anglais : initialisation du formulaire impossible (' . $exception::class . ')');
+    echo '<!doctype html><html lang="fr"><meta charset="utf-8"><title>Inscription indisponible | AESM</title><main><h1>Le formulaire est momentanément indisponible</h1><p>Réessayez dans quelques instants.</p><a href="/articles/anglais-aesm.html">Retour à l’article</a></main></html>';
+    exit;
+}
 
 const ENGLISH_REGISTRATION_URL = 'https://aesmetz.com/anglais.php';
 
@@ -86,10 +105,6 @@ function submit_english_registration(): void {
         'Nouvelle inscription aux rencontres d’anglais', $body, 'Voir le formulaire', ENGLISH_REGISTRATION_URL);
 }
 
-header('Cache-Control: private, no-store');
-header('Content-Type: text/html; charset=UTF-8');
-header('X-Content-Type-Options: nosniff');
-header('Referrer-Policy: same-origin');
 $method = $_SERVER['REQUEST_METHOD'];
 if (!in_array($method, ['GET', 'HEAD', 'POST'], true)) {
     header('Allow: GET, HEAD, POST');

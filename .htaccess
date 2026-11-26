@@ -70,6 +70,13 @@ AddDefaultCharset UTF-8
     ExpiresByType application/pdf           "access plus 1 month"
 </IfModule>
 
+# Le formulaire contient un jeton unique associé à la session.
+<Files "anglais.php">
+    <IfModule mod_expires.c>
+        ExpiresActive Off
+    </IfModule>
+</Files>
+
 # ---------- Types MIME ----------
 <IfModule mod_mime.c>
     AddType image/webp .webp
